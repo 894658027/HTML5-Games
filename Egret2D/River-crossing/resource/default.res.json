@@ -1,0 +1,25 @@
+{
+	"groups": [
+		{
+			"keys": "button3_png,longzhu_png,longzhu_json",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/button3.png",
+			"type": "image",
+			"name": "button3_png"
+		},
+		{
+			"url": "assets/longzhu.png",
+			"type": "image",
+			"name": "longzhu_png"
+		},
+		{
+			"name": "longzhu_json",
+			"type": "json",
+			"url": "assets/longzhu.json"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mainGame" width="607" height="950" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1584bd955cd"/>
+	<e:Image source="gamebg_png" verticalCenter="0" horizontalCenter="0" locked="true"/>
+	<e:Image source="gameui1_png" y="0" horizontalCenter="0" locked="true"/>
+	<e:Image source="conveyer_png" y="119.94" horizontalCenter="0" locked="true"/>
+	<e:Label id="lb_score" text="0" x="458.33" y="80" anchorOffsetX="0" width="74.67" verticalAlign="middle" textColor="0x000000" fontFamily="微软雅黑" textAlign="center" anchorOffsetY="0" height="26.97" locked="true"/>
+	<e:Group id="g_bottles" width="80" height="824.24" y="121" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0" locked="true"/>
+	<e:Group id="g_bottlePackage" x="0" y="207.99999999999994" locked="true">
+		<ns1:BotllePackage x="0" y="0.7900000000000489" skinName="bottlePackage"  pak_type="1"/>
+		<ns1:BotllePackage x="0" y="260.00000000000006" skinName="bottlePackage"  pak_type="2" scaleX="1" scaleY="1"/>
+		<ns1:BotllePackage x="0" y="506.00000000000006" skinName="bottlePackage"  pak_type="3" scaleX="1" scaleY="1"/>
+		<ns1:BotllePackage y="0" skinName="bottlePackage"  pak_type="4" x="461"/>
+		<ns1:BotllePackage y="260.00000000000006" skinName="bottlePackage"  pak_type="5" x="461"/>
+		<ns1:BotllePackage x="461" y="506.00000000000006" skinName="bottlePackage"  pak_type="6"/>
+	</e:Group>
+	<e:Group id="g_gameOver" x="0" y="0" width="607" height="950" locked="true" visible="false">
+		<e:Rect width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" fillAlpha="0.5"/>
+		<e:Image source="overrole_png" y="336.06" x="198.24"/>
+		<e:Image source="overpanel_png" x="109.09" y="6.06" anchorOffsetX="0" width="404.3" anchorOffsetY="0" height="349.64"/>
+		<e:Button id="btn_replay" label="" y="705.48" x="145.74">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_replay_png" source.down="btn_replay1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btn_main" label="" y="811.48" x="145.74">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_start_png" source.down="btn_start1_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="Score:" x="143.88" y="124" fontFamily="微软雅黑" size="56" textColor="0x000000"/>
+		<e:Label id="lb_over" text="0" x="326" y="127.03" fontFamily="微软雅黑" size="56" textColor="0xf70405"/>
+	</e:Group>
+</e:Skin>

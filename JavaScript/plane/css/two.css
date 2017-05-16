@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+.table_m{margin-left:15px;}
+.modal_1{border:solid 5px #F8C83D}
+*{font-family:"Times New Roman", Times, serifl;}
+.bg{background-repeat:no-repeat;
+  background-size:cover;
+  height:1040px;}
+.bo{ background:url(../img/info/banner.png);
+     background-repeat:no-repeat;
+	 background-position:center top;
+	 background-size:cover;
+	 height:1040px;}
+
+.h{ color:#000;
+    font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;}
+.h5 a{ color:#000;}
+.h1 a:hover{ color:#999;}
+a:hover{ text-decoration:none;
+     list-style:none;}
+.tu{ background:url(../img/info/back.jpg);
+background-size:auto;
+ background-size:cover;
+ background-repeat:no-repeat;
+ height:312px;
+ margin-top:50px;}
+ .six{ margin-left:170px;
+   margin-top:25px;}
+span{ color:#F00;}
+.reducedfrom {
+	text-decoration: line-through; /*文字删除样式*/
+	margin-right: 3%;
+	color: #555;}
+p.qty{
+margin: 15px 5px 0 0;
+color:#333333;
+font-size:1em;
+display:inline-block;
+}
+.db{  margin:0px;
+	padding:30px 0px;
+	 list-style:none;}
+.db li{background-color:#F54D56;
+          width:185px;
+           height:35px;
+		   text-align:center;
+           border:2px #FFFFFF solid;
+	-webkit-transition:background-color .4s ease-in;
+	-moz-transition:background-color .4s ease-in;
+	transition:background-color .4s ease-in;
+}
+.db li a{ color:#FFF;
+		   font-family:"MS Serif", "New York", serif;}
+.db li:hover{background-color:#000;}  
+.hr{ border-top:1px #FF530D solid;}
+.sp{ color:#999;
+position:relative;
+top:30px;
+left:25px;
+ font-family:"MS Serif", "New York", serif;}
+.sp_h{ font-size:16px;
+      margin-left:20px;}
+.hr_s{ border-bottom:1px #FF530D solid;
+     position:relative;
+	 top:90px;}
+.sp_s{ color:#999;
+position:relative;
+top:80px;
+left:-100px;
+ font-family:"MS Serif", "New York", serif;}
+.sp_hh{ font-size:16px;
+      margin-left:20px;}
+.quick{ font-family:"MS Serif", "New York", serif;}
+.quick_desc{ font-family:"MS Serif", "New York", serif; color:#999;}
+
+ul.size{
+	padding:0;
+	list-style:none;
+	margin-top:5px;
+}
+ul.size h3{
+	color: #555;
+	font-size: 0.85em;
+	text-transform: uppercase;/*文字过渡样式大写*/
+}
+ul.size li {
+	display: inline-block;/*水平呈块状*/
+	margin: 0px 10px 0px 0px;
+}
+ul.size li a {
+	color: #555;
+	font-size: 0.8425em;/*1em=16px;*/
+	background:#fff;
+	padding: 5px 15px;
+	 border:1px #666666 solid;
+}
+.pan{ background:#FDA5AA;
+	-webkit-transition:background-color .4s ease-in;
+	-moz-transition:background-color .4s ease-in;
+	transition:background-color .4s ease-in;}
+.pan_1{ background:#FC9096;
+	-webkit-transition:background-color .4s ease-in;
+	-moz-transition:background-color .4s ease-in;
+	transition:background-color .4s ease-in;}
+.pan_2{ background:#FD7179;
+	-webkit-transition:background-color .4s ease-in;
+	-moz-transition:background-color .4s ease-in;
+	transition:background-color .4s ease-in;}
+.pan_3{ background:#FA5C65;
+	-webkit-transition:background-color .4s ease-in;
+	-moz-transition:background-color .4s ease-in;
+	transition:background-color .4s ease-in;}
+.pan_4{ background:#F54D56;
+	-webkit-transition:background-color .4s ease-in;
+	-moz-transition:background-color .4s ease-in;
+	transition:background-color .4s ease-in;
+	}
+.pan_hd{ height:50px;}
+.pan:hover{ background-color:#7F7E7E;}
+.pan_1:hover{ background-color:#7F7E7E;}
+.pan_2:hover{ background-color:#7F7E7E;}
+.pan_3:hover{ background-color:#7F7E7E;}
+.pan_4:hover{ background-color:#7F7E7E;}
+.panel-heading a{ color:#FFF;}
+.panel-body{ background:#FFF;}
+
+.caption h4 a{ color:#000;
+        font-weight:bold;
+	-webkit-transition:color .4s ease-in;
+	-moz-transition:color .4s ease-in;
+	transition:color .4s ease-in;}
+.caption h4 a:hover{color:#F54D56;}
+
+.row_1{ margin-bottom:30px;}
+.img-thumbnail{border:4px solid #ddd;border-radius:4px;}
+.bottom{  height:270px;
+			background:#202020; margin-top:200px;}
+.h4 a{ color:#FFF;}
+.h5 a{ color:#FFF;}
+.sunning{ transition:background-color .4s ease-in;
+	-webkit-transition:background-color .4s ease-in;
+	-moz-transition:background-color .4s ease-in;
+						  margin:0px auto;
+	                       width:300px;	
+						   display:block;}
+.sunning:hover{background-color:#F0AD4E;
+                       width:300px;						  margin:0px auto;
+					   display:block;
+					   text-align:center;}

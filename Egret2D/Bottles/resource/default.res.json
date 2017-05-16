@@ -1,0 +1,870 @@
+{
+	"groups": [
+		{
+			"name": "preload",
+			"keys": "bottle1_19_png,bottle1_20_png,bottle1_21_png,bottle1_22_png,bottle1_23_png,bottle2_png,bottle2_0_png,bottle2_1_png,bottle2_2_png,bottle2_3_png,bottle2_4_png,bottle2_5_png,bottle2_6_png,bottle2_7_png,bottle2_8_png,bottle2_9_png,bottle2_10_png,bottle2_11_png,bottle2_12_png,bottle2_13_png,bottle2_14_png,bottle2_15_png,bottle2_16_png,bottle2_17_png,bottle2_18_png,bottle2_19_png,bottle2_20_png,bottle2_21_png,bottle2_22_png,bottle2_23_png,bottle3_png,bottle3_0_png,bottle3_1_png,bottle3_2_png,bottle3_3_png,bottle3_4_png,bottle3_5_png,bottle3_6_png,bottle3_7_png,bottle3_8_png,bottle3_9_png,bottle3_10_png,bottle3_11_png,bottle3_12_png,bottle3_13_png,bottle3_14_png,bottle3_15_png,bottle3_16_png,bottle3_17_png,bottle3_18_png,bottle3_19_png,bottle3_20_png,bottle3_21_png,bottle3_22_png,bottle3_23_png,bottle4_png,bottle4_0_png,bottle4_1_png,bottle4_2_png,bottle4_3_png,bottle4_4_png,bottle4_5_png,bottle4_6_png,bottle4_7_png,bottle4_8_png,bottle4_9_png,bottle4_10_png,bottle4_11_png,bottle4_12_png,bottle4_13_png,bottle4_14_png,bottle4_15_png,bottle4_16_png,bottle4_17_png,bottle4_18_png,bottle4_19_png,bottle4_20_png,bottle4_21_png,bottle4_22_png,bottle4_23_png,bottle5_png,bottle5_0_png,bottle5_1_png,bottle5_2_png,bottle5_3_png,bottle5_4_png,bottle5_5_png,bottle5_6_png,bottle5_7_png,bottle5_8_png,bottle5_9_png,bottle5_10_png,bottle5_11_png,bottle5_12_png,bottle5_13_png,bottle5_14_png,bottle5_15_png,bottle5_16_png,bottle5_17_png,bottle5_18_png,bottle5_19_png,bottle5_20_png,bottle5_21_png,bottle5_22_png,bottle5_23_png,bottle6_png,bottle6_0_png,bottle6_1_png,bottle6_2_png,bottle6_3_png,bottle6_4_png,bottle6_5_png,bottle6_6_png,bottle6_7_png,bottle6_8_png,bottle6_9_png,bottle6_10_png,bottle6_11_png,bottle6_12_png,bottle6_13_png,bottle6_14_png,bottle6_15_png,bottle6_16_png,bottle6_17_png,bottle6_18_png,bottle6_19_png,bottle6_20_png,bottle6_21_png,bottle6_22_png,bottle6_23_png,btn_play_png,btn_play1_png,btn_replay_png,btn_replay1_png,btn_start_png,btn_start1_png,conveyer_png,conveyer1_png,gamebg_png,gameui1_png,icon1_png,image5_png,overpanel_png,overrole_png,overshow_png,sound_off_png,sound_on_png,wheel0_png,wheel1_png,wheel2_png,wheel3_png,bg_png,bottle1_png,bottle1_0_png,bottle1_1_png,bottle1_2_png,bottle1_3_png,bottle1_4_png,bottle1_5_png,bottle1_6_png,bottle1_7_png,bottle1_8_png,bottle1_9_png,bottle1_10_png,bottle1_11_png,bottle1_12_png,bottle1_13_png,bottle1_14_png,bottle1_15_png,bottle1_16_png,bottle1_17_png,bottle1_18_png"
+		}
+	],
+	"resources": [
+		{
+			"name": "bottle1_19_png",
+			"type": "image",
+			"url": "assets/bottle1_19.png"
+		},
+		{
+			"name": "bottle1_20_png",
+			"type": "image",
+			"url": "assets/bottle1_20.png"
+		},
+		{
+			"name": "bottle1_21_png",
+			"type": "image",
+			"url": "assets/bottle1_21.png"
+		},
+		{
+			"name": "bottle1_22_png",
+			"type": "image",
+			"url": "assets/bottle1_22.png"
+		},
+		{
+			"name": "bottle1_23_png",
+			"type": "image",
+			"url": "assets/bottle1_23.png"
+		},
+		{
+			"name": "bottle2_png",
+			"type": "image",
+			"url": "assets/bottle2.png"
+		},
+		{
+			"name": "bottle2_0_png",
+			"type": "image",
+			"url": "assets/bottle2_0.png"
+		},
+		{
+			"name": "bottle2_1_png",
+			"type": "image",
+			"url": "assets/bottle2_1.png"
+		},
+		{
+			"name": "bottle2_2_png",
+			"type": "image",
+			"url": "assets/bottle2_2.png"
+		},
+		{
+			"name": "bottle2_3_png",
+			"type": "image",
+			"url": "assets/bottle2_3.png"
+		},
+		{
+			"name": "bottle2_4_png",
+			"type": "image",
+			"url": "assets/bottle2_4.png"
+		},
+		{
+			"name": "bottle2_5_png",
+			"type": "image",
+			"url": "assets/bottle2_5.png"
+		},
+		{
+			"name": "bottle2_6_png",
+			"type": "image",
+			"url": "assets/bottle2_6.png"
+		},
+		{
+			"name": "bottle2_7_png",
+			"type": "image",
+			"url": "assets/bottle2_7.png"
+		},
+		{
+			"name": "bottle2_8_png",
+			"type": "image",
+			"url": "assets/bottle2_8.png"
+		},
+		{
+			"name": "bottle2_9_png",
+			"type": "image",
+			"url": "assets/bottle2_9.png"
+		},
+		{
+			"name": "bottle2_10_png",
+			"type": "image",
+			"url": "assets/bottle2_10.png"
+		},
+		{
+			"name": "bottle2_11_png",
+			"type": "image",
+			"url": "assets/bottle2_11.png"
+		},
+		{
+			"name": "bottle2_12_png",
+			"type": "image",
+			"url": "assets/bottle2_12.png"
+		},
+		{
+			"name": "bottle2_13_png",
+			"type": "image",
+			"url": "assets/bottle2_13.png"
+		},
+		{
+			"name": "bottle2_14_png",
+			"type": "image",
+			"url": "assets/bottle2_14.png"
+		},
+		{
+			"name": "bottle2_15_png",
+			"type": "image",
+			"url": "assets/bottle2_15.png"
+		},
+		{
+			"name": "bottle2_16_png",
+			"type": "image",
+			"url": "assets/bottle2_16.png"
+		},
+		{
+			"name": "bottle2_17_png",
+			"type": "image",
+			"url": "assets/bottle2_17.png"
+		},
+		{
+			"name": "bottle2_18_png",
+			"type": "image",
+			"url": "assets/bottle2_18.png"
+		},
+		{
+			"name": "bottle2_19_png",
+			"type": "image",
+			"url": "assets/bottle2_19.png"
+		},
+		{
+			"name": "bottle2_20_png",
+			"type": "image",
+			"url": "assets/bottle2_20.png"
+		},
+		{
+			"name": "bottle2_21_png",
+			"type": "image",
+			"url": "assets/bottle2_21.png"
+		},
+		{
+			"name": "bottle2_22_png",
+			"type": "image",
+			"url": "assets/bottle2_22.png"
+		},
+		{
+			"name": "bottle2_23_png",
+			"type": "image",
+			"url": "assets/bottle2_23.png"
+		},
+		{
+			"name": "bottle3_png",
+			"type": "image",
+			"url": "assets/bottle3.png"
+		},
+		{
+			"name": "bottle3_0_png",
+			"type": "image",
+			"url": "assets/bottle3_0.png"
+		},
+		{
+			"name": "bottle3_1_png",
+			"type": "image",
+			"url": "assets/bottle3_1.png"
+		},
+		{
+			"name": "bottle3_2_png",
+			"type": "image",
+			"url": "assets/bottle3_2.png"
+		},
+		{
+			"name": "bottle3_3_png",
+			"type": "image",
+			"url": "assets/bottle3_3.png"
+		},
+		{
+			"name": "bottle3_4_png",
+			"type": "image",
+			"url": "assets/bottle3_4.png"
+		},
+		{
+			"name": "bottle3_5_png",
+			"type": "image",
+			"url": "assets/bottle3_5.png"
+		},
+		{
+			"name": "bottle3_6_png",
+			"type": "image",
+			"url": "assets/bottle3_6.png"
+		},
+		{
+			"name": "bottle3_7_png",
+			"type": "image",
+			"url": "assets/bottle3_7.png"
+		},
+		{
+			"name": "bottle3_8_png",
+			"type": "image",
+			"url": "assets/bottle3_8.png"
+		},
+		{
+			"name": "bottle3_9_png",
+			"type": "image",
+			"url": "assets/bottle3_9.png"
+		},
+		{
+			"name": "bottle3_10_png",
+			"type": "image",
+			"url": "assets/bottle3_10.png"
+		},
+		{
+			"name": "bottle3_11_png",
+			"type": "image",
+			"url": "assets/bottle3_11.png"
+		},
+		{
+			"name": "bottle3_12_png",
+			"type": "image",
+			"url": "assets/bottle3_12.png"
+		},
+		{
+			"name": "bottle3_13_png",
+			"type": "image",
+			"url": "assets/bottle3_13.png"
+		},
+		{
+			"name": "bottle3_14_png",
+			"type": "image",
+			"url": "assets/bottle3_14.png"
+		},
+		{
+			"name": "bottle3_15_png",
+			"type": "image",
+			"url": "assets/bottle3_15.png"
+		},
+		{
+			"name": "bottle3_16_png",
+			"type": "image",
+			"url": "assets/bottle3_16.png"
+		},
+		{
+			"name": "bottle3_17_png",
+			"type": "image",
+			"url": "assets/bottle3_17.png"
+		},
+		{
+			"name": "bottle3_18_png",
+			"type": "image",
+			"url": "assets/bottle3_18.png"
+		},
+		{
+			"name": "bottle3_19_png",
+			"type": "image",
+			"url": "assets/bottle3_19.png"
+		},
+		{
+			"name": "bottle3_20_png",
+			"type": "image",
+			"url": "assets/bottle3_20.png"
+		},
+		{
+			"name": "bottle3_21_png",
+			"type": "image",
+			"url": "assets/bottle3_21.png"
+		},
+		{
+			"name": "bottle3_22_png",
+			"type": "image",
+			"url": "assets/bottle3_22.png"
+		},
+		{
+			"name": "bottle3_23_png",
+			"type": "image",
+			"url": "assets/bottle3_23.png"
+		},
+		{
+			"name": "bottle4_png",
+			"type": "image",
+			"url": "assets/bottle4.png"
+		},
+		{
+			"name": "bottle4_0_png",
+			"type": "image",
+			"url": "assets/bottle4_0.png"
+		},
+		{
+			"name": "bottle4_1_png",
+			"type": "image",
+			"url": "assets/bottle4_1.png"
+		},
+		{
+			"name": "bottle4_2_png",
+			"type": "image",
+			"url": "assets/bottle4_2.png"
+		},
+		{
+			"name": "bottle4_3_png",
+			"type": "image",
+			"url": "assets/bottle4_3.png"
+		},
+		{
+			"name": "bottle4_4_png",
+			"type": "image",
+			"url": "assets/bottle4_4.png"
+		},
+		{
+			"name": "bottle4_5_png",
+			"type": "image",
+			"url": "assets/bottle4_5.png"
+		},
+		{
+			"name": "bottle4_6_png",
+			"type": "image",
+			"url": "assets/bottle4_6.png"
+		},
+		{
+			"name": "bottle4_7_png",
+			"type": "image",
+			"url": "assets/bottle4_7.png"
+		},
+		{
+			"name": "bottle4_8_png",
+			"type": "image",
+			"url": "assets/bottle4_8.png"
+		},
+		{
+			"name": "bottle4_9_png",
+			"type": "image",
+			"url": "assets/bottle4_9.png"
+		},
+		{
+			"name": "bottle4_10_png",
+			"type": "image",
+			"url": "assets/bottle4_10.png"
+		},
+		{
+			"name": "bottle4_11_png",
+			"type": "image",
+			"url": "assets/bottle4_11.png"
+		},
+		{
+			"name": "bottle4_12_png",
+			"type": "image",
+			"url": "assets/bottle4_12.png"
+		},
+		{
+			"name": "bottle4_13_png",
+			"type": "image",
+			"url": "assets/bottle4_13.png"
+		},
+		{
+			"name": "bottle4_14_png",
+			"type": "image",
+			"url": "assets/bottle4_14.png"
+		},
+		{
+			"name": "bottle4_15_png",
+			"type": "image",
+			"url": "assets/bottle4_15.png"
+		},
+		{
+			"name": "bottle4_16_png",
+			"type": "image",
+			"url": "assets/bottle4_16.png"
+		},
+		{
+			"name": "bottle4_17_png",
+			"type": "image",
+			"url": "assets/bottle4_17.png"
+		},
+		{
+			"name": "bottle4_18_png",
+			"type": "image",
+			"url": "assets/bottle4_18.png"
+		},
+		{
+			"name": "bottle4_19_png",
+			"type": "image",
+			"url": "assets/bottle4_19.png"
+		},
+		{
+			"name": "bottle4_20_png",
+			"type": "image",
+			"url": "assets/bottle4_20.png"
+		},
+		{
+			"name": "bottle4_21_png",
+			"type": "image",
+			"url": "assets/bottle4_21.png"
+		},
+		{
+			"name": "bottle4_22_png",
+			"type": "image",
+			"url": "assets/bottle4_22.png"
+		},
+		{
+			"name": "bottle4_23_png",
+			"type": "image",
+			"url": "assets/bottle4_23.png"
+		},
+		{
+			"name": "bottle5_png",
+			"type": "image",
+			"url": "assets/bottle5.png"
+		},
+		{
+			"name": "bottle5_0_png",
+			"type": "image",
+			"url": "assets/bottle5_0.png"
+		},
+		{
+			"name": "bottle5_1_png",
+			"type": "image",
+			"url": "assets/bottle5_1.png"
+		},
+		{
+			"name": "bottle5_2_png",
+			"type": "image",
+			"url": "assets/bottle5_2.png"
+		},
+		{
+			"name": "bottle5_3_png",
+			"type": "image",
+			"url": "assets/bottle5_3.png"
+		},
+		{
+			"name": "bottle5_4_png",
+			"type": "image",
+			"url": "assets/bottle5_4.png"
+		},
+		{
+			"name": "bottle5_5_png",
+			"type": "image",
+			"url": "assets/bottle5_5.png"
+		},
+		{
+			"name": "bottle5_6_png",
+			"type": "image",
+			"url": "assets/bottle5_6.png"
+		},
+		{
+			"name": "bottle5_7_png",
+			"type": "image",
+			"url": "assets/bottle5_7.png"
+		},
+		{
+			"name": "bottle5_8_png",
+			"type": "image",
+			"url": "assets/bottle5_8.png"
+		},
+		{
+			"name": "bottle5_9_png",
+			"type": "image",
+			"url": "assets/bottle5_9.png"
+		},
+		{
+			"name": "bottle5_10_png",
+			"type": "image",
+			"url": "assets/bottle5_10.png"
+		},
+		{
+			"name": "bottle5_11_png",
+			"type": "image",
+			"url": "assets/bottle5_11.png"
+		},
+		{
+			"name": "bottle5_12_png",
+			"type": "image",
+			"url": "assets/bottle5_12.png"
+		},
+		{
+			"name": "bottle5_13_png",
+			"type": "image",
+			"url": "assets/bottle5_13.png"
+		},
+		{
+			"name": "bottle5_14_png",
+			"type": "image",
+			"url": "assets/bottle5_14.png"
+		},
+		{
+			"name": "bottle5_15_png",
+			"type": "image",
+			"url": "assets/bottle5_15.png"
+		},
+		{
+			"name": "bottle5_16_png",
+			"type": "image",
+			"url": "assets/bottle5_16.png"
+		},
+		{
+			"name": "bottle5_17_png",
+			"type": "image",
+			"url": "assets/bottle5_17.png"
+		},
+		{
+			"name": "bottle5_18_png",
+			"type": "image",
+			"url": "assets/bottle5_18.png"
+		},
+		{
+			"name": "bottle5_19_png",
+			"type": "image",
+			"url": "assets/bottle5_19.png"
+		},
+		{
+			"name": "bottle5_20_png",
+			"type": "image",
+			"url": "assets/bottle5_20.png"
+		},
+		{
+			"name": "bottle5_21_png",
+			"type": "image",
+			"url": "assets/bottle5_21.png"
+		},
+		{
+			"name": "bottle5_22_png",
+			"type": "image",
+			"url": "assets/bottle5_22.png"
+		},
+		{
+			"name": "bottle5_23_png",
+			"type": "image",
+			"url": "assets/bottle5_23.png"
+		},
+		{
+			"name": "bottle6_png",
+			"type": "image",
+			"url": "assets/bottle6.png"
+		},
+		{
+			"name": "bottle6_0_png",
+			"type": "image",
+			"url": "assets/bottle6_0.png"
+		},
+		{
+			"name": "bottle6_1_png",
+			"type": "image",
+			"url": "assets/bottle6_1.png"
+		},
+		{
+			"name": "bottle6_2_png",
+			"type": "image",
+			"url": "assets/bottle6_2.png"
+		},
+		{
+			"name": "bottle6_3_png",
+			"type": "image",
+			"url": "assets/bottle6_3.png"
+		},
+		{
+			"name": "bottle6_4_png",
+			"type": "image",
+			"url": "assets/bottle6_4.png"
+		},
+		{
+			"name": "bottle6_5_png",
+			"type": "image",
+			"url": "assets/bottle6_5.png"
+		},
+		{
+			"name": "bottle6_6_png",
+			"type": "image",
+			"url": "assets/bottle6_6.png"
+		},
+		{
+			"name": "bottle6_7_png",
+			"type": "image",
+			"url": "assets/bottle6_7.png"
+		},
+		{
+			"name": "bottle6_8_png",
+			"type": "image",
+			"url": "assets/bottle6_8.png"
+		},
+		{
+			"name": "bottle6_9_png",
+			"type": "image",
+			"url": "assets/bottle6_9.png"
+		},
+		{
+			"name": "bottle6_10_png",
+			"type": "image",
+			"url": "assets/bottle6_10.png"
+		},
+		{
+			"name": "bottle6_11_png",
+			"type": "image",
+			"url": "assets/bottle6_11.png"
+		},
+		{
+			"name": "bottle6_12_png",
+			"type": "image",
+			"url": "assets/bottle6_12.png"
+		},
+		{
+			"name": "bottle6_13_png",
+			"type": "image",
+			"url": "assets/bottle6_13.png"
+		},
+		{
+			"name": "bottle6_14_png",
+			"type": "image",
+			"url": "assets/bottle6_14.png"
+		},
+		{
+			"name": "bottle6_15_png",
+			"type": "image",
+			"url": "assets/bottle6_15.png"
+		},
+		{
+			"name": "bottle6_16_png",
+			"type": "image",
+			"url": "assets/bottle6_16.png"
+		},
+		{
+			"name": "bottle6_17_png",
+			"type": "image",
+			"url": "assets/bottle6_17.png"
+		},
+		{
+			"name": "bottle6_18_png",
+			"type": "image",
+			"url": "assets/bottle6_18.png"
+		},
+		{
+			"name": "bottle6_19_png",
+			"type": "image",
+			"url": "assets/bottle6_19.png"
+		},
+		{
+			"name": "bottle6_20_png",
+			"type": "image",
+			"url": "assets/bottle6_20.png"
+		},
+		{
+			"name": "bottle6_21_png",
+			"type": "image",
+			"url": "assets/bottle6_21.png"
+		},
+		{
+			"name": "bottle6_22_png",
+			"type": "image",
+			"url": "assets/bottle6_22.png"
+		},
+		{
+			"name": "bottle6_23_png",
+			"type": "image",
+			"url": "assets/bottle6_23.png"
+		},
+		{
+			"name": "btn_play_png",
+			"type": "image",
+			"url": "assets/btn_play.png"
+		},
+		{
+			"name": "btn_play1_png",
+			"type": "image",
+			"url": "assets/btn_play1.png"
+		},
+		{
+			"name": "btn_replay_png",
+			"type": "image",
+			"url": "assets/btn_replay.png"
+		},
+		{
+			"name": "btn_replay1_png",
+			"type": "image",
+			"url": "assets/btn_replay1.png"
+		},
+		{
+			"name": "btn_start_png",
+			"type": "image",
+			"url": "assets/btn_start.png"
+		},
+		{
+			"name": "btn_start1_png",
+			"type": "image",
+			"url": "assets/btn_start1.png"
+		},
+		{
+			"name": "conveyer_png",
+			"type": "image",
+			"url": "assets/conveyer.png"
+		},
+		{
+			"name": "conveyer1_png",
+			"type": "image",
+			"url": "assets/conveyer1.png"
+		},
+		{
+			"name": "gamebg_png",
+			"type": "image",
+			"url": "assets/gamebg.png"
+		},
+		{
+			"name": "gameui1_png",
+			"type": "image",
+			"url": "assets/gameui1.png"
+		},
+		{
+			"name": "icon1_png",
+			"type": "image",
+			"url": "assets/icon1.png"
+		},
+		{
+			"name": "image5_png",
+			"type": "image",
+			"url": "assets/image5.png"
+		},
+		{
+			"name": "overpanel_png",
+			"type": "image",
+			"url": "assets/overpanel.png"
+		},
+		{
+			"name": "overrole_png",
+			"type": "image",
+			"url": "assets/overrole.png"
+		},
+		{
+			"name": "overshow_png",
+			"type": "image",
+			"url": "assets/overshow.png"
+		},
+		{
+			"name": "sound_off_png",
+			"type": "image",
+			"url": "assets/sound_off.png"
+		},
+		{
+			"name": "sound_on_png",
+			"type": "image",
+			"url": "assets/sound_on.png"
+		},
+		{
+			"name": "wheel0_png",
+			"type": "image",
+			"url": "assets/wheel0.png"
+		},
+		{
+			"name": "wheel1_png",
+			"type": "image",
+			"url": "assets/wheel1.png"
+		},
+		{
+			"name": "wheel2_png",
+			"type": "image",
+			"url": "assets/wheel2.png"
+		},
+		{
+			"name": "wheel3_png",
+			"type": "image",
+			"url": "assets/wheel3.png"
+		},
+		{
+			"name": "bg_png",
+			"type": "image",
+			"url": "assets/bg.png"
+		},
+		{
+			"name": "bottle1_png",
+			"type": "image",
+			"url": "assets/bottle1.png"
+		},
+		{
+			"name": "bottle1_0_png",
+			"type": "image",
+			"url": "assets/bottle1_0.png"
+		},
+		{
+			"name": "bottle1_1_png",
+			"type": "image",
+			"url": "assets/bottle1_1.png"
+		},
+		{
+			"name": "bottle1_2_png",
+			"type": "image",
+			"url": "assets/bottle1_2.png"
+		},
+		{
+			"name": "bottle1_3_png",
+			"type": "image",
+			"url": "assets/bottle1_3.png"
+		},
+		{
+			"name": "bottle1_4_png",
+			"type": "image",
+			"url": "assets/bottle1_4.png"
+		},
+		{
+			"name": "bottle1_5_png",
+			"type": "image",
+			"url": "assets/bottle1_5.png"
+		},
+		{
+			"name": "bottle1_6_png",
+			"type": "image",
+			"url": "assets/bottle1_6.png"
+		},
+		{
+			"name": "bottle1_7_png",
+			"type": "image",
+			"url": "assets/bottle1_7.png"
+		},
+		{
+			"name": "bottle1_8_png",
+			"type": "image",
+			"url": "assets/bottle1_8.png"
+		},
+		{
+			"name": "bottle1_9_png",
+			"type": "image",
+			"url": "assets/bottle1_9.png"
+		},
+		{
+			"name": "bottle1_10_png",
+			"type": "image",
+			"url": "assets/bottle1_10.png"
+		},
+		{
+			"name": "bottle1_11_png",
+			"type": "image",
+			"url": "assets/bottle1_11.png"
+		},
+		{
+			"name": "bottle1_12_png",
+			"type": "image",
+			"url": "assets/bottle1_12.png"
+		},
+		{
+			"name": "bottle1_13_png",
+			"type": "image",
+			"url": "assets/bottle1_13.png"
+		},
+		{
+			"name": "bottle1_14_png",
+			"type": "image",
+			"url": "assets/bottle1_14.png"
+		},
+		{
+			"name": "bottle1_15_png",
+			"type": "image",
+			"url": "assets/bottle1_15.png"
+		},
+		{
+			"name": "bottle1_16_png",
+			"type": "image",
+			"url": "assets/bottle1_16.png"
+		},
+		{
+			"name": "bottle1_17_png",
+			"type": "image",
+			"url": "assets/bottle1_17.png"
+		},
+		{
+			"name": "bottle1_18_png",
+			"type": "image",
+			"url": "assets/bottle1_18.png"
+		}
+	]
+}

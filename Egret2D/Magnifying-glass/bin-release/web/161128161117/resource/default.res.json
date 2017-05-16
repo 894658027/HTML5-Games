@@ -1,0 +1,25 @@
+{
+	"groups": [
+		{
+			"keys": "big_jpg,small_jpg,glass_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "big_jpg",
+			"type": "image",
+			"url": "assets/big.jpg"
+		},
+		{
+			"name": "small_jpg",
+			"type": "image",
+			"url": "assets/small.jpg"
+		},
+		{
+			"name": "glass_png",
+			"type": "image",
+			"url": "assets/glass.png"
+		}
+	]
+}

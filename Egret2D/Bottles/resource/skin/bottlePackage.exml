@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="bottlePackage" width="146" height="231" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img_body" source="bottle1_0_png" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>JavaScript语法</title>
+        <style type="text/css">
+            #game{
+               width:512px;height:500px;
+               position:relative;
+               background:url("./images/bg2.png") no-repeat 0px -1036px;
+               overflow:hidden;
+            }
+            
+            #player{
+                position:absolute; /*相对定位*/
+                top:300px;
+                left:150px;
+            }
+           
+        </style>
+    </head>
+    <body>
+
+     
+        <div id="game">
+
+          <!-- 炮弹 -->
+           <img id="eshot0" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot1" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot2" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot3" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot4" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot5" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot6" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot7" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot8" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <img id="eshot9" src="./images/eshot.png" style="position:absolute;display:none;"/>
+           <!--敌机-->
+           <img  id="e0" src="./images/e1.png" style="display: none;position:absolute">
+           <img  id="e1" src="./images/e2.png" style="display: none;position:absolute">
+           <img  id="e2" src="./images/e3.png" style="display: none;position:absolute">
+            <img  id="e3" src="./images/e1.png" style="display: none;position:absolute">
+           <img  id="e4" src="./images/e2.png" style="display: none;position:absolute">
+           <img  id="e5" src="./images/e3.png" style="display: none;position:absolute">
+
+           <!-- 玩家 -->
+           <img id="player" src="./images/me.png"/>
+        </div>
+
+        <script type="text/javascript">
+           //获取游戏背景主图
+           var game = document.getElementById("game");
+           var pplist=new Array();//定义用于存放爆炸的数组
+           //负者游戏背景图片的移动
+           var bg_m=-1036; //设置背景位置
+           setInterval(function(){
+             bg_m+=2;
+             if(bg_m>=-268){
+                bg_m=-1036;
+             }
+             game.style.backgroundPosition="0px "+bg_m+"px";
+           },10);
+           
+           
+           //获取玩家飞机对象
+            var player = document.getElementById("player");
+            //为当前网页添加键盘事件
+            window.document.onkeydown=function(ent){
+               //兼容IE和火狐浏览器兼容
+               var event = ent || window.event;
+               //获取键盘值：
+               //alert(event.keyCode);
+               switch(event.keyCode){
+                   // case 87:
+                    case 38:   //上
+                        player.style.top = Math.max(0,(player.offsetTop-10))+"px";
+                        break; 
+                
+                    case 39:   //右
+                        player.style.left = Math.min(406,(player.offsetLeft+10))+"px";
+                        break;
+                
+                    case 40:   //下
+                        player.style.top = Math.min(424,(player.offsetTop+10))+"px";
+                        break;
+                
+                    case 37:   //左
+                        player.style.left = Math.max(0,(player.offsetLeft-10))+"px";
+                        break;
+
+                               case 32: //发射炮弹
+                        //获取飞机的位置
+                        var x = player.offsetLeft+52;
+                        var y = player.offsetTop;
+                        doFire(x,y);
+                        break;
+
+               }
+            }
+
+
+         //发射炮弹的方法
+            function doFire(x,y){
+                //循环所有炮弹
+                for(var i=0;i<10;i++){
+                    //获取对应的炮弹
+                    var eshot = document.getElementById("eshot"+i);
+                    //判断炮弹是否可用
+                    if(eshot.style.display=="none"){
+                        eshot.style.left=x+"px";
+                        eshot.style.top=y+"px";
+                        eshot.style.display="block";
+                        return;
+                    }
+                }
+                
+                
+            }
+            
+            //游戏的主线程
+            function running(){
+                //循环所有可见炮弹，执行移动
+                for(var i=0;i<10;i++){
+                    //获取对应的炮弹
+                    var eshot = document.getElementById("eshot"+i);
+                    //判断炮弹是否可见
+                    if(eshot.style.display=="block"){
+                        eshot.style.top=(eshot.offsetTop-5)+"px";
+                        //调用碰撞检测
+                        doCheck(eshot);
+                        //如果炮弹超出屏幕直接回收
+                        if(eshot.offsetTop<-20){
+                            eshot.style.display="none";
+                        }
+                    }
+                }
+                
+                //循环所有敌机，执行移动
+                for(var i=0;i<6;i++){
+                    //获取对应的敌机
+                    var ee = document.getElementById("e"+i);
+                    //判断敌机是否可见
+                    if(ee.style.display=="block"){
+                        ee.style.top=(ee.offsetTop+5)+"px";
+                        //如果炮弹超出屏幕直接回收
+                        if(ee.offsetTop>500){
+                            ee.style.display="none";
+                        }
+                    }
+                }
+                
+                //循环爆炸场面
+                for(var i=0;i<pplist.length;i++){
+                    pplist[i].num++;
+                    if(pplist[i].num>3){
+                        pplist[i].style.display="none";
+                        pplist.splice(i);
+                    }
+                    
+                }
+                //定时调用
+                setTimeout("running()",30);
+            }
+            
+            //随机出现敌机
+            function doShow(){
+               //随机0-5；
+               var i = Math.ceil(Math.random()*10000)%6;
+               //获取对应的敌机
+               var ee = document.getElementById("e"+i);
+               //判断敌机是否可用
+               if(ee.style.display=="none"){
+                    ee.style.top=-82+"px";
+                    ee.style.left=(Math.ceil(Math.random()*10000)%396)+"px";
+                    ee.style.display="block";
+               }
+               setTimeout("doShow()",2000);
+            }
+            
+            
+            //碰撞检测
+            function doCheck(eshot){
+                //遍历所有的敌机
+                for(var i=0;i<6;i++){
+                    //获取对应的炮弹
+                    var ee = document.getElementById("e"+i);
+                    //判断炮弹是否可见
+                    if(ee.style.display=="block"){
+                       //判断是否相交
+                       var ex= ee.offsetLeft+13;
+                       var ey= ee.offsetTop+55; //下边
+                       var px= eshot.offsetLeft;
+                       var py= eshot.offsetTop;
+                       
+                       if(py<ey && px>=ex && px<=ex+72){
+                            ee.style.display="none";
+                            eshot.style.display="none";
+                            //添加爆炸场面
+                            var pp = document.createElement("img");
+                            pp.src="./images/boom.gif";
+                            pp.style.position="absolute";
+                            pp.style.top=(py-130)+"px";
+                            pp.style.left=(px-190)+"px";
+                            pp.num=0;
+                            pplist.push(pp);//将爆炸添加到数组中
+                            game.appendChild(pp);
+                       }
+                    }
+                }
+            }
+            
+  		running();
+  		doShow();
+            
+        
+        </script>
+    </body>
+</html>

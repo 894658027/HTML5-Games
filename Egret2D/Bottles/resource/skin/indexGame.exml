@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="indexGame" width="607" height="950" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1584bd9f185"/>
+	<e:Image source="bg_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Button id="btn_start" label="" anchorOffsetX="4" anchorOffsetY="100" enabled="true" y="829.21" x="138.97">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_play_png" source.down="btn_play1_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="传送带接瓶子" y="174.75" fontFamily="微软雅黑" textColor="0x000000" size="49" anchorOffsetX="0" width="331" textAlign="center" x="153.15"/>
+</e:Skin>
