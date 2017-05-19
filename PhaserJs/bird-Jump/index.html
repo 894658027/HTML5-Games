@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<title>Phaser</title>
+    <style>
+        *{margin:0;padding:0}
+        html, body
+        {
+            -webkit-text-size-adjust:none;
+            overflow: hidden;
+            height:100%;
+        }
+        #bg-canvas{
+			margin:auto; position: absolute; z-index:-10;width: 100vw;top:0px;left:0px;
+			/*height:1030px;*/
+			height:108%;
+		}
+    </style>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preloader.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/create.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/stbg.js"></script>
+</head>
+<body style="background-color: #000">
+	<div id="game"></div>
+     <canvas id="bg-canvas" width="1024" height="720" ></canvas>
+<script>
+	document.getElementById('game').style.height = document.body.clientHeight + 'px';
+    var game = new Phaser.Game(750, 1206, Phaser.CANVAS, 'game','',true);
+	    game.state.add('Boot', MyGame.Boot);
+	    game.state.add('Preloader', MyGame.Preloader);
+	    game.state.add('MainMenu', MyGame.MainMenu);
+	    game.state.add('Game', MyGame.Game);
+	    game.state.start('Boot');
+
+        function canvasBgone(){
+                            var config = {
+                            barWidth: 5,
+                            deltaTime: 400,
+                            showTimes: 8
+                        }
+                        console.log(1);
+                        if(window.stbg) stbg.removeSelf();
+                        window.stbg = new STBG(config);
+                }
+	     function canvasBgtwo(){
+                            var config = {
+                            barWidth: 10,
+                            deltaTime: 400,
+                            showTimes: 8
+                        }
+                        console.log(1);
+                        if(window.stbg) stbg.removeSelf();
+                        window.stbg = new STBG(config);
+                }
+	function canvasBgthree(){
+                            var config = {
+                            barWidth: 15,
+                            deltaTime: 400,
+                            showTimes: 8
+                        }
+                        console.log(1);
+                        if(window.stbg) stbg.removeSelf();
+                        window.stbg = new STBG(config);
+                }
+	function canvasBgfour(){
+                            var config = {
+                            barWidth: 20,
+                            deltaTime: 400,
+                            showTimes: 8
+                        }
+                        console.log(1);
+                        if(window.stbg) stbg.removeSelf();
+                        window.stbg = new STBG(config);
+                }
+</script>
+<!--<script src="inpMusic.js"></script>-->
+</body>
+</html>

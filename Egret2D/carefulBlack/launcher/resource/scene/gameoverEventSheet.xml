@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="gameover" previous="" next="" version="2.0">
+  <item type="instance" UID="4503"/>
+  <item type="instance" UID="4497"/>
+  <item type="instance" UID="4494"/>
+  <item type="variable" variableName="速度" variableType="number" initValue="5"/>
+  <item type="variable" variableName="随机位置" variableType="number" initValue="0"/>
+  <item type="variable" variableName="得分" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="reset"/>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="速度" name="10" variable="true"/>
+      <item valueDataType="any" value="5" name="9"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="得分" name="10" variable="true"/>
+      <item valueDataType="any" value="0" name="9"/>
+    </item>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="MainScene" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" callTarget="instance" callName="setText" target="成绩">
+      <item valueDataType="any" value="System.%E5%BE%97%E5%88%86%2B'%E5%88%86'" name="1"/>
+    </item>
+  </item>
+</eventSheets>

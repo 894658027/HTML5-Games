@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="null" sceneSize="409,736" next="MainScene" previous="" eventSheet="newSceneEventSheet" version="2.0">
+  <layer index="0" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <item UID="4500" plugin="AITextField" name="AITextField4499" parallaxX="100" parallaxY="100" index="0" family="text">
+    <item name="name" value="AITextField4499" valueDataType="string"/>
+    <item name="uiGuid" value="4500" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="204.50000000000003" valueDataType="number"/>
+    <item name="y" value="308" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="303.95" valueDataType="number"/>
+    <item name="height" value="248.90000000000003" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="text" value="%E5%BC%80%E5%A7%8B" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91" valueDataType="string"/>
+    <item name="size" value="96" valueDataType="number"/>
+    <item name="textColor" value="0" valueDataType="string"/>
+    <item name="bold" value="false" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+</layout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="MainScene" previous="" next="" version="2.0">
+  <item type="instance" UID="4470"/>
+  <item type="instance" UID="4507"/>
+  <item type="instance" UID="4467"/>
+  <item type="instance" UID="4451"/>
+  <item type="instance" UID="4504"/>
+  <item type="instance" UID="4450"/>
+  <item type="instance" UID="4449"/>
+  <item type="instance" UID="4485"/>
+  <item type="instance" UID="4476">
+    <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+  </item>
+  <item type="variable" variableName="速度" variableType="number" initValue="5"/>
+  <item type="variable" variableName="随机位置" variableType="number" initValue="0"/>
+  <item type="variable" variableName="得分" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" callTarget="instance" callName="destory" target="cube"/>
+    <item type="action" callTarget="instance" callName="destory" target="horizontal"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="ForEvent" callName="execFor" isTrigger="false" target="System" loop="true">
+        <item valueDataType="string" value="i" name="name"/>
+        <item valueDataType="any" value="0" name="startIndex"/>
+        <item valueDataType="any" value="5" name="endIndex"/>
+      </item>
+      <item type="action" callTarget="instance" callName="createObject" target="System">
+        <item valueDataType="string" value="cube" name="23" isFamily="false"/>
+        <item valueDataType="any" value="1" name="22"/>
+        <item valueDataType="any" value="50%2BSystem.%E9%9A%8F%E6%9C%BA%E4%BD%8D%E7%BD%AE*103" name="21"/>
+        <item valueDataType="any" value="200-getloopIndex('i')*(cube.height%2Bhorizontal.height)" name="20"/>
+      </item>
+      <item type="action" callTarget="instance" callName="spawn" target="cube">
+        <item valueDataType="string" value="horizontal" name="10" isFamily="false"/>
+        <item valueDataType="any" value="1" name="11"/>
+        <item valueDataType="any" value="0" name="12"/>
+        <item valueDataType="any" value="0" name="13"/>
+        <item valueDataType="any" value="0" name="14"/>
+      </item>
+      <item type="action" callTarget="instance" callName="pin" target="horizontal" behaviorName="别针">
+        <item valueDataType="string" value="cube" name="1" isFamily="false"/>
+        <item valueDataType="any" value="0" name="2"/>
+      </item>
+      <item type="action" callTarget="instance" callName="gotoAndStop" target="cube">
+        <item valueDataType="any" value="1" name="4"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" target="System">
+        <item valueDataType="string" value="随机位置" name="10" variable="true"/>
+        <item valueDataType="any" value="floor(random()*4)" name="9"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="cube"/>
+    <item type="action" callTarget="instance" callName="gotoAndStop" target="cube">
+      <item valueDataType="any" value="2" name="4"/>
+    </item>
+    <item type="action" callTarget="instance" callName="addTo" target="System">
+      <item valueDataType="string" value="得分" name="14" variable="true"/>
+      <item valueDataType="any" value="1" name="13"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setText" target="AITextField4469">
+      <item valueDataType="any" value="System.%E5%BE%97%E5%88%86" name="1"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareYPosEvent" callName="compareY" isTrigger="false" target="cube">
+      <item valueDataType="any" value="greaterThan" name="operationType"/>
+      <item valueDataType="any" value="736%2Bcube.height" name="y"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="CompareFrameEvent" callName="compareFrame" isTrigger="false" target="cube">
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="2" name="frame"/>
+    </item>
+    <item type="action" callTarget="instance" callName="gotoAndStop" target="cube">
+      <item valueDataType="any" value="1" name="4"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="随机位置" name="10" variable="true"/>
+      <item valueDataType="any" value="floor(random()*4)" name="9"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="cube">
+      <item valueDataType="any" value="50%2BSystem.%E9%9A%8F%E6%9C%BA%E4%BD%8D%E7%BD%AE*103" name="16"/>
+      <item valueDataType="any" value="cube.y-(cube.height%2Bhorizontal.height)*6" name="17"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="white"/>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="gameover" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareYPosEvent" callName="compareY" isTrigger="false" target="cube">
+      <item valueDataType="any" value="greaterThan" name="operationType"/>
+      <item valueDataType="any" value="736" name="y"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="CompareFrameEvent" callName="compareFrame" isTrigger="false" target="cube">
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="1" name="frame"/>
+    </item>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="gameover" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryTickEvent" callName="everyTick" isTrigger="false" target="System"/>
+    <item type="action" callTarget="instance" callName="moveAtAngle" target="cube">
+      <item valueDataType="any" value="90" name="14"/>
+      <item valueDataType="any" value="System.%E9%80%9F%E5%BA%A6" name="15"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="1" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="addTo" target="System">
+      <item valueDataType="string" value="速度" name="14" variable="true"/>
+      <item valueDataType="any" value="0.5" name="13"/>
+    </item>
+  </item>
+</eventSheets>
