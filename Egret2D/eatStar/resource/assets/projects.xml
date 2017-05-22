@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<projects>
-  <sceneSize height="768" width="1024" showFps="0" hasJpg="false" hasPng="false"/>
-  <info eventsheetName="newSceneEventSheet" eventsheetUrl="newSceneEventSheet.xml" layoutName="newScene" layoutUrl="newScene.xml" baseUrl="resource/scene/"/>
-  <internal>%7B%22internalComponents%22%3A%5B%7B%22plugin%22%3A%22AIObject%22%2C%22name%22%3A%22Object%22%7D%2C%7B%22plugin%22%3A%22AIKeyboard%22%2C%22name%22%3A%22Keyboard%22%7D%2C%7B%22plugin%22%3A%22Global%22%2C%22name%22%3A%22Global%22%7D%2C%7B%22plugin%22%3A%22AIBrowser%22%2C%22name%22%3A%22Browser%22%7D%2C%7B%22plugin%22%3A%22AIWebStorage%22%2C%22name%22%3A%22WebStorage%22%7D%2C%7B%22plugin%22%3A%22AIFunction%22%2C%22name%22%3A%22Function%22%7D%2C%7B%22plugin%22%3A%22AIWebSocket%22%2C%22name%22%3A%22WebSocket%22%7D%2C%7B%22plugin%22%3A%22AISystem%22%2C%22name%22%3A%22System%22%7D%2C%7B%22plugin%22%3A%22AIAjax%22%2C%22name%22%3A%22Ajax%22%7D%2C%7B%22plugin%22%3A%22AITouch%22%2C%22name%22%3A%22Touch%22%7D%5D%7D</internal>
-  <version>2.000</version>
-</projects>
