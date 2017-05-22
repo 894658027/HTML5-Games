@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="null" sceneSize="1024,768" next="MainScene" previous="newScene" eventSheet="MainEventSheet" version="2.0">
+  <layer index="0" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <layer index="1" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <item UID="4799" plugin="AISprite" name="spriteSheet" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="spriteSheet" valueDataType="string"/>
+    <item name="uiGuid" value="4799" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-64.15" valueDataType="number"/>
+    <item name="y" value="5.75" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="30" valueDataType="number"/>
+    <item name="height" value="30" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C30.00%2C30.00%7C30.00%2C30.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C30.00%2C30.00%7C30.00%2C30.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="4792" plugin="AISprite" name="gaoJi" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="gaoJi" valueDataType="string"/>
+    <item name="uiGuid" value="4792" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="900.43" valueDataType="number"/>
+    <item name="y" value="715.5547972966677" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="210" valueDataType="number"/>
+    <item name="height" value="69" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2FHard-btn.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C69.00%2C210.00%7C69.00%2C210.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C69.00%2C210.00%7C69.00%2C210.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4794" plugin="AISprite" name="chuJi" parallaxX="100" parallaxY="100" index="1" family="displayobject">
+    <item name="name" value="chuJi" valueDataType="string"/>
+    <item name="uiGuid" value="4794" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="900.43" valueDataType="number"/>
+    <item name="y" value="534.8419685191177" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="210" valueDataType="number"/>
+    <item name="height" value="69" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2FEasy.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C69.00%2C210.00%7C69.00%2C210.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C69.00%2C210.00%7C69.00%2C210.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4796" plugin="AISprite" name="zhongJi" parallaxX="100" parallaxY="100" index="2" family="displayobject">
+    <item name="name" value="zhongJi" valueDataType="string"/>
+    <item name="uiGuid" value="4796" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="900.43" valueDataType="number"/>
+    <item name="y" value="623.856684998382" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="210" valueDataType="number"/>
+    <item name="height" value="69" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2FMedium-btn.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C69.00%2C210.00%7C69.00%2C210.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C69.00%2C210.00%7C69.00%2C210.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+</layout>
