@@ -39,8 +39,8 @@
             this.stage.enableMouseOver();
             this.width = this.stage.canvas.width;
             this.height = this.stage.canvas.height;
-             this.proloadEvent();
-            // this.gameDataSheet();
+            //  this.proloadEvent();
+            this.gameDataSheet();
             this.render();
             // createjs.Sound.play("s2", createjs.Sound.INTERRUPT_NONE,0,0,-1,1,0);
     }
@@ -387,41 +387,41 @@
         //                 if(window.stbg) stbg.removeSelf();
         //                 window.stbg = new STBG(config);
         //         }
-          proloadEvent(){
-                    var gamelayer = new c.Bitmap(window.queue.getResult("loading"));
-                    var gamelayerBtn = new c.Bitmap(window.queue.getResult("normal"));
-                    var gamelayerHover = new c.Bitmap(window.queue.getResult("hover"));
-                    gamelayer.x = 0;
-                    gamelayer.y = 0;
-                    this.stage.addChild(gamelayer);
-                    gamelayerBtn.x = 550;
-                    gamelayerBtn.y = 550;
-                    this.stage.addChild(gamelayerBtn);
-                let mouseoverF = (ev) => {
-                    this.stage.removeChild(ev.target);
-                    gamelayerHover.x = 550;
-                    gamelayerHover.y = 550;
-                    this.stage.removeChild(gamelayerBtn);
-                    this. stage.addChild(gamelayerHover);
-                }
-                 gamelayerBtn.addEventListener("mouseover", mouseoverF);
-                gamelayerBtn.addEventListener("click", mouseoverF);
-                gamelayerHover.addEventListener("mouseout", (ev) => {
-                   this.stage.removeChild(gamelayerHover);
-                        gamelayerHover.x = 500;
-                        gamelayerHover.y = 550;
-                       this.stage.addChild(gamelayerBtn);
-                })
-                gamelayerHover.addEventListener("mousedown", (ev) => {
-                        this.stage.removeChild(gamelayer);
-                        this.stage.removeChild(gamelayerBtn);
-                        this.stage.removeChild(gamelayerHover); 
-                        gamelayerBtn.visible = false;
-                        gamelayerHover.visible = false;    
-                        $("#icon_1").show();
-                        $("#icon_2").show(); 
-                        //document.body.style.cursor = "none";    
-                        this.gameDataSheet();
-                    })
-               }   
+        //   proloadEvent(){
+        //             var gamelayer = new c.Bitmap(window.queue.getResult("loading"));
+        //             var gamelayerBtn = new c.Bitmap(window.queue.getResult("normal"));
+        //             var gamelayerHover = new c.Bitmap(window.queue.getResult("hover"));
+        //             gamelayer.x = 0;
+        //             gamelayer.y = 0;
+        //             this.stage.addChild(gamelayer);
+        //             gamelayerBtn.x = 550;
+        //             gamelayerBtn.y = 550;
+        //             this.stage.addChild(gamelayerBtn);
+        //         let mouseoverF = (ev) => {
+        //             this.stage.removeChild(ev.target);
+        //             gamelayerHover.x = 550;
+        //             gamelayerHover.y = 550;
+        //             this.stage.removeChild(gamelayerBtn);
+        //             this. stage.addChild(gamelayerHover);
+        //         }
+        //          gamelayerBtn.addEventListener("mouseover", mouseoverF);
+        //         gamelayerBtn.addEventListener("click", mouseoverF);
+        //         gamelayerHover.addEventListener("mouseout", (ev) => {
+        //            this.stage.removeChild(gamelayerHover);
+        //                 gamelayerHover.x = 500;
+        //                 gamelayerHover.y = 550;
+        //                this.stage.addChild(gamelayerBtn);
+        //         })
+        //         gamelayerHover.addEventListener("mousedown", (ev) => {
+        //                 this.stage.removeChild(gamelayer);
+        //                 this.stage.removeChild(gamelayerBtn);
+        //                 this.stage.removeChild(gamelayerHover); 
+        //                 gamelayerBtn.visible = false;
+        //                 gamelayerHover.visible = false;    
+        //                 $("#icon_1").show();
+        //                 $("#icon_2").show(); 
+        //                 //document.body.style.cursor = "none";    
+        //                 this.gameDataSheet();
+        //             })
+        //        }   
 }

@@ -6,7 +6,7 @@
 </head>
 <style>
 *{margin: 0px;padding: 0px;}
-#wrap{z-index: 888;background: url(image/glasses/selectGlassess.png) no-repeat;cursor: auto;top: 0px;left: 15%;}
+#wrap{z-index: 888;background: url(image/glasses/selectGlassess.png) no-repeat;cursor: auto;top: 0px;left: 15%;display: none;}
 #wrap,#wraps,#containerGame{width: 1280px;height: 720px;position: absolute;}
 #wraps{background: url(image/glasses/selectGlassess.png) no-repeat;z-index: 998;top: 10px;left: 15%;}
 #containerGame{background: url(image/glasses/selectGlassess.png) no-repeat;z-index: 999;top: 10px;left: 15%;}
@@ -15,9 +15,9 @@
 #textWen{ padding-top: 270px;}
 #text_selects{font-size: 30px;color: #FFF;text-align: center;padding-top: 270px;}
 #btn{width: 187px;height: 80px;background: url(image/confirm3.png);border: none;margin-top: 80px;margin-left: 40%;}
-#icon_1{position: absolute;top: 1px;left: 1%;z-index: 997}
-#icon_2{position: absolute;bottom: 0px;left: 1%; z-index: 996}
-#sucImg,#failImg{position: absolute;top: 36%;left: 43%;}
+#icon_1{position: absolute;top: 1px;left: 1%;z-index: 997;display: none;}
+#icon_2{position: absolute;bottom: 0px;left: 1%; z-index: 996;display: none;}
+#sucImg,#failImg{position: absolute;top: 36%;left: 43%;display: none;}
 @media (max-width: 1366px ){
 #wrap,#wraps,#wrapss,#containerGame{position: absolute;top: 0px;left:0px;}
 /*#sucImg,#failImg{top: 0.1%;left: 12%}*/
@@ -74,11 +74,7 @@ canvas{background: #ff00ff;}
 
 <script>
 //你真棒
-$("#wrap").hide();
-$("#sucImg").hide();
-$("#failImg").hide();
-$("#icon_1").hide();
-$("#icon_2").hide();
+// $("#wrap").hide();
 //训练说明
   $("#icon_1").click(function(){
      $("#wrap").show();
