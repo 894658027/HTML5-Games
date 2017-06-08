@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>划拳裁判长</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+*{margin: 0px;padding: 0px;}
+#wrap{z-index: 888;background: url(image/glasses/selectGlassess.png) no-repeat;cursor: auto;top: 0px;left: 15%;}
+#wrap,#wraps,#containerGame{width: 1280px;height: 720px;position: absolute;}
+#wraps{background: url(image/glasses/selectGlassess.png) no-repeat;z-index: 998;top: 10px;left: 15%;}
+#containerGame{background: url(image/glasses/selectGlassess.png) no-repeat;z-index: 999;top: 10px;left: 15%;}
+#gameView{width:100vw;height:100%;border: 1px solid red;}
+#textWen,#textWens{font-size: 30px;color: #FFF;text-align: center;padding-top: 200px;}
+#textWen{ padding-top: 270px;}
+#text_selects{font-size: 30px;color: #FFF;text-align: center;padding-top: 270px;}
+#btn{width: 187px;height: 80px;background: url(image/confirm3.png);border: none;margin-top: 80px;margin-left: 40%;}
+#icon_1{position: absolute;top: 1px;left: 1%;z-index: 997}
+#icon_2{position: absolute;bottom: 0px;left: 1%; z-index: 996}
+#sucImg,#failImg{position: absolute;top: 36%;left: 43%;}
+@media (max-width: 1366px ){
+#wrap,#wraps,#wrapss,#containerGame{position: absolute;top: 0px;left:0px;}
+/*#sucImg,#failImg{top: 0.1%;left: 12%}*/
+#sucImg,#failImg{position: absolute;top: 31%;left: 41%;}
+}
+@media (min-width: 1020px) and (max-width: 1300px) {
+     #sucImg,#failImg{position: absolute;top: 10%;left: 37%;}
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+     #sucImg,#failImg{position: absolute;top: 10%;left: 37%;}
+}
+@media (max-width: 414px ){
+    #sucImg,#failImg{position: absolute;top: 10%;left: 15%;}
+}
+#loading {text-align: center;position: absolute;z-index: 100;width: 100%;height:100%;}
+#loading span {position: absolute;top: 300px;}
+#img_blue,#img_red{float: left;width: 250px;height: 150px;margin-left: 30px;margin-right: 30px;border: 1px dashed #2c4949;}
+#img_blue:hover,#img_red:hover{border: 1px dashed #FFF;}
+.wrap_glasses{margin-left:320px;margin-top: 50px;}
+#modalGroup{width: 200px;height:200px;}
+#modalBtn{width: 172px;height: 158px;background: url(image/direPic/normal.png);position: absolute;bottom: 10px;left: 40%;}
+#modalBtn:hover{background: url(image/direPic/hover.png);width: 197px;height: 178px;cursor: pointer;}
+.btn {width: 187px;height: 80px;background: url(image/qd.png);border: none;margin-top: 80px;}
+
+canvas{background: #ff00ff;}
+</style>
+<body>
+<div id="loading"><span></span></div>
+
+<div id="containerGame">
+        <p id="text_selects">请小朋友们用最快的速度判断,左边赢、右边赢、平局～找对有惊喜！</p>
+       <center> <button class="btn"></button></center>
+      </div>
+<div id="wrap">
+        <p id="textWen">请小朋友们用最快的速度判断,左边赢、右边赢、平局～找对有惊喜！</p>
+        <button id="btn"></button>
+</div>
+    <div id="sucImg"><img src="image/success.png" style="width:300px;height: 300px;"></div>
+    <div id="failImg"><img src="image/fail.png" style="width:300px;height: 300px;"></div>
+    <div id="icon_1"><img src="image/help2.png"></div>
+    <div id="icon_2"> <a href="index.html"><img src="image/reset1.png"></a></div>
+<center>
+    <canvas id="gameView" width="1280" height="720"></canvas>
+</center>
+   <!--<canvas id="bg-canvas" width="1024" height="768" style="margin:auto; position: absolute; z-index:-10;width: 100vw;height:100vh;top:0px;left:0px;"></canvas>-->
+   <!--<audio src="music/s2.mp3" loop="loop" autoplay="autoplay"></audio>-->
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/create.js"></script>
+<script src="js/common.js"></script>
+<!--<script src="js/stbg.js"></script>-->
+<script src="js/gameDataSheets.js"></script><!--第一关-->
+
+<script>
+//你真棒
+$("#wrap").hide();
+$("#sucImg").hide();
+$("#failImg").hide();
+$("#icon_1").hide();
+$("#icon_2").hide();
+//训练说明
+  $("#icon_1").click(function(){
+     $("#wrap").show();
+     $("#gameView").hide();
+  });
+//训练说明
+  $("#btn").click(function(){
+     $("#wrap").hide();
+     $("#gameView").show();
+     
+  });
+    $("#modalBtn").click(function(){
+     $("#wrapss").hide();
+  });
+  $(".btn").click(function(){
+    $("#containerGame").hide();
+    window.init();
+  })
+</script>
+</html>
