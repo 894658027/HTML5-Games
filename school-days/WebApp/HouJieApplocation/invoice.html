@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>发票详情页</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div class="mainBody">
+	<div class="invoiceItems">
+    	<div class="invoiceHead">发票类型</div>
+        <div class="invoiceCon invoiceTab">
+        	<ul class="clearfix"><li class="first on">纸质发票<i class="oIcon"></i></li><li>电子发票<i class="oIcon"></i></li><li>不需要发票<i class="oIcon"></i></li></ul>
+        </div>
+    </div>
+    <div class="invoiceWrap">
+        <div class="invoiceItems">
+            <div class="invoiceHead">发票抬头</div>
+            <div class="invoiceCon invoiceTitle">
+                <input type="text" placeholder="个人" ><i class="oIcon2 titDel"></i>
+                <div class="invTitleBox">
+                    <ul>
+                        <li>个人</li>
+                        <li>现软后街网电子商务有限公司</li>
+                        <li>后街网电子商务有限公司</li>
+                        <li>TGW项目组</li>
+                        <li>后街网软件开发部</li>
+                    </ul>
+				</div>
+            </div>
+        </div>
+        <div class="invoiceItems">
+            <div class="invoiceHead">发票内容</div>
+            <div class="invoiceCon invoiceInfo">
+                <label class="iiItems selected"><i class="oIcon"></i><span>商品</span></label><label class="iiItems"><i></i><span>明细</span></label>
+            </div>
+        </div>
+        <div class="invoiceBtn"><input id="invoiceSubmit" class="invoiceSubmit" type="submit" value="确定"></div>
+    </div>
+    <div class="invoiceWrap" style="display:none;">
+        <div class="invoiceItems">
+            <div class="invoiceHead">发票抬头</div>
+            <div class="invoiceCon invoiceTitle">
+                <input type="text" value="个人" disabled ><i class="oIcon2 titDel"></i>
+            </div>
+        </div>
+        <div class="invoiceItems">
+            <div class="invoiceHead">发票内容</div>
+            <div class="invoiceCon invoiceInfo">
+                <label class="iiItems selected"><i class="oIcon"></i><span>商品</span></label><label class="iiItems"><i></i><span>明细</span></label>
+            </div>
+        </div>
+        <div class="invoiceItems">
+            <div class="invoiceCon invoicePhone">
+                <p class="pho"><em>*</em><span>收票人手机</span><input type="tel" maxlength="11"></p>
+                <p class="pro">备注：订单签收后在电脑端【我的订单】下载电子发票</p>
+            </div>
+        </div>
+        <div class="invoiceBtn"><input id="invoiceSubmit2" class="invoiceSubmit" type="submit" value="确定"></div>
+    </div>
+</div>
+
+<!--公共弹窗-->
+<div class="pubMask"></div>
+<div class="pubPopup">
+    <div class="popCon"></div>
+</div>
+<!--公共弹窗end-->
+<!--返回顶部-->
+<div class="goTop" onclick="myScroll()">
+<i class="pubIcon"></i>
+</div>
+<!--返回顶部 结束-->
+
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/public2015.js"></script>
+<script type="text/javascript">
+  Zepto(function($){
+	$('.invoiceTab li').on('click',function(){
+		var wIndex=$(this).index();
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.invoiceWrap').eq(wIndex).show().siblings('.invoiceWrap').hide();
+	});
+	//发票
+	$('.invoiceInfo .iiItems').on('click',function(){
+		$(this).addClass('selected').find('i').addClass('oIcon');
+		$(this).siblings().removeClass('selected').find('i').removeClass('oIcon');
+	});
+	//发票内容
+	$(document).on('click',function(event){
+		$('.invTitleBox').hide();
+		event.stopPropagation();
+	});
+	$('.invoiceTitle input').on('focus',function(){
+		$(this).siblings('.invTitleBox').show();
+	});
+	$('.invTitleBox li').on('click',function(){
+		var tex = $(this).text();
+		$(this).parents('.invTitleBox').hide().siblings('input').val(tex);
+	});
+	$(".invoiceTitle").bind('click',function(event){
+		event.stopPropagation();
+	});
+	$('.titDel').on('click',function(){
+		$(this).siblings('input').val('').focus();
+	});
+	//提交
+	$('#invoiceSubmit2').on('click',function(){
+		var pattern=/^(13|14|15|18|17)[0-9]{9}$/;
+		var telValue = Zepto.trim($("input[type='tel']").val());
+		if(telValue=='')
+		{
+			popEffect('请输入手机号');
+		}
+		else if(!pattern.test(telValue))
+		{
+			popEffect('请输入正确的手机号');
+		}
+		else
+		{
+			return;
+		}
+	});
+});
+</script>
+</body>
+</html>

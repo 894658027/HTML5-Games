@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>分类界面</title>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+$(function(){
+	$("#nav_right").click(function(){
+		$(".nav_menu").slideToggle("slow");
+		})
+	})
+
+</script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+*{ margin:0px; padding:0px; width:100%; height:auto;}
+html{ font-size:62.5%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{ padding:0; margin:0;}
+ol,ul,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace;}
+button,input,select,textarea{font-size:100%;outline:none; -webkit-tap-highlight-color:transparent;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+a,a:hover{text-decoration:none; color:#333;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';}
+label,button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;}
+del{text-decoration:line-through;}
+ins{text-decoration:none;}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help;}
+mark{background-color:yellow;}
+input[type=submit],input[type=button]{ -webkit-appearance:none; box-sizing:content-box;border:0; border-radius:0;}
+body{font-family:"华文细黑","黑体","Microsoft YaHei";font-size:12px; color:#333; background:#fff;}
+/*声明层*/
+div[class="main"]{ min-width:320px; max-width:640px; width:100%; height:auto; overflow:hidden; margin:0px auto; position:relative;}
+div[class="top"]{min-width:320px; max-width:640px;overflow:hidden; margin:0px auto;  width:100%; height:auto; background:#D43925; margin-top:1px;text-align:center; position:relative;position:fixed; z-index:999; top:-1px;}
+div[class="top"] h3 a{ color:#FFF; text-decoration:none; margin:0px auto; line-height:40px; font-size:18px;}
+div[class="nav_left"] img{ width:30px; height:auto; float:left; position:absolute; top:0px; left:5px; cursor:pointer;}
+div[class="nav_right"] img{ width:30px; height:auto; float:right; position:absolute;top:6px; right:5px; cursor:pointer;}
+div[class="nav_menu"] span{ width:100%; height:auto; color:#FFF; padding:0px 15px; line-height:40px; cursor:pointer;}
+div[class="nav_menu"]{ display:none;}
+/*导航层*/
+div[class="nav_main"]{ width:100%; height:100%; margin-top:3em; padding:12px 10px;  background:#EAEAEA;}
+div[class="nav_logo"]{ margin-bottom:8px;}
+div[class="nav_logo"] img{ width:70%; height:100%; float:left;}
+div[class="nav_logo_two"]{ width:100%; height:auto; margin-top:-8px;}
+div[class="nav_logo_two"] img{ width:30%; height:100%;/* margin-top:3em;*/}
+div[class="nav_logo_three"] img{ width:30%; height:100%; padding-top:4px;}
+
+div[class="body_menu"]{ padding:0.6em 0em;}
+div[class="body_menu"],div[class="body_menu_two"]{ text-align:center; margin-top:1em;}
+div[class="body_menu"] span,div[class="body_menu_two"] span{width:25%;color:#FFF;background:#FFF; color:#DCDCDC; padding:4px 20px; font-size:small; font-family:"微软雅黑", "宋体", "楷体";} 
+div[class="imgbox"]{ background:#FFFFFF; width:100%; height:100%; margin-top:1em; text-align:center; font-size:medium; line-height:30px; padding-top:20px;}
+p[class="outlain"]{ width:100%; height:160px; background:#FFFFFF;}
+p[class="outlain"] img{ float:left; width:160px; height:160px;}
+p[class="outlain"] span{ font-size:small; margin-left:-20px;}
+.text_1{ color:#E04843; font-weight:bold; font-size:medium; display:block;}
+button[class="btn_1"]{ width:25%; height:100%; display:block; margin:20px auto; color:#FFF; background:#3598DC; border-radius:1px; font-size:small; font-weight:500; font-family:"微软雅黑", "宋体", "楷体";}
+.body_bottom{ background:#EAEAEA; width:100%; height:45px; text-align:center; line-height:40px;}
+div[class="body_bottom"] span{ font-size:medium; padding:0px 15px;}
+div[class="body_menu"]{ text-align:center; margin-top:1em;}
+div[class="body_menu_bottom"]{background:#EAEAEA;}
+div[class="body_menu_bottom"] span{width:25%; height:30px;color:#EAEAEA; background:#FFF; padding:0px 15px; font-size:small; font-family:"微软雅黑", "宋体", "楷体";} 
+</style>
+<body>
+<div class="main">
+<div class="top">
+  <h3><a href="#">所有物品</a></h3>
+  <div class="nav_left"><a href="index.html"><img src="images/headBack.jpg"></a></div>
+  <div class="nav_right"><img src="images/headicon_副本.png" id="nav_right"></div>
+  <div class="nav_menu"><a href="index.html" style="text-decoration:none;"><span>首页</span></a><a href="#" style="text-decoration:none;"><span>搜索</span><a href="invoice.html"><span>购物车</span></a></a><a href="self.html" style="text-decoration:none;"><span>个人中心</span></a></div>
+</div>
+<!--导航end-->
+<div class="nav_main">
+<div class="nav_logo"><img src="images/son/header_left.jpg"></div>
+<div class="nav_logo_two"><img src="images/son/header_right_top.jpg">
+<div class="nav_logo_three"><img src="images/son/header_right_bottom.jpg"></div>
+<div class="nav_logo_three"><img src="images/son/header_right_top.jpg"></div>
+</div>
+
+<div class="body_menu">
+<span><a href="#">首页</a></span>
+<span><a href="#">分类</a></span>
+<span><a href="#">购物车</a></span>
+<span><a href="#">活动页</a></span></div>
+
+<div class="body_menu_two">
+<span><a href="#">大牌</a></span>
+<span><a href="#">男装</a></span>
+<span><a href="#">自行车</a></span>
+<span><a href="#">活动页</a></span></div>
+<!--<div style="width:100%; height:auto; margin-top:10px;"><img src="images/son/body_4.png"></div>-->
+<div class="imgbox">精品推荐<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<p class="outlain"><img src="images/son/main_body_7.jpg"><span>53°茅台贵宾迎宾酒500ml</span><span class="text_1">￥332</span></p>
+<hr/>
+<button class="btn_1" style="border:none">更多产品</button>
+<div class="body_bottom"><span><a href="index.html">←返回</a></span><span><a href="#">手机客户端☎</a></span><span><a href="#">回顶部↑</a></span></div>
+<div class="body_menu_bottom">
+<span><a href="index.html">首页</a></span>
+<span><a href="#">分类</a></span>
+<span><a href="login.html">购物车</a></span>
+<span><a href="activity.html">活动专场</a></span></div>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+</body>
+</html>

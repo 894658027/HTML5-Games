@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+#con_1{background:#F0F1F1;}
+.row_1{background-color:#FFF;}
+#row_2{background-color:#FFF;}
+.p_1{padding-left:1.5%;}
+#pos_1{position:relative;}
+#pic_1{width:30%; height:30%; display:block; float:left;}
+#hf_1{ float:right; color:#FF8A00; vertical-align:top;}
+#hf_1:hover{ text-decoration:none;}
+#ui_a{ vertical-align:top; padding-left:5%; }
+#ui_a span{color:#1F8902;}
+/*#ui_a:hover{text-decoration:none;}*/
+#tz{ position:absolute; left:36%; top:30px; color:#999; font-size:12px;}
+input[name="text_1"]{ background:#CCC; color:#000;}
+placeholder{ color:#000;}

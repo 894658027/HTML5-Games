@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>HOUJIE</title>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.slideBox.min.js"></script>
+        <script>
+jQuery(function($){
+	$('#demo2').slideBox({
+		direction : 'left',//left,top#方向
+		duration : 0.5,//滚动持续时间，单位：秒
+		easing : 'linear',//swing,linear//滚动特效
+		delay : 5,//滚动延迟时间，单位：秒
+		startIndex : 1//初始焦点顺序
+	});
+});
+</script>
+<link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+*{ margin:0px; padding:0px; width:100%; height:auto;}
+html{ font-size:62.5%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{ padding:0; margin:0;}
+ol,ul,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp,tt{font-family:"Courier New",Courier,monospace;}
+button,input,select,textarea{font-size:100%;outline:none; -webkit-tap-highlight-color:transparent;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+a,a:hover{text-decoration:none; color:#333;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';}
+label,button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;}
+del{text-decoration:line-through;}
+ins{text-decoration:none;}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help;}
+mark{background-color:yellow;}
+input[type=submit],input[type=button]{ -webkit-appearance:none; box-sizing:content-box;border:0; border-radius:0;}
+body{font-family:"华文细黑","黑体","Microsoft YaHei";font-size:12px; color:#333; background:#fff;}
+/*样式声明*/
+.body_container{ min-width:320px; max-width:640px; width:100%; margin:0 auto; height:auto; overflow:hidden; background:#FFF;}
+div[class="top"] img{ width:100%; height:auto;}
+div[class="logo"]{ margin-top:1em;}
+p[class="logo_top"] img{ width:77px; height:40px; padding:0px 8px;}
+select{ width:25%; height:25px;vertical-align:bottom; position:relative;}
+span[class="login"]{ font-size:15px; color:#333;text-align:right;vertical-align:central; float:right; margin-top:-1.5em; padding:0px 10px;}
+span[class="login_two"]{ padding-left:10px;}
+form{ margin-top:1em;} 
+img{ width:40px; height:32px;}
+span[class="img"] img{ width:40px; height:auto; position:absolute; top:3px; right:0.5em;}
+li a img{ width:640px; height:auto;}
+div.slideBox{
+	position:relative;
+	width:auto;
+	border-radius:5px;
+	height:auto;
+	 overflow:hidden;}
+/*map*/
+div[class="nav_menu_one"]{/* width:100%; height:80px;*/ background:#F9FAFC; margin:3px 0px; position:relative;}
+div[class~="nav_menu_one"] img{ width:18%; height:auto; padding:0px 8px; margin:1px 6px;}
+div[class="nav_menu_two"]{/* width:100%; height:80px;*/ background:#F9FAFC; margin:1px 1px; border-top: dashed 1px #E0E0E0;}
+div[class~="nav_menu_two"] img{ width:18%; height:auto;padding:0px 8px;margin:1px 6px;}
+div[class~="nav_banner"]{ margin-top:7px;}
+div[class~="nav_banner"] img{ width:100%; height:auto;}
+div[class~="nav_main"]{ width:100%; height:auto; padding:0px; margin:5px 0px;}
+div[class="main"]{ position:relative;}
+div[class~="main_top"] img{ width:49%; height:auto;
+margin-left:1px;}
+div[class~="main_top"] span img{ width:49%; height:auto; margin-left:5px;}
+div[class~="main_bottom"]{ margin:10px 0px;}
+div[class~="main_bottom"] img{ width:49%; height:auto;
+margin-left:1px;}
+div[class~="main_bottom"] span img{ width:49%; height:auto; margin-left:5px;}
+div[class="hr"] p{ font-size:16px; margin-left:10px;}
+hr{ margin-top:5px; height:1px; background:#999;}
+div[class="main_one"] p img,div[class="main_two"] p img,div[class="main_three"] p img,div[class="main_four"] p img,div[class="main_five"] p img,div[class="main_six"] p img{ width:40%; height:auto; margin-left:5px; margin-top:8px;}
+div[class="main_one"] span,div[class="main_two"] span,div[class="main_three"] span,div[class="main_four"] span,div[class="main_five"] span,div[class="main_six"] span{ vertical-align:top; font-size:small; margin-left:5px;}
+p span[class~="sp"]{vertical-align:1em; margin-left:5px; color:#C40004; font-size:medium; font-weight:bold;}
+p span[class~="tp"]{margin-left:-3em; vertical-align:250%;}
+button[class="btn_1"]{ width:25%; height:100%; display:block; margin:20px auto; color:#FFF; background:#3598DC; border-radius:1px; font-size:small; font-weight:100px; font-family:"微软雅黑", "宋体", "楷体";}
+.body_bottom{ background:#EAEAEA; width:100%; height:45px; text-align:center; line-height:40px;}
+div[class="body_bottom"] span{ font-size:medium; padding:0px 20px;}
+div[class="body_menu"]{ text-align:center; margin-top:1em;}
+div[class="body_menu"] span{width:25%; height:30px;color:#FFF;background:#DCDCDC; padding:0px 20px; font-size:small; font-family:"微软雅黑", "宋体", "楷体";} 
+.pic li{list-style:none;
+display:inline-block}
+</style>
+
+<body>
+<div class="body_container">
+<!--<div class="top"><a href="#"><img src="images/top.png" style="width:100%; height:auto;"></a></div>-->
+<div class="logo">
+<p class="logo_top"><img src="images/hg_logo1.png">
+<span>
+<select>
+<option>北小营村</option><option>马池口镇</option>
+<option>龙泽</option><option>西二旗</option>
+</select></span>
+<span class="login"><a href="login.html">登陆</a><a href="login.html"><span class="login_two">注册</span></a></span></p>
+<form class="form-horizontal">
+<div class="form-group">
+<div class="col-sm-10">
+<input type="text" class="form-control" placeholder="请在此处输入您所需要的内容" style="margin-left:10px;"><span class="img"><a href="white.html"><img src="images/search.png"></a></span></div>
+</div>
+</form>
+<!--表单层end-->
+</div><div id="demo2" class="slideBox">
+  <ul class="items">
+    <li><a href="#" title=""><img src="images/banner_6.png" class="img-responsive"></a></li>
+    <li><a href="#" title=""><img src="images/banner_4.png" class="img-responsive"></a></li>
+    <li><a href="#" title=""><img src="images/banner_3.png" class="img-responsive"></a></li>
+    <li><a href="#" title=""><img src="images/banner_5.png" class="img-responsive"></a></li>
+            <li><a href="#" title=""><img src="images/11.png"class="img-responsive"></a></li>
+
+        <li><a href="#" title=""><img src="images/banner_10.png" class="img-responsive"></a></li>
+  </ul>
+</div>
+
+<!--轮播层 end-->
+<center>
+ <div class="nav_menu_one">
+
+            <a href="white.html" ><img src="images/q.png" ></a>
+               <a href="white.html"  ><img src="images/y.png" ></a>   
+                   <a href="white.html"  ><img src="images/e.png" ></a>
+                  <a href="white.html"  ><img src="images/t.png" ></a>
+                  
+ </div>
+<div class="nav_menu_two">
+                      <a href="white.html"><img src="images/r.png"></a>
+                      <a href="white.html"><img src="images/i.png"></a>
+                      <a href="white.html"><img src="images/u.png"></a>
+                      <a href="white.html"><img src="images/o.png"></a></div>
+                   </center>
+<div class="nav_banner"><a href="activity.html"><img src="images/top.png"></a></div>
+<div class="nav_main">
+<div class="main_top"><a href="activity.html"><img src="images/main_pic4,.jpg"></a><span><a href="activity.html"><img src="images/main_pic2,.jpg"></a></span></div>
+<div class="main_bottom"><a href="activity.html"><img src="images/main_pic2,.jpg"></a><span><a href="activity.html"><img src="images/main_pic4,.jpg"></a></span></div>
+<div class="hr"><p>今日专享<span><hr/></span></p></div>
+</div>
+<div class="main">
+<div class="main_one"><p><img src="images/main_body_7.jpg"><span class="sp">￥320</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_two"><p><img src="images/main_body_8.jpg"><span class="sp">￥120</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_three"><p><img src="images/main_body_9.jpg"><span class="sp">￥520</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_four"><p><img src="images/main_body_10.jpg"><span class="sp">￥150</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px; cursor:pointer;height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_five"><p><img src="images/main_body_11.jpg"><span class="sp">￥170</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_six"><p><img src="images/main_body_12.jpg"><span class="sp">￥350</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_one"><p><img src="images/main_body_13.jpg"><span class="sp">￥120</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_two"><p><img src="images/main_body_14.jpg"><span class="sp">￥840</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_three"><p><img src="images/main_body_15.jpg"><span class="sp">￥620</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px;cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<div class="main_four"><p><img src="images/main_body_16.jpg"><span class="sp">￥120</span><span class="tp">超值组合套餐！</span><a href="introduce.html"><img src="images/che.png" style="width:37px; cursor:pointer; height:auto; position:absolute; float:right; bottom:auto; right:1px;"></a></p></div>
+<a href="activity.html"><button class="btn_1" style="border:none">更多活动</button></a>
+</div>
+<div class="body_bottom"><span><a href="#">←返回</a></span><span><a href="#">手机客户端☎</a></span><a href="#"><span>回顶部↑</span></a></div>
+<div class="body_menu">
+<span><a href="#">首页</a></span>
+<span><a href="white.html">分类</a></span>
+<span><a href="login.html">购物车</a></span>
+<span><a href="activity.html">活动专场</a></span></div>
+</div>
+</body>
+</html>
