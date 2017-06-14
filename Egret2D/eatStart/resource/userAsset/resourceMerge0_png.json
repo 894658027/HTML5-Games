@@ -1,0 +1,12 @@
+{"file":"resourceMerge0_png.png","frames":{
+"images/fireBg.png":{"x":1,"y":1,"w":1024,"h":768,"offX":0,"offY":0,"sourceW":1024,"sourceH":768},
+"images/yeyeye.png":{"x":1026,"y":1,"w":800,"h":800,"offX":0,"offY":0,"sourceW":800,"sourceH":800},
+"images/ground.png":{"x":1,"y":770,"w":256,"h":256,"offX":0,"offY":0,"sourceW":256,"sourceH":256},
+"images/qd.png":{"x":1827,"y":1,"w":187,"h":80,"offX":0,"offY":0,"sourceW":187,"sourceH":80},
+"images/Medium-btn.png":{"x":1827,"y":82,"w":210,"h":69,"offX":0,"offY":0,"sourceW":210,"sourceH":69},
+"images/Easy.png":{"x":1827,"y":152,"w":210,"h":69,"offX":0,"offY":0,"sourceW":210,"sourceH":69},
+"images/Hard-btn.png":{"x":1827,"y":222,"w":210,"h":69,"offX":0,"offY":0,"sourceW":210,"sourceH":69},
+"images/PurpleMonster.png":{"x":1827,"y":292,"w":78,"h":67,"offX":0,"offY":0,"sourceW":78,"sourceH":67},
+"images/starBig.png":{"x":1906,"y":292,"w":60,"h":71,"offX":0,"offY":0,"sourceW":60,"sourceH":71},
+"images/star.png":{"x":1827,"y":360,"w":60,"h":71,"offX":0,"offY":0,"sourceW":60,"sourceH":71},
+"images/congzai.png":{"x":1967,"y":292,"w":58,"h":58,"offX":0,"offY":0,"sourceW":58,"sourceH":58}}}

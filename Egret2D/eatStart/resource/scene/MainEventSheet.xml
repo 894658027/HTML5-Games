@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="Main" previous="" next="" version="2.0">
+  <item type="instance" UID="4796"/>
+  <item type="instance" UID="4794"/>
+  <item type="instance" UID="4792"/>
+  <item type="instance" UID="4799">
+    <item initValue="0" variableType="number" variableName="sum" type="variable"/>
+  </item>
+  <item type="instance" UID="4784"/>
+  <item type="variable" variableName="toward" variableType="number" initValue="0"/>
+  <item type="variable" variableName="timer" variableType="number" initValue="0"/>
+  <item type="variable" variableName="score" variableType="number" initValue="0"/>
+  <item type="variable" variableName="Scale" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="chuJi"/>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="Scale" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="9"/>
+    </item>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="MainScene" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="zhongJi"/>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="Scale" name="10" variable="true"/>
+      <item valueDataType="any" value="0.5" name="9"/>
+    </item>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="MainScene" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="gaoJi"/>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="Scale" name="10" variable="true"/>
+      <item valueDataType="any" value="0.2" name="9"/>
+    </item>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="MainScene" name="18"/>
+    </item>
+  </item>
+</eventSheets>

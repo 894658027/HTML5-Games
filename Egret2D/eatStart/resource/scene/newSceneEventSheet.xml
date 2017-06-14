@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="newScene" previous="" next="" version="2.0">
+  <item type="instance" UID="4822"/>
+  <item type="instance" UID="4778"/>
+  <item type="instance" UID="4775"/>
+  <item type="instance" UID="4772"/>
+  <item type="instance" UID="4767"/>
+  <item type="variable" variableName="toward" variableType="number" initValue="0"/>
+  <item type="variable" variableName="timer" variableType="number" initValue="0"/>
+  <item type="variable" variableName="score" variableType="number" initValue="0"/>
+  <item type="variable" variableName="Scale" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="beginBtn"/>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="Main" name="18"/>
+    </item>
+  </item>
+</eventSheets>

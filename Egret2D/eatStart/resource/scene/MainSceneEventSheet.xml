@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="MainScene" previous="" next="" version="2.0">
+  <item type="instance" UID="4810"/>
+  <item type="instance" UID="4804"/>
+  <item type="instance" UID="4749">
+    <item type="behavior" behaviorType="SolidBehaivor" name="刚体"/>
+    <item type="behavior" behaviorType="PlatformBehaivor" name="横轴跑酷">
+      <item valueDataType="any" value="330" name="maxspeed"/>
+      <item valueDataType="any" value="450" name="acc"/>
+      <item valueDataType="any" value="450" name="dec"/>
+      <item valueDataType="any" value="650" name="jumpStrength"/>
+      <item valueDataType="any" value="1500" name="g"/>
+      <item valueDataType="any" value="1000" name="maxFall"/>
+      <item valueDataType="any" value="0" name="enableDoubleJump"/>
+      <item valueDataType="any" value="0" name="jumpSustain"/>
+      <item valueDataType="any" value="0" name="defaultControls"/>
+      <item valueDataType="any" value="1" name="enabled"/>
+    </item>
+    <item type="behavior" behaviorType="BoundsOfRectBehaivor" name="边界限制">
+      <item valueDataType="any" value="0" name="boundType"/>
+      <item valueDataType="any" value="0" name="x"/>
+      <item valueDataType="any" value="0" name="y"/>
+      <item valueDataType="any" value="0" name="width"/>
+      <item valueDataType="any" value="0" name="height"/>
+    </item>
+  </item>
+  <item type="instance" UID="4752"/>
+  <item type="instance" UID="4764"/>
+  <item type="instance" UID="4816"/>
+  <item type="instance" UID="4761"/>
+  <item type="instance" UID="4813">
+    <item type="behavior" behaviorType="FlashBehavior" name="闪烁">
+      <item valueDataType="any" value="0.1" name="onTime"/>
+      <item valueDataType="any" value="0.1" name="offTime"/>
+      <item valueDataType="any" value="0" name="times"/>
+      <item valueDataType="any" value="1" name="enabled"/>
+    </item>
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+      <item valueDataType="any" value="100" name="speed"/>
+      <item valueDataType="any" value="0" name="acceleration"/>
+      <item valueDataType="any" value="0" name="gravity"/>
+      <item valueDataType="any" value="90" name="angle"/>
+    </item>
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁"/>
+  </item>
+  <item type="instance" UID="4755">
+    <item type="behavior" behaviorType="FlashBehavior" name="闪烁">
+      <item valueDataType="any" value="0.1" name="onTime"/>
+      <item valueDataType="any" value="0.1" name="offTime"/>
+      <item valueDataType="any" value="0" name="times"/>
+      <item valueDataType="any" value="1" name="enabled"/>
+    </item>
+  </item>
+  <item type="instance" UID="4758"/>
+  <item type="instance" UID="4746">
+    <item type="behavior" behaviorType="SolidBehaivor" name="刚体"/>
+  </item>
+  <item type="instance" UID="4741"/>
+  <item type="variable" variableName="toward" variableType="number" initValue="0"/>
+  <item type="variable" variableName="timer" variableType="number" initValue="0"/>
+  <item type="variable" variableName="score" variableType="number" initValue="0"/>
+  <item type="variable" variableName="Scale" variableType="number" initValue="0"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnPlatformLandEvent" callName="onLand" isTrigger="true" target="hero" behaviorName="横轴跑酷"/>
+    <item type="action" callTarget="instance" callName="play" target="hreoMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="execTween" target="hero">
+      <item valueDataType="any" value="luodi" name="key"/>
+      <item valueDataType="any" value="" name="x"/>
+      <item valueDataType="any" value="" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="100" name="duration"/>
+      <item valueDataType="string" value="line" name="ease"/>
+      <item valueDataType="any" value="0" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="1.2" name="scaleX"/>
+      <item valueDataType="any" value="0.8" name="scaleY"/>
+    </item>
+    <item type="action" callTarget="instance" callName="wait" target="System">
+      <item valueDataType="any" value="0.1" name="time"/>
+    </item>
+    <item type="action" callTarget="instance" callName="simulateControl" target="hero" behaviorName="横轴跑酷">
+      <item valueDataType="any" value="2" name="ctrl"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="hero">
+      <item valueDataType="string" value="Xing" name="object" isFamily="false"/>
+    </item>
+    <item type="action" callTarget="instance" callName="play" target="XingMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="Xing"/>
+    <item type="action" callTarget="instance" callName="addTo" target="System">
+      <item valueDataType="string" value="score" name="14" variable="true"/>
+      <item valueDataType="any" value="1" name="13"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setText" target="ScoreKill">
+      <item valueDataType="any" value="System.score" name="1"/>
+    </item>
+    <item type="action" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="Xing" name="23" isFamily="false"/>
+      <item valueDataType="any" value="1" name="22"/>
+      <item valueDataType="any" value="20%2BMath.random()*680" name="21"/>
+      <item valueDataType="any" value="320%2BMath.random()*180" name="20"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setScale" target="Xing">
+      <item valueDataType="any" value="System.Scale" name="16"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="congZ"/>
+    <item type="action" callTarget="instance" callName="reload" target="Browser"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+      <item valueDataType="string" value="timer" name="variable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="1" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="execTween" target="greatPIC">
+      <item valueDataType="any" value="greatPIC" name="key"/>
+      <item valueDataType="any" value="528.76" name="x"/>
+      <item valueDataType="any" value="-411.22" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="2000" name="duration"/>
+      <item valueDataType="string" value="bounceInOut" name="ease"/>
+      <item valueDataType="any" value="2000" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="1" name="scaleX"/>
+      <item valueDataType="any" value="1" name="scaleY"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="timer" name="10" variable="true"/>
+      <item valueDataType="any" value="0" name="9"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnPlatformJumpEvent" callName="onJump" isTrigger="true" target="hero" behaviorName="横轴跑酷"/>
+    <item type="action" callTarget="instance" callName="execTween" target="hero">
+      <item valueDataType="any" value="tiao" name="key"/>
+      <item valueDataType="any" value="" name="x"/>
+      <item valueDataType="any" value="" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="100" name="duration"/>
+      <item valueDataType="string" value="line" name="ease"/>
+      <item valueDataType="any" value="0" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="0.8" name="scaleX"/>
+      <item valueDataType="any" value="1.2" name="scaleY"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnTweenCompleteEvent" callName="onTweenComplete" isTrigger="true" target="hero">
+      <item valueDataType="any" value="tiao" name="key"/>
+    </item>
+    <item type="action" callTarget="instance" callName="execTween" target="hero">
+      <item valueDataType="any" value="huifu" name="key"/>
+      <item valueDataType="any" value="" name="x"/>
+      <item valueDataType="any" value="" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="300" name="duration"/>
+      <item valueDataType="string" value="backInOut" name="ease"/>
+      <item valueDataType="any" value="0" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="1" name="scaleX"/>
+      <item valueDataType="any" value="1" name="scaleY"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnTouchBeginEvent" callName="onTouchBegin" isTrigger="true" target="Touch"/>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareXPosEvent" callName="compareX" isTrigger="false" target="hero">
+        <item valueDataType="any" value="lessThan" name="operationType"/>
+        <item valueDataType="any" value="Touch.touchSceneX" name="x"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" target="System">
+        <item valueDataType="string" value="toward" name="10" variable="true"/>
+        <item valueDataType="any" value="1" name="9"/>
+      </item>
+    </item>
+    <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+      <item type="condition" callTarget="instance" paramsClass="CompareXPosEvent" callName="compareX" isTrigger="false" target="hero">
+        <item valueDataType="any" value="greaterThan" name="operationType"/>
+        <item valueDataType="any" value="Touch.touchSceneX" name="x"/>
+      </item>
+      <item type="action" callTarget="instance" callName="setValue" target="System">
+        <item valueDataType="string" value="toward" name="10" variable="true"/>
+        <item valueDataType="any" value="2" name="9"/>
+      </item>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+      <item valueDataType="string" value="toward" name="variable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="1" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="simulateControl" target="hero" behaviorName="横轴跑酷">
+      <item valueDataType="any" value="1" name="ctrl"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareVariableEvent" callName="compareVariable" isTrigger="false" target="System">
+      <item valueDataType="string" value="toward" name="variable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="2" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="simulateControl" target="hero" behaviorName="横轴跑酷">
+      <item valueDataType="any" value="0" name="ctrl"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="15" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="singStar" name="23" isFamily="false"/>
+      <item valueDataType="any" value="1" name="22"/>
+      <item valueDataType="any" value="40%2Brandom()*650" name="21"/>
+      <item valueDataType="any" value="0" name="20"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="hero">
+      <item valueDataType="string" value="singStar" name="object" isFamily="false"/>
+    </item>
+    <item type="action" callTarget="instance" callName="play" target="XingMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="singStar"/>
+    <item type="action" callTarget="instance" callName="addTo" target="System">
+      <item valueDataType="string" value="score" name="14" variable="true"/>
+      <item valueDataType="any" value="5" name="13"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setText" target="ScoreKill">
+      <item valueDataType="any" value="System.score" name="1"/>
+    </item>
+    <item type="action" callTarget="instance" callName="execTween" target="greatPIC">
+      <item valueDataType="any" value="greatPIC" name="key"/>
+      <item valueDataType="any" value="500.46" name="x"/>
+      <item valueDataType="any" value="337.13" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="1000" name="duration"/>
+      <item valueDataType="string" value="bounceInOut" name="ease"/>
+      <item valueDataType="any" value="0" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="1" name="scaleX"/>
+      <item valueDataType="any" value="1" name="scaleY"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" target="System">
+      <item valueDataType="string" value="timer" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="9"/>
+    </item>
+    <item type="action" callTarget="instance" callName="play" target="good">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="20" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="singStar"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="Xing" name="23" isFamily="false"/>
+      <item valueDataType="any" value="1" name="22"/>
+      <item valueDataType="any" value="20%2BMath.random()*680" name="21"/>
+      <item valueDataType="any" value="320%2BMath.random()*180" name="20"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setScale" target="Xing">
+      <item valueDataType="any" value="System.Scale" name="16"/>
+    </item>
+  </item>
+</eventSheets>

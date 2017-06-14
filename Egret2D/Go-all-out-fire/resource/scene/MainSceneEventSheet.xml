@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="MainScene" previous="" next="" version="2.2">
+  <item type="instance" UID="3447"/>
+  <item type="instance" UID="3444"/>
+  <item type="instance" UID="3438"/>
+  <item type="instance" UID="3432">
+    <item initValue="5" variableType="number" variableName="hp" type="variable"/>
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+      <item valueDataType="number" value="100" name="speed"/>
+      <item valueDataType="number" value="0" name="acceleration"/>
+      <item valueDataType="number" value="0" name="gravity"/>
+      <item valueDataType="number" value="90" name="angle"/>
+      <item valueDataType="number" value="0" name="bounceOffSolids"/>
+      <item valueDataType="number" value="1" name="solidChangedAngle"/>
+    </item>
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁">
+      <item valueDataType="number" value="1" name="type"/>
+    </item>
+  </item>
+  <item type="instance" UID="3429">
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+      <item valueDataType="number" value="400" name="speed"/>
+      <item valueDataType="number" value="0" name="acceleration"/>
+      <item valueDataType="number" value="0" name="gravity"/>
+      <item valueDataType="number" value="0" name="angle"/>
+      <item valueDataType="number" value="0" name="bounceOffSolids"/>
+      <item valueDataType="number" value="1" name="solidChangedAngle"/>
+    </item>
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁">
+      <item valueDataType="number" value="1" name="type"/>
+    </item>
+  </item>
+  <item type="instance" UID="3426">
+    <item initValue="0" variableType="number" variableName="c" type="variable"/>
+  </item>
+  <item type="instance" UID="3450"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="number" value="0.1" name="interval"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="spawn" target="炮">
+      <item valueDataType="string" value="AISprite3428" name="10" isFamily="false"/>
+      <item valueDataType="number" value="0" name="11"/>
+      <item valueDataType="number" value="80" name="12"/>
+      <item valueDataType="number" value="0" name="13"/>
+      <item valueDataType="number" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsTouchDownEvent" callName="isTouchDown" isTrigger="false" target="Touch"/>
+    <item type="action" persistent="false" callTarget="instance" callName="rotateTowardPosition" target="炮">
+      <item valueDataType="number" value="Touch.touchX" name="1"/>
+      <item valueDataType="number" value="Touch.touchY" name="2"/>
+      <item valueDataType="number" value="5" name="3"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="number" value="1" name="interval"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="怪" name="23" isFamily="false"/>
+      <item valueDataType="number" value="0" name="22"/>
+      <item valueDataType="number" value="30%2Bls.random()*380" name="21"/>
+      <item valueDataType="number" value="0" name="20"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="怪">
+      <item valueDataType="string" value="AISprite3428" name="object" isFamily="false"/>
+    </item>
+    <item type="action" persistent="true" callTarget="instance" callName="execTween" target="怪">
+      <item valueDataType="string" value="initt" name="key"/>
+      <item valueDataType="number" value="%E6%80%AA.x" name="x"/>
+      <item valueDataType="number" value="%E6%80%AA.y-5" name="y"/>
+      <item valueDataType="number" value="" name="anchorX"/>
+      <item valueDataType="number" value="" name="anchorY"/>
+      <item valueDataType="number" value="" name="width"/>
+      <item valueDataType="number" value="" name="height"/>
+      <item valueDataType="number" value="" name="rotation"/>
+      <item valueDataType="number" value="" name="alpha"/>
+      <item valueDataType="number" value="1000" name="duration"/>
+      <item valueDataType="string" value="backOut" name="ease"/>
+      <item valueDataType="number" value="0" name="waitTime"/>
+      <item valueDataType="number" value="0" name="loop"/>
+      <item valueDataType="number" value="1" name="scaleX"/>
+      <item valueDataType="number" value="1" name="scaleY"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="subtractFrom" target="怪">
+      <item valueDataType="string" value="hp" name="10" variable="true"/>
+      <item valueDataType="number" value="1" name="11"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="destory" target="AISprite3428"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="怪">
+      <item valueDataType="string" value="hp" name="instanceVariable" variable="true"/>
+      <item valueDataType="string" value="%22lessOrEqual%22" name="operationType"/>
+      <item valueDataType="any" value="0" name="value"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="spawn" target="怪">
+      <item valueDataType="string" value="得分" name="10" isFamily="false"/>
+      <item valueDataType="number" value="0" name="11"/>
+      <item valueDataType="number" value="0" name="12"/>
+      <item valueDataType="number" value="0" name="13"/>
+      <item valueDataType="number" value="0" name="14"/>
+    </item>
+    <item type="action" persistent="true" callTarget="instance" callName="execTween" target="得分">
+      <item valueDataType="string" value="t1" name="key"/>
+      <item valueDataType="number" value="%E6%80%AA.x" name="x"/>
+      <item valueDataType="number" value="%E6%80%AA.y-100" name="y"/>
+      <item valueDataType="number" value="" name="anchorX"/>
+      <item valueDataType="number" value="" name="anchorY"/>
+      <item valueDataType="number" value="" name="width"/>
+      <item valueDataType="number" value="" name="height"/>
+      <item valueDataType="number" value="" name="rotation"/>
+      <item valueDataType="number" value="" name="alpha"/>
+      <item valueDataType="number" value="1000" name="duration"/>
+      <item valueDataType="string" value="backOut" name="ease"/>
+      <item valueDataType="number" value="0" name="waitTime"/>
+      <item valueDataType="number" value="0" name="loop"/>
+      <item valueDataType="number" value="1" name="scaleX"/>
+      <item valueDataType="number" value="1" name="scaleY"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="destory" target="怪"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnTweenCompleteEvent" callName="onTweenComplete" isTrigger="true" target="得分">
+      <item valueDataType="string" value="t1" name="key"/>
+    </item>
+    <item type="action" persistent="true" callTarget="instance" callName="execTween" target="得分">
+      <item valueDataType="string" value="t2" name="key"/>
+      <item valueDataType="number" value="coins.x" name="x"/>
+      <item valueDataType="number" value="coins.y" name="y"/>
+      <item valueDataType="number" value="" name="anchorX"/>
+      <item valueDataType="number" value="" name="anchorY"/>
+      <item valueDataType="number" value="" name="width"/>
+      <item valueDataType="number" value="" name="height"/>
+      <item valueDataType="number" value="" name="rotation"/>
+      <item valueDataType="number" value="" name="alpha"/>
+      <item valueDataType="number" value="1000" name="duration"/>
+      <item valueDataType="string" value="bounceOut" name="ease"/>
+      <item valueDataType="number" value="0" name="waitTime"/>
+      <item valueDataType="number" value="0" name="loop"/>
+      <item valueDataType="number" value="1" name="scaleX"/>
+      <item valueDataType="number" value="1" name="scaleY"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnTweenCompleteEvent" callName="onTweenComplete" isTrigger="true" target="得分">
+      <item valueDataType="string" value="t2" name="key"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="destory" target="得分"/>
+    <item type="action" persistent="false" callTarget="instance" callName="addTo" target="炮">
+      <item valueDataType="string" value="c" name="10" variable="true"/>
+      <item valueDataType="number" value="50" name="11"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryTickEvent" callName="everyTick" isTrigger="false" target="System"/>
+    <item type="action" persistent="false" callTarget="instance" callName="setText" target="coins">
+      <item valueDataType="string" value="%E7%82%AE.c" name="1"/>
+    </item>
+  </item>
+</eventSheets>
