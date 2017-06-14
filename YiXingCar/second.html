@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="images/1.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>二级商品索引界面</title>
+<meta name="Keywords" content="易行，易行网二级索引，多款汽车类型，车系，在线商品分类筛选" />
+<meta name="Description" content="易行网二级界面筛选，跑车，商务车，家居用车，越野车，在线查看。" />
+<link href="css/second.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script  type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class=" col-lg-12 menu">
+  <div class="container-fluid banner" >
+    <div id="yanse" class="navbar navbar-inverse navbar-fixed-top">
+      <div class=" navbar-header ">
+        <p id="p1"> <span class="time"> <span id="sp_time"></span> 
+          <script type="text/javascript">
+     					setInterval(function(){
+						var dd = new Date();
+						var y = dd.getFullYear();
+						var m = dd.getMonth() + 1;
+						var d = dd.getDate();
+						var h = dd.getHours();
+						var mi = dd.getMinutes();
+						var s = dd.getSeconds();
+						var str = y + "年" + m + "月" + d + "日&nbsp;&nbsp;" + h + ":" + mi + ":" + s + "&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
+						document.getElementById("sp_time").innerHTML = str;},1000);
+				</script> 
+          </span> </p>
+      </div>
+      <div >
+        <ul class="nav navbar-nav pull-right sheng_1 " id="t1" style="width:1050px; float:left; margin-left: 500px" >
+          <li></li>
+          <li class="sheng">
+            <select id="province">
+              <option selected="selected">省份</option>
+              <option>北京</option>
+              <option>上海</option>
+              <option>江苏</option>
+            </select>
+            <select class="city">
+              <option selected="selected">城市</option>
+            </select>
+            <select class="city">
+              <option>东城</option>
+              <option>西城</option>
+              <option>崇文</option>
+              <option>宣武</option>
+              <option>朝阳</option>
+            </select>
+            <select class="city">
+              <option>黄浦</option>
+              <option>卢湾</option>
+              <option>徐汇</option>
+              <option>长宁</option>
+              <option>静安</option>
+            </select>
+            <select class="city">
+              <option>南京</option>
+              <option>镇江</option>
+              <option>苏州</option>
+              <option>南通</option>
+              <option>扬州</option>
+            </select>
+          </li>
+          <li><a href="login.html">登录</a></li>
+          <li><a href="register.html">注册</a></li>
+          <li><a href="self.html">购物车</a></li>
+          <li><a href="self.html">个人中心</a></li>
+          <li><a href="active.html">活动专区</a></li>
+          <li><a href="#">关注易行</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--导航菜单结束--> 
+<!--表单菜单-->
+<div class="logo" style=" margin-bottom:30px;" >
+  <div class="logo_content">
+    <div class="logo_left"> <a href="index.html"><img src="images/logo.png"  style="float:left; margin-top:28px"  class="img-responsive"    /></a> </div>
+    <div style="width:700px; height:100px; background:#9F9 ; float:left ;  margin:30px 0px 0px  100px">
+      <section class="webdesigntuts-workshop">
+        <form action="" method="">
+          <input type="search"  class="sear"  value="请输入查找内容" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入查找内容';}" autofocus="autofocus" >
+          <button>Search</button>
+        </form>
+        <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"> </div>
+      </section>
+    </div>
+  </div>
+</div>
+<!--表单菜单结束--> 
+<!--索引栏位开始-->
+<div class="container">
+  <div class="container sx_1">
+    <h4 class="pp_1">品牌</h4>
+    <ul class="pp_2">
+      <li><a href="#">大众</a></li>
+      <li><a href="#">宝马</a></li>
+      <li><a href="#">奔驰</a></li>
+      <li><a href="#">别克</a></li>
+      <li><a href="#">丰田</a></li>
+      <li><a href="#">BYD</a></li>
+      <li><a href="#">吉利</a></li>
+      <li><a href="#">大众</a></li>
+      <li><a href="#">更多>></a></li>
+    </ul>
+  </div>
+  <div class="container sx_1">
+    <h4 class="pp_1">价格</h4>
+    <ul class="pp_2">
+      <li><a href="#">3万以下</a></li>
+      <li><a href="#">3-5万</a></li>
+      <li><a href="#">5-10万</a></li>
+      <li><a href="#">10-15万</a></li>
+      <li><a href="#">15-20万</a></li>
+      <li><a href="#">20-30万</a></li>
+      <li><a href="#">30-60万</a></li>
+      <li><a href="#">60万以上</a></li>
+    </ul>
+  </div>
+  <div class="container sx_1">
+    <h4 class="pp_1">品牌</h4>
+    <ul class="pp_2">
+      <li><a href="#">SUV</a></li>
+      <li><a href="#">商务车</a></li>
+      <li><a href="#">跑车</a></li>
+      <li><a href="#">急售</a></li>
+      <li><a href="#">准新车</a></li>
+      <li><a href="#">更多>></a></li>
+    </ul>
+  </div>
+  <!--索引栏位结束--> 
+  
+  <!--汽车组图开始-->
+  <div class="col-xs-12">
+    <div class="col-xs-4"><a href="#"><img src="images/2.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+    <div class="col-xs-4"><a href="#"><img src="images/3.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+    <div class="col-xs-4"><a href="#"><img src="images/4.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="col-xs-4"><a href="#"><img src="images/2.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+    <div class="col-xs-4"><a href="#"><img src="images/3.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+    <div class="col-xs-4"><a href="#"><img src="images/4.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="col-xs-4"><a href="#"><img src="images/2.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+    <div class="col-xs-4"><a href="#"><img src="images/3.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+    <div class="col-xs-4"><a href="#"><img src="images/4.jpg" class="img-responsive img-thumbnail"></a>
+      <div class="caption">
+        <h3 class="h3_">商品名称</h3>
+        <p class="p_">说明文字</p>
+        <p class="btn_a"> <a href="#" class="btn btn-warning">加入购物车</a> <a href="#" class="btn btn-success">立刻购买</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--分页效果-->
+
+<center>
+  <button class="btn_1">分页效果</button>
+</center>
+<!--汽车组图结束--> 
+
+<!--论坛部分-->
+<hr/>
+<div class="container" >
+  <div class="col-md-12" style="margin-bottom:20px;">
+    <div class="col-md-8"> <span class="driver">车主故事&nbsp;</span> <a href="#" class="butter">&nbsp;更多>></a> </div>
+    <div class="col-md-4"> <span class="driver">车友论坛&nbsp;</span> <a href="#" class="butter">&nbsp;更多>></a> </div>
+  </div>
+  <div class="col-md-12">
+    <div class="col-md-8">
+      <div class="col-md-4"> <a href="#"><img src="images/mt3.png" class=" img-responsive"></a> </div>
+      <div class="col-md-4 luntan_text">
+        <p>
+        <a href="#">
+        <h4>美女赛车手，与她的爱车之间的故事</h4>
+        </a>
+        </p>
+        <p class="h5">美女赛车手，与她的爱车之间的故事美女赛车手，与她的爱车之间的故事美女赛车手，与她的爱</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <ol class="luntan_1">
+        <li><a href="#">论坛福利：必拙 发帖每天送3000元奖品</a></li>
+        <li><a href="#">不求人功略：新车全知道易行3000问</a></li>
+        <li><a href="#">买车：提车、上牌照、加强险</a></li>
+        <li><a href="#">新人攻略：从新车小白到老司机 秘籍</a></li>
+        <li><a href="#">新人攻略：从新车小白到老司机 秘籍</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!--底部信息--> 
+<br />
+<hr/>
+<h2 class="text-center sunning" style="color:#FFF; margin-top:60px;">易行，让出行更简单</h2>
+<div style=" width:1000px; margin:0px auto" >
+  <div class="bottom" >
+    <ul>
+      <li class="title" style="font-size:18px">新手指南</li>
+      <br />
+      <br />
+      <a href="javascript:void(0)" >
+      <li>安全中心</li>
+      </a><br />
+      <a href="javascript:void(0)">
+      <li>购车规则</li>
+      </a><br />
+      <a href="javascript:void(0)">
+      <li>商户服务平台</li>
+      </a>
+    </ul>
+  </div>
+  <div class="bottom" >
+    <ul>
+      <li class="title" style="font-size:18px">诚信保证计划</li>
+      <br />
+      <br />
+      <a href="javascript:void(0)">
+      <li>七天包退</li>
+      </a><br />
+      <a href="javascript:void(0)">
+      <li>发票服务</li>
+      </a><br />
+      <a href="javascript:void(0)">
+      <li>缺货退款</li>
+      </a>
+    </ul>
+  </div>
+  <div class="bottom" >
+    <ul>
+      <li class="title" style="font-size:18px">支付方式</li>
+      <br />
+      <br />
+      <a href="javascript:void(0)">
+      <li>网银支付</li>
+      </a><br />
+      <a href="javascript:void(0)">
+      <li>银行卡支付</li>
+      </a><br />
+      <a href="javascript:void(0)">
+      <li>信用卡支付</li>
+      </a>
+    </ul>
+  </div>
+  <div class="bottom" >
+    <ul>
+      <li class="title" style="font-size:18px">售后服务</li>
+      <br />
+      <br />
+      <a href="javascript:void(0)">
+      <li>联系客服</li>
+      </a><br />
+      <a href="javascript:void(0)">
+      <li>消费者维权中心</li>
+      </a>
+    </ul>
+  </div>
+  <div class="con"  > <a href=""  target="_blank">购车资讯</a> <a href=""  target="_blank">诚证英才</a> <a href=""  target="_blank">网站合作</a> <a href=""  target="_blank">联系我们</a> <a href=""  target="_blank">法律声明</a>
+    <p>ICP备案证书号：15028076&nbsp;&nbsp;&nbsp;&nbsp;举报电话：010-62502662 </p>
+  </div>
+</div>
+
+<!--底部信息结束--> 
+<script type="text/javascript">
+$(document).ready(function(){
+var currentShowCity=0;
+
+	$("#province").change(function(){
+       $("#province option").each(function(i,o){
+		   if($(this).prop("selected"))
+            {
+			   
+               $(".city").hide();
+               $(".city").eq(i).show();
+               currentShowCity=i;
+           }
+       });
+   });
+   $("#province").change();
+   
+	});
+</script>
+</body>
+</html>

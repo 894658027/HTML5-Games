@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<title>正在跳转</title>
+
+</head>
+<style>
+body{ background:url(images/404.png) top center; background-repeat:no-repeat; background-size:cover;}
+@media screen and (max-width:1030px){
+	body{ background:url(images/404.png) top center; background-repeat:no-repeat; width:30%;height:30%;}
+	#four{position:absolute;left:5%!important;top: 80%;}
+	}
+#four{
+	position:absolute;
+	position:fixed;
+	left: 30%;
+	top: 20%;
+}
+</style>
+<body>
+<div id="four">
+<form name=loading> 
+
+　<p align=center> <font color="#000" size="2">正在跳转，请稍等</font><font color="#000" size="2" face="Arial">...</font>
+
+　　<input type=text name=chart size=46 style="font-family:Arial; font-weight:bolder; color:#000; background-color:#fef4d9; padding:0px; border-style:none;"> 
+
+　　
+
+　　<input type=text name=percent size=47 style="color:#000; text-align:center; border-width:medium;background:#fef4d9; border-style:none;"> 
+
+　　<script>　 
+
+var bar=0　 
+
+var line="||"　 
+
+var amount="||"　 
+
+count()　 
+
+function count(){　 
+
+bar=bar+2　 
+
+amount =amount + line　 
+
+document.loading.chart.value=amount　 
+
+document.loading.percent.value=bar+"%"　 
+
+if (bar<99)　 
+
+{setTimeout("count()",100);}　 
+
+else　 
+
+{window.location = "index.html";}　 
+
+}</script> 
+
+　</p> 
+
+</form> 
+
+<p align="center"> 如果您的浏览器不支持跳转,<a style="text-decoration: none" href="index.html"><font color="#FF0000">请点这里</font></a>.</p>
+</div>
+</body>
+
+</html>

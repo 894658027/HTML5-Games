@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="images/1.jpg" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录界面</title>
+<meta name="Keywords" content="易行，易行网，易行网登录页面，易行网在线登录" />
+<meta name="Description" content="易行，易行网登录界面，用户中心登录系统，。" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-2.1.1.js"></script>
+</head>
+
+<body>
+<!--导航层开始--->
+<div id="menu">
+  <div id="logo"> <a href="index.html"><img src="images/logo.png"  id="img2" /></a><img src="images/shu.jpg" />
+    <div class="logo_1"><span class="span1"><a href="register.html">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</a></span></div>
+    <span style="color:#FFF; float:right; margin-top:100px ; font-size:20px">还没有账号？</span>
+    <div class="logo_2"><span class="span4"><a href="login.html">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a></span></div>
+  </div>
+</div>
+<!--导航层结束---> 
+
+<!--主体层开始--->
+<div id="main">
+  <div id="middle">
+    <div id="content"> <a href="index.html"><img src="images/0000.png" id="img1" /></a>
+      <div id="small">
+        <div id="small_content"> 
+        <span class="span2"><a href="login.html">登&nbsp;&nbsp;&nbsp;&nbsp;录</a></span> 
+        <span  class="span3"><a href="register.html">注&nbsp;&nbsp;&nbsp;&nbsp;册</a></span> 
+        </div>
+        <form>
+          <img src="images/a1.jpg" id="pic5" />
+          <input type="text" name="number" id="input1" value="请输入账号" >
+            <div class="w1">&nbsp;&nbsp;号码有误</div>
+          <img src="images/b1.jpg"  id="pic6" />
+          <input type="password" name="mima"  id="input2" >
+          <div class="w2">密码错误</div>
+        </form>
+        <p id="wen"><a href="">忘记密码</a></p>
+        <form>
+          <input type="submit" name="submit" id="input3" value="登录" >
+          <input type="reset" name="reset"  id="input4"  value="重置" >
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--主体层结束---> 
+
+<!--底部层开始--->
+<div id="bottom"></div>
+<!--底部层结束---> 
+<script>
+$(function(){
+   $('#input1').focus(function(){
+	    var val=$('#input1').val();
+		if(val=='请输入账号'){
+			$('#input1').val('')
+			}  
+	   
+	   });
+     
+    $('#input1').blur(function(){
+	    var val=$('#input1').val();
+		if(val==''){
+			$('#input1').val('请输入账号')
+			}  
+	   
+	   });
+  
+  });
+</script>
+
+
+
+<script>
+$(function(){
+   $('#input1').focus(function(){
+	    var val=$('#input1').val();
+		if(val=='请输入手机号'){
+			$('#input1').val('')
+			}  
+	   
+	   });
+     
+    $('#input1').blur(function(){
+	    var val=$('#input1').val();
+		if(val==''){
+			$('#input1').val('请输入手机号')
+			}  
+	   
+	   });
+   $('#input9').focus(function(){
+	    var val=$('#input9').val();
+		if(val=='请输入验证码'){
+			$('#input9').val('')
+			}  
+	   
+	   });
+     
+    $('#input9').blur(function(){
+	    var val=$('#input9').val();
+		if(val==''){
+			$('#input9').val('请输入验证码')
+			}  
+	   
+	   });
+	  $('#input2').focus(function(){
+		    $('.w3').show();
+		  });
+		   $('#input2').blur(function(){
+		    $('.w3').hide();
+			$('.w3').text('密码有误');
+		  });
+   
+  });
+</script> 
+</body>
+</html>

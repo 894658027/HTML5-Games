@@ -1,0 +1,921 @@
+
+
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD --><head>
+
+	<meta charset="utf-8" />
+
+	<title>GMS管理系统</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta content="" name="description" />
+
+	<meta content="" name="author" />
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+	<link href="css/metro.css" rel="stylesheet" />
+
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+
+	<link href="css/font-awesome.css" rel="stylesheet" />
+
+	<link href="css/style.css" rel="stylesheet" />
+
+	<link href="css/style_responsive.css" rel="stylesheet" />
+
+	<link href="css/style_default.css" rel="stylesheet" id="style_color" />
+
+	<link href="css/jquery.fancybox.css" rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="css/uniform.default.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/chosen.css" />
+
+	<link rel="stylesheet" href="css/DT_bootstrap.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/uniform.default.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.1.custom.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/admin.main.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.thickbox.css" />
+
+    
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+
+<style>
+center{ font-size:medium; display:block; font-weight:bold; line-height:0px; cursor:pointer;}
+img{ cursor:pointer;}
+</style>
+<body class="fixed-top">
+
+	<!-- BEGIN HEADER -->
+
+	<div class="header navbar navbar-fixed-top">
+
+		<!-- BEGIN TOP NAVIGATION BAR -->
+
+		<div class="navbar-inner">
+
+	<div class="container-fluid">
+
+		<!-- BEGIN LOGO -->
+
+		<a class="brand" href="index.html">
+
+		<img src="images/logo.png">
+
+		</a>
+
+		<!-- END LOGO -->
+
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+		<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+		<img src="images/menu-toggler.png" alt="" />
+
+		</a>          
+
+		<!-- END RESPONSIVE MENU TOGGLER -->				
+
+		<!-- BEGIN TOP NAVIGATION MENU -->					
+
+		<ul class="nav pull-right">
+
+			<!-- BEGIN NOTIFICATION DROPDOWN -->	
+
+			<li class="dropdown" id="header_notification_bar">
+
+<!--				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+				<i class="icon-warning-sign"></i>
+
+				<span class="badge">1</span>
+
+				</a>-->
+
+				
+
+			</li>
+
+			<!-- END NOTIFICATION DROPDOWN -->
+
+			<!-- BEGIN INBOX DROPDOWN -->
+
+			<li class="dropdown" id="header_inbox_bar">
+
+<!--				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+				<i class="icon-envelope-alt"></i>
+
+				<span class="badge"></span>
+
+				</a>-->
+
+
+			</li>
+
+			<!-- END INBOX DROPDOWN -->
+
+			<!-- BEGIN TODO DROPDOWN -->
+
+			<li class="dropdown" id="header_task_bar">
+<!--
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+				<i class="icon-tasks"></i>
+
+				<span class="badge">5</span>
+
+				</a>-->
+
+				<ul class="dropdown-menu extended tasks">
+
+					<li>
+
+						<p>You have 12 pending tasks</p>
+
+					</li>
+
+					<li>
+
+						<a href="#">
+
+						<span class="task">
+
+						<span class="desc">New release v1.2</span>
+
+						<span class="percent">30%</span>
+
+						</span>
+
+						<span class="progress progress-success ">
+
+						<span style="width: 30%;" class="bar"></span>
+
+						</span>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="#">
+
+						<span class="task">
+
+						<span class="desc">Application deployment</span>
+
+						<span class="percent">65%</span>
+
+						</span>
+
+						<span class="progress progress-danger progress-striped active">
+
+						<span style="width: 65%;" class="bar"></span>
+
+						</span>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="#">
+
+						<span class="task">
+
+						<span class="desc">Mobile app release</span>
+
+						<span class="percent">98%</span>
+
+						</span>
+
+						<span class="progress progress-success">
+
+						<span style="width: 98%;" class="bar"></span>
+
+						</span>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="#">
+
+						<span class="task">
+
+						<span class="desc">Database migration</span>
+
+						<span class="percent">10%</span>
+
+						</span>
+
+						<span class="progress progress-warning progress-striped">
+
+						<span style="width: 10%;" class="bar"></span>
+
+						</span>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="#">
+
+						<span class="task">
+
+						<span class="desc">Web server upgrade</span>
+
+						<span class="percent">58%</span>
+
+						</span>
+
+						<span class="progress progress-info">
+
+						<span style="width: 58%;" class="bar"></span>
+
+						</span>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="#">
+
+						<span class="task">
+
+						<span class="desc">Mobile development</span>
+
+						<span class="percent">85%</span>
+
+						</span>
+
+						<span class="progress progress-success">
+
+						<span style="width: 85%;" class="bar"></span>
+
+						</span>
+
+						</a>
+
+					</li>
+
+					<li class="external">
+
+						<a href="#">See all tasks <i class="m-icon-swapright"></i></a>
+
+					</li>
+
+				</ul>
+
+			</li>
+
+			<!-- END TODO DROPDOWN -->
+
+			<!-- BEGIN USER LOGIN DROPDOWN -->
+
+			<li class="dropdown user">
+
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#FFF;">
+
+<!--				<img alt="" src="images/avatar.gif" style="height:29px;" />
+
+				<span class="username">admin</span>
+
+				<i class="icon-angle-down"></i>-->
+session
+				</a>
+
+			<!--	<ul class="dropdown-menu pull-right">
+
+					<li><a href="extra_profile.html"><i class="icon-user"></i> 我的信息</a></li>
+
+					<li><a href="calendar.html"><i class="icon-calendar"></i> 我的日历</a></li>
+
+					<li><a href="#"><i class="icon-tasks"></i> 我的任务</a></li>
+
+					<li class="divider"></li>
+
+                    <li><a href="/Account/Auth/ModifyPwd?TB_iframe=true&KeepThis=true&height=380&width=500" class="thickbox" title="修改密码"><i class="icon-key"></i> 修改密码</a></li>
+
+                    <li><a href="/Account/Auth/Logout"><i class="icon-signout"></i> 退出系统</a></li>
+
+				</ul>
+-->
+			</li>
+
+			<!-- END USER LOGIN DROPDOWN -->
+
+		</ul>
+
+		<!-- END TOP NAVIGATION MENU -->	
+
+	</div>
+
+</div>
+
+		<!-- END TOP NAVIGATION BAR -->
+
+	</div>
+
+	<!-- END HEADER -->
+
+	<!-- BEGIN CONTAINER -->
+
+	<div class="page-container row-fluid">
+
+		<!-- BEGIN SIDEBAR -->
+
+		<div class="page-sidebar nav-collapse collapse">
+
+	<!-- BEGIN SIDEBAR MENU -->        	
+
+	<ul>
+
+		<li>
+
+			<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+			<div class="sidebar-toggler hidden-phone"><h3 style="margin-left:-160px; line-height:23px;  color:#FFF; ">易行CMS</h3></div>
+
+			<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+		</li>
+
+		<li>
+
+			<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+
+			<form class="sidebar-search dn">
+
+				<div class="input-box">
+
+					<a href="javascript:;" class="remove"></a>
+
+					<input type="text" placeholder="Search..." />				
+
+					<input type="button" class="submit" value=" " />
+
+				</div>
+
+			</form>
+
+			<!-- END RESPONSIVE QUICK SEARCH FORM -->
+
+		</li>
+
+            <li class="">
+
+			    <a href="index.html" title="欢迎登录GMS系统！">
+
+			    <i class="icon-home"></i> 
+
+			    <span class="title">管理首页</span>
+
+			    </a>
+
+		    </li>
+
+            <li class="has-sub">
+
+			    <a href="javascript:;" title="">
+
+			    <i class="icon-cog"></i> 
+
+			    <span class="title">商品管理系统</span>
+
+                    <span class='arrow'></span>
+
+			    </a>
+
+                    <ul class="sub">
+
+
+
+				        <li ><a href="one_1.html" title="添加修改删除角色">商品发布</a></li>
+                        <li ><a href="one_2.html" title="添加修改删除用户">商品操作</a></li>
+                        <li ><a href="one_3.html" title="添加修改删除用户">商品查看</a></li>
+
+                    </ul>
+
+		    </li>
+
+	    </li>
+
+            <li class="has-sub">
+
+			    <a href="javascript:;" title="">
+
+			    <i class="icon-cog"></i> 
+
+			    <span class="title">用户管理系统</span>
+
+                    <span class='arrow'></span>
+
+			    </a>
+
+                    <ul class="sub">
+
+
+
+				        <li ><a href="two_1.html" title="添加修改删除角色">查看用户</a></li>
+                        <li ><a href="two_2.html" title="添加修改删除用户">管理用户</a></li>
+
+                    </ul>
+
+		    </li>
+
+
+            <li class="has-sub">
+
+			    <a href="javascript:;" title="">
+
+			    <i class="icon-leaf"></i> 
+
+			    <span class="title">订单管理系统</span>
+
+                    <span class='arrow'></span>
+
+			    </a>
+
+                    <ul class="sub">
+                         <li ><a href="three_1.html" title="添加修改删除分类频道">查看订单</a></li>
+				        <li ><a href="three_2.html" title="添加修改删除文章频道">管理订单</a></li>
+                    </ul>
+
+		    </li>
+
+           <!-- <li class="has-sub">
+
+			    <a href="javascript:;" title="">
+
+			    <i class="icon-sitemap"></i> 
+
+			    <span class="title">OA管理</span>
+
+                    <span class='arrow'></span>
+
+			    </a>
+
+                    <ul class="sub">
+
+				        <li ><a href="/OA/Staff/Index" title="添加修改删除员工信息">员工管理</a></li>
+
+				        <li ><a href="/OA/Branch/Index" title="添加修改删除部门信息">部门管理</a></li>
+
+				        <li ><a href="/OA/Org/Index" title="管理部门从属关系及员工所属部门">组织结构管理</a></li>
+
+                    </ul>
+
+		    </li>-->
+
+            <li class="has-sub">
+
+			    <a href="javascript:;" title="">
+
+			    <i class="icon-phone-sign"></i> 
+
+			    <span class="title">商城管理系统</span>
+
+                    <span class='arrow'></span>
+
+			    </a>
+
+                    <ul class="sub">
+
+
+				        <li ><a href="four_1.html" title="添加修改删除项目">站长设置</a></li>
+                         <li ><a href="four_2.html" title="添加修改删除出售信息">添加管理员</a></li>
+                         <li ><a href="four_3.html" title="添加修改删除收藏信息">查看管理员</a></li>
+
+                    </ul>
+
+		    </li>
+
+
+
+        
+
+	</ul>
+
+	<!-- END SIDEBAR MENU -->
+
+</div>
+
+		<!-- END SIDEBAR -->
+
+		<!-- BEGIN PAGE -->
+
+		<div class="page-content">
+
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<div id="portlet-config" class="modal hide">
+
+				<div class="modal-header">
+
+					<button data-dismiss="modal" class="close" type="button"></button>
+
+					<h3>portlet Settings</h3>
+
+				</div>
+
+				<div class="modal-body">
+
+					<p>Here will be a configuration form</p>
+
+				</div>
+
+			</div>
+
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<!-- BEGIN PAGE CONTAINER-->			
+
+			<div class="container-fluid">
+
+				<!-- BEGIN PAGE HEADER-->
+
+				<div class="row-fluid">
+
+					<div class="span12" id="navigation">
+
+						<!-- BEGIN STYLE CUSTOMIZER -->
+
+						<div class="color-panel hidden-phone">
+
+	<div class="color-mode-icons icon-color"></div>
+
+	<div class="color-mode-icons icon-color-close"></div>
+
+	<div class="color-mode">
+
+		<p>选择主题颜色</p>
+
+		<ul class="inline">
+
+			<li class="color-black current color-default" data-style="default"></li>
+
+			<li class="color-blue" data-style="blue"></li>
+
+			<li class="color-brown" data-style="brown"></li>
+
+			<li class="color-purple" data-style="purple"></li>
+
+			<li class="color-white color-light" data-style="light"></li>
+
+		</ul>
+
+		<label class="hidden-phone">
+
+		<input type="checkbox" class="header" checked value="" />
+
+		<span class="color-mode-label">是否固定顶部页头</span>
+
+		</label>							
+
+	</div>
+
+</div>
+
+						<!-- END BEGIN STYLE CUSTOMIZER -->  
+
+						<!-- BEGIN PAGE TITLE & BREADCRUMB-->			
+
+						<h3 class="page-title">
+
+							<span>标题</span>　<small>介绍</small>
+
+						</h3>
+
+						<ul class="breadcrumb">
+
+							<li>
+
+								<i class="icon-home"></i>
+
+								<span>首页</span> 
+
+								<i class="icon-angle-right"></i>
+
+							</li>
+
+							<li>
+
+								<span>菜单组</span>
+
+								<i class="icon-angle-right"></i>
+
+							</li>
+
+							<li><span>菜单</span></li>
+
+						</ul>
+
+						<!-- END PAGE TITLE & BREADCRUMB-->
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->				
+
+                
+
+
+
+
+
+<div class="p10 m10">
+
+	<!-- BEGIN BLOCKQUOTES PORTLET-->
+
+	<div class="portlet">
+
+		<div class="portlet-title">
+
+
+
+			<a href="index.html"><h4><i class="icon-reorder"></i>易行管理系统-></h4></a><span class="h5 cur">查看管理员</span>
+
+			<div class="tools">
+
+				<a href="javascript:;" class="collapse"></a>
+
+				<a href="#portlet-config" data-toggle="modal" class="config"></a>
+
+				<a href="javascript:;" class="reload"></a>
+
+				<a href="javascript:;" class="remove"></a>
+
+			</div>
+
+		</div>
+
+
+
+		<!--<div class="portlet-body">
+
+			<h3></h3>
+
+			<blockquote>
+
+				<p>欢迎使用 后街管理系统 ，Welcome to HouJie CMS!</p>
+
+			</blockquote>
+
+		</div>-->
+
+	</div>
+
+	<!-- END BLOCKQUOTES PORTLET-->
+<div class="tab-pane" id="hj_c">
+<table class="table table-hover table-bordered text-center">
+<th style="text-align:center;">
+选择<td style="text-align:center;">查看账户</td> <td style="text-align:center;">查看密码</td> <td style="text-align:center;">手机号码</td><td style="text-align:center;">电子邮箱</td><td style="text-align:center;">注册日期</td><td style="text-align:center;">IP地址</td><td style="text-align:center;">管理员权限</td>
+</th>
+<tr>
+<td><center><input type="checkbox" value="1"></center></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><button class="btn btn-danger">查看详情</button></td>
+</tr>
+
+
+</table>
+</div>
+
+</div>
+
+
+
+
+
+<!--<div class="portlet box red m10">
+
+	<div class="portlet-title">
+
+		<h4><i class="icon-reorder"></i>功能列表</h4>
+
+
+
+		<div class="tools">
+
+			<a href="javascript:;" class="collapse"></a>
+
+		</div>
+
+	</div>
+
+	<div class="portlet-body">
+
+		<ul>
+
+
+                <li><h4>系统管理</h4></li>
+
+                <ul class="dl-horizontal unstyled">
+
+                    <li class="m10 floatleft"><a href="/Account/User/Index" class="btn red-stripe">会员管理 　<span class="muted">会员权限管理</span></a></li>
+<li class="m10 floatleft"><a href="/Account/User/Index" class="btn red-stripe">商品管理 　<span class="muted">商品权限管理</span></a></li>
+
+
+                </ul>
+
+                <li><h4>CMS管理</h4></li>
+
+                <ul class="dl-horizontal unstyled">
+
+
+                    <li class="m10 floatleft"><a href="/Cms/Channel/Index" class="btn red-stripe">文章频道管理 　<span class="muted">添加修改删除文章</span></a></li>
+
+                </ul>
+
+                <li><h4>SEM管理</h4></li>
+
+                <ul class="dl-horizontal unstyled">
+             <li class="m10 floatleft"><a href="/Crm/VisitRecord/Index" class="btn red-stripe">出售管理 　<span class="muted">添加修改删除出售商品</span></a></li>
+
+                </ul>
+
+
+
+		</ul>
+
+	</div>
+
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- END PAGE CONTENT-->
+
+			</div>
+
+			<!-- END PAGE CONTAINER-->
+
+		</div>
+
+		<!-- END PAGE -->
+
+	</div>
+
+	<!-- END CONTAINER -->
+
+	<!-- BEGIN FOOTER -->
+
+	<div class="footer">
+			<div class="container-fluid bottom">
+<h1 class="text-center sunning" style="color:#FFF; margin-top:10px;">易行，让出行更简单</h1>
+<p class="text-center h4" id="p_">
+<a href="#">购车指南&nbsp;</a>
+<a href="#">&nbsp;站内咨询&nbsp;</a>
+<a href="#">&nbsp;售后保障&nbsp;</a>
+<a href="#">&nbsp;关于我们</a></p>
+<p class="text-center h5" id="p1_">
+公司名称：北京航大智翔科技有限公司 公司地址：北京市-昌平区-回龙观-金燕龙大厦1909 联系电话：010-62502662 </p>
+<p class="text-center h5" id="p2_">
+航大智翔出品 </p>
+</div>
+			</div>
+
+	<!-- END FOOTER -->
+
+	<!-- BEGIN JAVASCRIPTS -->
+
+    <script type="text/javascript">
+
+        var staticFileRoot = "http://guozili.28.web1268.net";
+
+	</script>
+
+	<!-- Load javascripts at bottom, this will reduce page load time -->
+
+	<script src="js/jquery-1.8.3.min.js"></script>	
+
+	<script src="js/breakpoints.js"></script>	
+
+	<script src="js/bootstrap.min.js"></script>	
+
+	<script src="js/jquery.blockui.js"></script>
+
+	<script src="js/jquery.cookie.js"></script>
+
+	<!-- ie8 fixes -->
+
+	<!--[if lt IE 9]>
+
+	<script src="js/excanvas.js"></script>
+
+	<script src="js/respond.js"></script>
+
+	<![endif]-->	
+
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+
+	<script type="text/javascript" src="js/DT_bootstrap.js"></script>
+
+    	
+
+	<script type="text/javascript" src="js/app.js"></script>	
+
+    <script type="text/javascript" src="js/jquery.thickbox.js"></script>	
+
+    <script type="text/javascript" src="js/jquery-ui-1.10.1.custom.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.numeric.js"></script>
+
+    <script type="text/javascript" src="js/jquery.ui.datapicker-zh-CN.js"></script>	
+
+    <script type="text/javascript" src="js/admin.main.js"></script>	
+
+	<script type="text/javascript">
+
+	    jQuery(document).ready(function () {
+
+	        // initiate layout and plugins
+
+	        App.init();
+
+	    });
+
+	</script>
+
+    
+
+		
+
+    <script type="text/javascript">
+
+        $("#navigation").hide();
+
+        $(".sub").show();
+
+        $(".has-sub>a").each(function () {
+
+            $(this).css("background-color", "#313131");
+
+
+
+        });
+
+   </script>
+
+
+
+</body>
+
+<!-- END BODY -->
+
+</html>
+

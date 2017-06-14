@@ -1,0 +1,139 @@
+*{margin:0px;padding:0px;}
+body{ background:url(../images/year/year_bg2.jpg); background-repeat:repeat-y; background-size:100%;height:auto;}
+#wrap{width:100%;height:1023px; background:url(../images/year/ooo.jpg) center top; background-repeat:no-repeat;}
+
+/*导航组件*/
+.menu {width:80%;height:10px;margin:0px auto;}
+.img1{float:left;margin-left:1%;margin-top:10px;}
+.img2{float:left;margin-top:10px; margin-left:2%;}
+.menu ul{width:100%;}
+.menu ul li {width:9%;height:47px;list-style:none;float:right;margin:0px 1.5% 0px;margin-top:15px; padding-top:2px;	}
+.menu ul li a {display:block;width:130px;height:47px; font-family:'微软雅黑';text-decoration:none;text-align:center;line-height:47px;font-size:16px;color:#300}
+.menu ul li a:hover{display:block;background:#82070e;width:130px;height:47px;border-radius:0px;font-family:'微软雅黑';text-decoration:none;text-align:center;line-height:47px;color:#FFF;}
+.activity{background:#6D0714;}
+.activity:hover{background:#6D0714;}
+/*响应式导航栏*/
+@media screen and (max-width: 1283px) {
+	.menu{height:0px;}
+	.img1,.img2{margin-top:0px;}
+	.menu ul li{margin-top:0px;}
+		.menu ul li a{ height:43px;}
+	.menu ul li a:hover{height:43px;}
+	 }
+@media screen and (max-width: 1367px){
+		.menu{height:0px;}
+	.img1,.img2{margin-top:0px;}
+	.menu ul li{margin-top:0px;}
+	}
+@media screen and (max-width: 1605px){
+			.menu{height:10px;}
+	.img1,.img2{margin-top:5px;}
+	.menu ul li{margin-top:5px;}
+	}
+	@media screen and (max-width: 1025px){
+				.menu{height:0px;}
+	.img1,.img2{margin-top:0px;}
+	.menu ul li{margin-top:0px;}
+	.menu ul li a{ height:40px;}
+	.menu ul li a:hover{height:40px;}
+		}
+		.pos_c{position:absolute; top:521px;right:100px; position:fixed;}
+		#pic_1{-webkit-transition: all 0.9s ease-out;  z-index:999;
+transition: transform 0.9s ease-out;
+ -moz-transition: -moz-transform 0.9s ease-out;}
+ #pic_1:hover{transform: rotateY(360deg);
+ -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);}
+/*响应式内容栏
+      .top{width:100%;height:53em;}
+	@media screen and (max-width: 1283px) {
+			.top{width:100%;height:35em;}
+			}
+	@media screen and (max-width: 1366px){
+			.top{width:100%;height:38em;}
+			}
+			@media screen and (max-width: 1605px){
+				.top{width:100%;height:44.5em;}
+				}
+				@media screen and (max-width: 1025px){
+					.top{width:100%;height:29em;}
+					}
+					@media screen and (min-width: 1922px){
+						.top{width:100%;height:59em;}
+						}*/
+/*图片响应式*/
+.img_res{width:100%; display:block; height:auto;}
+/*瀑布流层开始*/
+.pro_it{ width:290px;
+		 float:left;
+		 margin-left:10px;} 
+.ittop{ position:relative;
+		width:290px;
+		overflow:hidden;
+		margin-bottom:10px;
+		color:#fff; margin-left:50px;}
+/*@media screen and (max-width: 1605px){
+	.ittop{ margin-left:200px;}
+	}
+	@media screen and (max-width: 1025px){
+		.ittop{ margin-left:0px;margin:0px; padding:0px;}
+		#pt4{ display:none;}
+		}*/
+.h225{ height:225px}		
+.pro_t{ position:absolute;
+		bottom:-50px;
+		left:0;
+		height:50px;
+		line-height:50px;
+		padding:0 10px;
+		background:rgba(41,50,64,0.6);
+		width:270px;
+		transition:all 500ms;
+		overflow:hidden;}
+.ittop:hover .pro_t{ bottom:30px;
+ 					 transform:scale(0.95);
+					 background:rgba(255,210,31,0.8);
+					 color:#fd2433;
+					 text-shadow:0 0 2px #CCC;
+					 }	 
+#pt,#pt1,#pt2,#pt3{margin-top:-120px;}
+					 .clear{ clear:both}
+					 /*瀑布流结束*/
+	/*第三部分*/				 
+.car_bg{width:1000px; height:auto; margin:0px auto; }
+.car_bg img{ width:100%;}
+
+#car_one{width:1000px; height:1150px; background:url(../images/year/car_lu.jpg) center top;}
+
+.car_left{width:500px; height:262px; float:left;}
+.car_right{width:400px; height:262px; float:right; word-break:break-all; text-align:center; margin-top:30px;}
+/*#car_1{position:relative;}
+#car_2{position:relative;}
+
+.pos_left{position:absolute; bottom:-262px; left:0px; width:500px; height:260px; background:#333;}
+.pos_right{position:absolute; bottom:-262px; right:0px; width:400px; height:260px; background:#333;}
+
+.pos_left_one{position:absolute; bottom:-525px; left:0px; width:400px; height:260px; background:#333;}
+.pos_right_one{position:absolute; bottom:-525px; right:0px; width:500px; height:260px; background:#333;}
+
+.pos_left_two{position:absolute; bottom:-796px; left:0px; width:500px; height:260px; background:#333;}
+.pos_right_two{position:absolute; bottom:-796px; right:0px; width:400px; height:260px; background:#333;}*/
+
+#media{margin:0px auto; width:1215px; height:550px;}
+
+	@media screen and (max-width: 1025px){
+		#media{margin:0px auto; width:1007px; height:550px;}
+		#pt4{ display:none;}
+		}
+		
+.bottom{
+	background:url(../images/actdibu.png);
+	height:130px;}
+.bom{width:970px; height:auto;margin:0px auto;}
+.bom ul li{list-style:none; float:left; padding-top:30px;padding-left:30px;color:#fff;}
+.bom ul li a{color:#FFF;text-decoration:none; margin-right:30px;}
+
+.div_1{width:100%; height:auto;}
+
+.l_left{ float:left;}
+.l_right{ float:right;}

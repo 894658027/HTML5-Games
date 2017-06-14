@@ -1,0 +1,52 @@
+*{margin:0px;padding:0px;}
+body{ background:#F1F2F7;}
+/*wrap*/
+#top{width:100%;max-width:100%;height:30px; min-height:30px; max-height:40px;background:#F2F2F2;}
+.top_1{margin:0px auto;width:80%;height:30px;overflow:hidden;padding:0px;}
+.nav_li{color:#999999;}
+ul li{list-style:none; float:right;line-height:26px;}
+ul li a{color:#999999;padding:0px 5px;text-decoration:none;}
+/*LOGO层*/
+.top_one{box-shadow: 5px 5px 5px #888888;width:100%;max-width:100%;height:90px; min-height:90px; max-height:90px;background:#FFFFFF;}
+.top_2{margin:0px auto;width:70%;height:90px;overflow:hidden;padding:0px;}
+.top_3{width:80%;margin:20px auto;width:70%;height:150px;overflow:hidden;padding:0px;}
+/*content*/
+.top_two{width:100%;max-width:100%;height:400px;margin:0px auto; background:#FFF; margin-top:8px;}
+
+.top_three{width:70%;max-width:70%;height:708px;margin:0px auto; background:#FFF; background:url(../images/con_bj.png) center top; background-repeat:no-repeat;}
+
+/*.top_four{width:352px;max-width:352px;height:500px; background:#000; margin-top:10px;}*/
+.five{  width:500px;max-width:500px;height:615px; margin:0px auto;}
+
+.nbsp{ padding-top:70px;}
+.six{ width:320px;max-width:320px;height:195px;}
+
+.six_t{ border:1px dashed red; width:320px;max-width:320px;height:143px;}
+
+.seven{width:320px;max-width:320px;height:92px;margin-top:20px;}
+
+.eight{ width:148px;max-width:148px;height:23px; padding-top:13px; margin:0px auto;}
+
+.nine{width:435px;max-width:435px;height:185px;margin-top:26px;}
+
+
+/*内部样式*/
+.img_pos,.img_pos_l{ padding-top:5px; padding-left:2px;}
+.sn_1{font-size:14px; font-weight:bold; padding-left:5px;}
+.img_pos_l{ float:right; padding-right:2px; display:block;}
+
+.text_are{ width:320px;max-width:320px;height:92px;resize: none; border:1px dashed #000; background:none;}
+
+.sub_b{float:right; background:#0b5284; cursor:pointer; color:#FFF; width:51px; height:23px; border:none; margin-top:10px;}
+div[class="nine"] p{ font-size:14px; padding:0px; margin:0px;}
+.xx{ font-size:12px; float:right; border:1px solid #f1f1f1; cursor:pointer; height:20px; padding-top:3px;}
+.sn_k:hover{border:1px solid #0b5284;}
+.sn_k{border:1px solid #f1f1f1;}
+/*logo特效*/
+#IMG_1{transition: all .4s ease-in; cursor:pointer;
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;}
+#IMG_1:hover{-moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);}
+#Img_c{display:block;margin:0px auto;}

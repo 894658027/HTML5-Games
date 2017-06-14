@@ -1,0 +1,90 @@
+*{margin:0px;padding:0px;}
+body{ background:#F1F2F7;}
+/*wrap*/
+#top{width:100%;max-width:100%;height:30px; min-height:30px; max-height:40px;background:#F2F2F2;}
+.top_1{margin:0px auto;width:80%;height:30px;overflow:hidden;padding:0px;}
+.nav_li{color:#999999;}
+ul li{list-style:none; float:right;line-height:26px;}
+ul li a{color:#999999;padding:0px 5px;text-decoration:none;}
+/*LOGO层*/
+.top_one{box-shadow: 5px 5px 5px #888888;width:100%;max-width:100%;height:90px; min-height:90px; max-height:90px;background:#FFFFFF;}
+.top_2{margin:0px auto;width:70%;height:90px;overflow:hidden;padding:0px;}
+.top_3{width:80%;margin:20px auto;width:70%;height:150px;overflow:hidden;padding:0px;}
+/*content*/
+.top_two{width:80%;max-width:70%;height:800px;margin:0px auto;}
+
+/*logo特效*/
+#IMG_1{transition: all .4s ease-in; cursor:pointer;
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;}
+#IMG_1:hover{-moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);}
+
+.T1,T1_1{text-align:center;font-size:16px;}
+input[name="Btn"],input[name="Btn_s"]{background:##F1F2F7;border:none;color:#fd8301;cursor:pointer;}
+input[name="Btn_s"]{color:#000;font-size:16px;}
+input[name="Bor_n"]{border:none; width:30%;margin-left:2%;background:#F1F2F7;}
+.sp_1{ font-size:11px;vertical-align:50px; padding-left:1px;}
+.sp_1 a{text-decoration:none;color:#000;}
+.sp_1 a:hover{text-decoration:underline; color:#063;}
+/* 添加数量 */
+.p_number{ margin:0px auto;}	
+.p_number .f_l{ padding-left:39%;}
+@media screen and (max-width:1290px){
+	.p_number .f_l{ padding-left:32%;}
+	}
+@media screen and (max-width:1610px){
+	.p_number .f_l{ padding-left:37%;}
+	}
+@media screen and (max-width:1370px){
+	.p_number .f_l{ padding-left:34%;}
+	}
+@media screen and (max-width:1030px){
+	.p_number .f_l{ padding-left:28%;}
+	}
+.p_number .add_chose{width:105px;}
+.p_number .add_chose a{float:left;margin:5px 0 0 0;display:block;width:15px;height:15px;line-height:99em;overflow:hidden;background:url(../images/reduce-add.gif) no-repeat;}
+.p_number .add_chose a.reduce{background-position:0 0;}
+.p_number .add_chose a.reduce:hover{background-position:0 -16px;}
+.p_number .add_chose a.add{background-position:-16px 0;}
+.p_number .add_chose a.add:hover{background-position: -16px -16px;}
+.p_number .add_chose .text{float:left;margin:0 5px;display:inline;border:solid 1px #ccc;padding:4px 3px 4px 8px;width:40px;line-height:18px;font-size:14px;color:#990000;font-weight:800;}
+
+
+
+/*选项卡样式*/
+		.con{margin:0;}
+		.menu{list-style:none;display:block;}
+		.menu li{
+			float:left;line-height:26px;height:26px;font-size:16px;
+			border:3px solid #cecdcd;
+			margin-right:50px;
+			border-bottom:none;
+			padding:5px;
+			margin-bottom:0;
+			cursor:pointer;font-size:18px;font-weight:600;
+		}
+		.content_box{clear:both;margin-top:-2px;padding-left:12px;width:98%;max-width:98%; height:790px;background:#FFFFFF;border:3px solid #cecdcd;border-top:none;}
+		.li_one{background:#FFFFFF; color:#00A9EE;}
+		.li_two{background:#FFFFFF; color:#00A9EE;}
+/*选项卡1内部样式*/
+.Pin_1{padding:50px;}
+.Pin_2{padding-left:50px;padding-top:50px;}
+.Pin_3{padding-left:50px;}
+.In_1{width:20%;height:25px;color:#00aaee;font-size:16px;border:none;}
+.In_2,.In_3{width:200px;height:30px;color:#00aaee;font-size:16px;}
+.In_4{width:201px;height:30px;color:#00aaee;font-size:16px;}
+.In_5{width:100px;height:30px;color:#00aaee;font-size:16px;}
+.text_5{padding:3% 0px;padding-left:50px;}
+.text_5 span{padding:2% 1.8%;margin-top:10px;}
+.selected_1{border:3px solid #00aaee;cursor:pointer;}
+/*小图片*/
+.img_res{vertical-align:-10px;padding-right:5px;}
+.Btn_a{margin:0px auto;display:block;width:128px;height:51px;border:none;color:#FFFFFF;background:#00aaee;font-size:16px;margin-top:15px;margin-bottom:15px;cursor:pointer;}
+.C_a,.C_1,.C_2{padding:7px 50px;}
+.C_2{color:#8d8c8c;font-size:14px;}
+.Z_c{color:#F00;}
+
+/*选项卡3内部样式*/
+.Img_cz{display:block;padding-top:50px;padding-left:50px; width:90%;height:auto;}

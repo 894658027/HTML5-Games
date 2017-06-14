@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>商品详情</title>
+<link href="css/price_sass.css" rel="stylesheet" type="text/css">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(function(){
+	 $(".Lb li a:lt(3)").css("color","red");
+	  $(".Lb_1 li a:lt(3)").css("color","red");
+	   $(".Lb_2 li a:lt(3)").css("color","red");
+	  $(".Lb_3 li a:lt(3)").css("color","red");
+	})
+</script>
+</head>
+
+<body>
+<!--logo层-->
+<div class="logo">
+			<div class="logo_content">
+				<div class="logo_left">
+					<a href="__ROOT__"><img src="images/logo_2.png" style="float:left; margin-top:28px" class="img-responsive" /></a>
+				</div>
+				<div style="width:700px; height:100px; background:#9F9 ; float:left ;  margin:30px 0px 0px  100px">
+					<section class="webdesigntuts-workshop">
+						<form action="__ROOT__/index.php/home/search" method="get">
+							<input type="search" name="search" class="sear" value="请输入查找内容" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入查找内容';}" autofocus="autofocus">
+							<button>Search</button>
+						</form>
+						<div style="text-align:center;margin:0 0; font:normal 14px/24px 'MicroSoft YaHei';"> </div>
+					</section>
+				</div>
+			</div>
+		</div>
+        <!--说明层-->
+        <div class="row mg_top_1"></div>
+<div class="container">
+  <p class="p_we">同&nbsp;品&nbsp;牌</p>
+  <p class="p_color">同样是<a href="#">丰田</a>品牌的汽车还有：共查询到：<a href="#">20</a>条结果</p>
+
+  <!--第一组表格-->
+<table class="table table-hover table-bordered text-center" id="tab_t">
+
+<foreach>
+<tr>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+</tr>
+
+<tr>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+</tr>
+
+<tr>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+<td class="TD_1"><a href="#"><img src="images/lb6.jpg" class="Img_q"></a></td>
+</tr>
+
+
+</foreach>
+
+</table>
+  <p id="page">分页</p>
+  </div>
+        
+
+<div class="row mg_top"></div>
+        	<div class="container-fluid" style="background:#000; height:350px;">
+            <br/>
+			<h2 class="text-center sunning" style="color:#FFF;">易行，让出行更简单</h2>
+			<div style=" width:990px; margin:0px auto;">
+				<div class="bottom">
+					<ul>
+						<li class="title" style="font-size:18px">新手指南</li>
+						<br />
+						<br />
+						<a href="javascript:void(0)">
+							<li>安全中心</li>
+						</a><br />
+						<a href="javascript:void(0)">
+							<li>购车规则</li>
+						</a><br />
+						<a href="javascript:void(0)">
+							<li>商户服务平台</li>
+						</a>
+					</ul>
+				</div>
+				<div class="bottom">
+					<ul>
+						<li class="title" style="font-size:18px">诚信保证计划</li>
+						<br />
+						<br />
+						<a href="javascript:void(0)">
+							<li>七天包退</li>
+						</a><br />
+						<a href="javascript:void(0)">
+							<li>发票服务</li>
+						</a><br />
+						<a href="javascript:void(0)">
+							<li>缺货退款</li>
+						</a>
+					</ul>
+				</div>
+				<div class="bottom">
+					<ul>
+						<li class="title" style="font-size:18px">支付方式</li>
+						<br />
+						<br />
+						<a href="javascript:void(0)">
+							<li>网银支付</li>
+						</a><br />
+						<a href="javascript:void(0)">
+							<li>银行卡支付</li>
+						</a><br />
+						<a href="javascript:void(0)">
+							<li>信用卡支付</li>
+						</a>
+					</ul>
+				</div>
+				<div class="bottom">
+					<ul>
+						<li class="title" style="font-size:18px">售后服务</li>
+						<br />
+						<br />
+						<a href="javascript:void(0)">
+							<li>联系客服</li>
+						</a><br />
+						<a href="javascript:void(0)">
+							<li>消费者维权中心</li>
+						</a>
+					</ul>
+
+				</div>
+
+				<div class="con">
+					<a href="" target="_blank">购车资讯</a>
+					<a href="" target="_blank">诚证英才</a>
+					<a href="" target="_blank">网站合作</a>
+					<a href="" target="_blank">联系我们</a>
+					<a href="" target="_blank">法律声明</a>
+					<p>ICP备案证书号：15028076&nbsp;&nbsp;&nbsp;&nbsp;举报电话：010-62502662 </p>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

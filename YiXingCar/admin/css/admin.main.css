@@ -1,0 +1,90 @@
+﻿html, body, div, span, input, p,h1, h2, h3, h4, h5, h6, blockquote, a, abbr, acronym, address, strong, b, u, i, center,dl, dt, dd, ol, ul,td,tr
+{
+    font-family:"Microsoft Yahei","微软雅黑","宋体", "Simsun", "Open Sans";
+}
+
+label { cursor:auto}
+
+.dn { display:none;}
+
+.well { padding:5px;}
+
+.mini { font-size: 13px !important; }
+
+.page-title{margin: 5px 0px 5px 0px;font-size: 18px;}
+
+.dataTables_filter label { margin:5px;}
+
+.table { border-top:3px solid #ccc}
+
+.alert { margin:0px}
+
+.form-horizontal .control-label  { width:100px; }
+.form-horizontal .controls { margin-left:120px; }
+
+.field-validation-error
+{
+    line-height:20px;
+	margin-left:2px;
+	padding-left:16px;
+	color:#f00;
+	background:url(../images/error.png) no-repeat left center;
+	_margin-left:2px;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+input.input-validation-error
+{
+    border-color:#f00;
+}
+
+.validation-summary-errors
+{
+    float:right;
+    color:#f00;
+    width:300px;
+    height:20px;
+    overflow:hidden;
+}
+
+.validation-summary-errors li
+{
+    float:right;
+    margin-left:20px;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+input.price{width:50px}
+input.number{width:30px}
+input.hasDatepicker{width:75px}
+
+h4{border-bottom: 1px solid #EEEEEE;}
+
+.m10 { margin : 10px}
+.p10 {  padding : 10px}
+
+.floatleft { float:left;}
+.floatright  { float:right;}
+
+.gray{color:#666}
+
+.green{color:green}
+
+.blue{color:blue}
+
+.integer {width:30px;}
+
+/*分页控件样式*/
+.pages { color:red;font-weight:bold; clear:both; }
+.pages  .item{padding: 1px 6px;font-size: 13px;} /*数字页索引样式*/
+.pages a { border: 1px solid #ddd;padding:3px 10px;color:#333;font-weight:normal; background:#eee; }
+.pages a:hover { background-color: #111; color:#fff;border:1px solid #ddd; text-decoration:none;font-weight:normal;}
+.pages span{ color:#000; padding:4px 10px; background-color:#ddd; margin:5px; }

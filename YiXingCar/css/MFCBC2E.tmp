@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; 
+   padding:0;
+   border:0}
+/*导航层*/
+body{ background:url(../images/week_bg.png); background-repeat:no-repeat; background-size:100%;height:auto;}
+.top{width:100%;height:40px}
+.menu {width:80%;height:50px;margin:0px auto;}
+.img1{float:left;margin-left:1%;margin-top:10px;}
+.img2{float:left;margin-top:10px; margin-left:2%;}
+.menu ul li {width:8%;height:47px;list-style:none;float:right;margin:0px 1.5% 0px;margin-top:15px; padding-top:2px;	}
+.menu ul li a {display:block;width:100px;height:47px; font-family:'微软雅黑';text-decoration:none;text-align:center;line-height:47px;font-size:16px;color:#300}
+.menu ul li a:hover{display:block;background:#90050e;width:100px;height:47px;border-radius:0px;font-family:'微软雅黑';text-decoration:none;text-align:center;line-height:47px;color:#FFF;}
+.activity{background:#82070e;}
+/*#IMG_1,#IMG_2{transition: all .4s ease-in; cursor:pointer;
+	-webkit-transition: all .4s ease-in;
+	-moz-transition: all .4s ease-in;}
+#IMG_1:hover{-moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);}
+#IMG_2:hover{-moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);}*/
+
+/*导航层结束*/
+.img_res{width:100%; height:auto; display:block;}
+/*二层定位*/
+#pos_icon{width:1px; height:10px; background:#B31F00; margin:0px auto; position:relative;}
+#icon_1{ width:830px; height:370px;position:absolute; top:-891px; left:-480px;}
+#icon_2{ width:830px; height:400px;position:absolute; top:-450px; left:-480px;}
+
+.nav_bar{height:10px; margin-top:15px;}
+.nav_bar img{ padding-top:10px;}
+.nav_sp{ font-size:18px;  padding-left:15px; font-weight:bold; vertical-align:-5px;}
+/*日期计时*/
+.day{ color:#333333; font-size:24px; vertical-align:-1px;}
+.day:hover{ text-decoration:none; color:#000;}
+/*文字样式*/
+.cap_f{background:#FFF; padding:15px;}
+
+/*内部内边距*/
+.xs_pdi{padding:0px 5px;}
+.xs_md{margin:3px 0px;}
+/*文字层定位*/
+.pos_main{width:200px; height:1px; background:red; margin:0px auto; position:relative;}
+.pos_con{width:200px; height:40px; background:#000; text-align:center; padding-top:10px;color:#FFF;filter:alpha(opacity=75);opacity:0.75;-moz-opacity:0.75; position:absolute; top:-170px;}
+
+.product{text-decoration:none; color:#000;}
+
+
+/*底部层*/
+.bottom{
+	background:url(../images/actdibu.png);
+	height:130px;}
+.bom{width:500px; height:auto;margin:0px auto; background:#000;}
+.bom ul li{list-style:none; float:left; padding-top:30px;padding-left:30px;color:#fff;}
+.bom ul li a{color:#FFF;text-decoration:none;}
+/*底部层结束*/
