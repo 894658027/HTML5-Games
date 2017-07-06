@@ -25,10 +25,7 @@
             { id: "scBtn", src: "image/direPic/scBtn.png"},
             { id: "sgBtn", src: "image/direPic/sgBtn.png"},
             { id: "pjBtn", src: "image/direPic/middle.png"},
-            { id: "left_press", src: "image/direPic/left_press.png"},
-            { id: "right_press", src: "image/direPic/right_press.png"},
-            { id: "middle_press", src: "image/direPic/middle_press.png"},
-            { id: "scorePanel", src: "image/direPic/scorePanel.png"},
+            // { id: "scorePanel", src: "image/direPic/scorePanel.png"},
             { id: "loading", src: "image/direPic/loading.png"},
             { id: "hover", src: "image/direPic/hover.png"},
             { id: "normal", src: "image/direPic/normal.png"},
@@ -51,19 +48,20 @@
                         this.render();
                     })
                 }
+                // localstory 取值
        gameDataSheet(){
                     window.ceil = window.localStorage.vision;
                     console.log(ceil);
                     this.firstScreen();      
                 }
+                // 游戏主逻辑处理
        firstScreen() {
             var gameView;
                     this.gameView = new createjs.Container();
                     this.stage.addChild(this.gameView);
-
                     this.bgMain();
         var logScore = 1,logSum = 2, logSom = 1, logRow = 1, logClos = 3, logZi = 3,getHero,insect,getHeros,redImgHero,
-        sgBtn_1,sgBtns,scBtn_1,scBtns,pjBtn_1,pjBtns,left_press,left_pres;
+        sgBtn_1,sgBtns,scBtn_1,scBtns,pjBtn_1,pjBtns;
                     let bitmaps = [];
 //得分面板
         // var scorePanel = new createjs.Bitmap(window.queue.getResult("scorePanel"));
@@ -71,6 +69,7 @@
         // scorePanel.y = -10;
         // this.gameView.addChild(scorePanel); 
 
+// 左手
                     var heroContainer = new createjs.Container();
                         window.currentIndex = babyEye.randomRange(1, 4);
                         getHero = window.queue.getResult(currentIndex);
@@ -83,7 +82,7 @@
                         heroContainer.y = 300;
 
                         this.gameView.addChild(heroContainer);
-
+// 右手
                     var heroContainers = new createjs.Container();
                         window.current = babyEye.randomRange(5, 7);
                         getHeros = window.queue.getResult(current);
@@ -127,46 +126,17 @@
                         if(window.currentIndex == 1 && window.current == 6){
                            scBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                // this.gameDataSheet();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else if(window.currentIndex == 2 && window.current == 4){
                            scBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                // this.gameDataSheet();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else if(window.currentIndex == 3 && window.current == 5){
                            scBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else{
                            scBtns.addEventListener("mousedown",(ev)=>{
@@ -177,44 +147,17 @@
                           if(window.currentIndex == 3 && window.current == 4){
                            sgBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else if(window.currentIndex == 1 && window.current == 5){
                            sgBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else if(window.currentIndex == 2 && window.current == 6){
                            sgBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else{
                            sgBtns.addEventListener("mousedown",(ev)=>{
@@ -225,44 +168,17 @@
                         if(window.currentIndex == 1 && window.current == 4){
                            pjBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else if(window.currentIndex == 2 && window.current == 5){
                            pjBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else if(window.currentIndex == 3 && window.current == 6){
                            pjBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
-                                  if(ceil == 0.10000000000000014){
-                                ceil = ceil - 0.3;
-                                    ceil += 0.3;
-                                }else{
-                                ceil = ceil - 0.1;
-                                }
-                                console.log(ceil);
-                                     this.success();  
-                                     this.reset();
-                                this.firstScreen();
+                               this.opinion();
                            })
                         }else{
                            pjBtns.addEventListener("mousedown",(ev)=>{
@@ -270,20 +186,36 @@
                             })
                         }     
  } 
+//   精灵图与背景缩放元素控制
+        opinion(){
+                if(ceil == 0.10000000000000014){
+                    ceil = ceil - 0.3;
+                      ceil += 0.3;
+                        }else{
+                           ceil = ceil - 0.1;
+                         }
+                this.success();  
+                this.reset();
+                this.firstScreen();
+        }
+        // 正确提示
         success(){
                 createjs.Sound.play("nzb", createjs.Sound.INTERRUPT_NONE, 0, 0, 0, 1, 0);
-                $("#sucImg").show(1000);
-                $("#sucImg").hide(1000);
+                $("#sucImg").show(500);
+                $("#sucImg").hide(500);
         }
+        // 错误提示
         fail(){
             createjs.Sound.play("noMuc", createjs.Sound.INTERRUPT_NONE, 0, 0, 0, 1, 0);
-                $("#failImg").show(1000);
-                $("#failImg").hide(1000);
+                $("#failImg").show(500);
+                $("#failImg").hide(500);
         }
+        // 清空画布
         reset(){
                         this.stage.removeAllChildren();
                         this.stage.removeAllEventListeners();
                 }
+        // 背景缩放判断处理
        bgMain(){
                 if(ceil == 1){
                 this.canvasBgeight(); 
@@ -305,6 +237,7 @@
                 this.canvasBgone();
       }
    }
+//    背景组
          canvasBgone(){
                             var config = {
                             barWidth: 5,
