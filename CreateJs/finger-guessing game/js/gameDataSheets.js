@@ -66,10 +66,10 @@
         sgBtn_1,sgBtns,scBtn_1,scBtns,pjBtn_1,pjBtns,left_press,left_pres;
                     let bitmaps = [];
 //得分面板
-        var scorePanel = new createjs.Bitmap(window.queue.getResult("scorePanel"));
-        scorePanel.x = 400;
-        scorePanel.y = -10;
-        this.gameView.addChild(scorePanel); 
+        // var scorePanel = new createjs.Bitmap(window.queue.getResult("scorePanel"));
+        // scorePanel.x = 400;
+        // scorePanel.y = -10;
+        // this.gameView.addChild(scorePanel); 
 
                     var heroContainer = new createjs.Container();
                         window.currentIndex = babyEye.randomRange(1, 4);
@@ -78,13 +78,6 @@
                         insect.scaleX = insect.scaleY = ceil;
                         insect.regX = 39;
                         insect.regY = 29;
-                        // createjs.Tween.get(insect,{loop:true})
-                        //                             .to({x: insect.x,y:insect.y}, 100)
-                        //                             .to({x: insect.x,y:insect.y - 50 }, 100)
-                        //                             .to({x: insect.x,y:insect.y}, 100);
-                        // createjs.Tween.get(insect,{loop:true})
-                        //                             .to({alpha:0}, 1000)
-                        //                             .to({alpha:1}, 1000);
                         heroContainer.addChild(insect);
                         heroContainer.x = 490;
                         heroContainer.y = 300;
@@ -122,12 +115,6 @@
                         scBtns.y = 520;
                         this.gameView.addChild(scBtns);
 
-                        // left_press = window.queue.getResult("left_press");
-                        // left_pres = new createjs.Bitmap(left_press);
-                        // left_pres.scaleX = left_pres.scaleY = 0.7;
-                        // left_pres.x= 390;
-                        // left_pres.y = 520;
-
                         //平局按钮
                         pjBtn_1 = window.queue.getResult("pjBtn");
                         pjBtns = new createjs.Bitmap(pjBtn_1);
@@ -139,8 +126,6 @@
                         //左边赢判断
                         if(window.currentIndex == 1 && window.current == 6){
                            scBtns.addEventListener("mousedown",(ev)=>{
-                            //    this.gameView.addChild(left_pres);
-                            //    this.gameView.removeChild(scBtns);
                                this.gameView.removeChild(heroContainer);
                                   if(ceil == 0.10000000000000014){
                                 ceil = ceil - 0.3;
@@ -154,10 +139,6 @@
                                 // this.gameDataSheet();
                                 this.firstScreen();
                            })
-                        //    scBtns.addEventListener("mouseout",(ev)=>{
-                        //      this.gameView.removeChild(left_pres);
-                        //      this.gameView.addChild(scBtns);
-                        //    })
                         }else if(window.currentIndex == 2 && window.current == 4){
                            scBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
@@ -185,7 +166,6 @@
                                 console.log(ceil);
                                      this.success();  
                                      this.reset();
-                                // this.gameDataSheet();
                                 this.firstScreen();
                            })
                         }else{
@@ -206,7 +186,6 @@
                                 console.log(ceil);
                                      this.success();  
                                      this.reset();
-                                // this.gameDataSheet();
                                 this.firstScreen();
                            })
                         }else if(window.currentIndex == 1 && window.current == 5){
@@ -221,7 +200,6 @@
                                 console.log(ceil);
                                      this.success();  
                                      this.reset();
-                                // this.gameDataSheet();
                                 this.firstScreen();
                            })
                         }else if(window.currentIndex == 2 && window.current == 6){
@@ -236,7 +214,6 @@
                                 console.log(ceil);
                                      this.success();  
                                      this.reset();
-                                // this.gameDataSheet();
                                 this.firstScreen();
                            })
                         }else{
@@ -257,7 +234,6 @@
                                 console.log(ceil);
                                      this.success();  
                                      this.reset();
-                                // this.gameDataSheet();
                                 this.firstScreen();
                            })
                         }else if(window.currentIndex == 2 && window.current == 5){
@@ -272,7 +248,6 @@
                                 console.log(ceil);
                                      this.success();  
                                      this.reset();
-                                // this.gameDataSheet();
                                 this.firstScreen();
                            })
                         }else if(window.currentIndex == 3 && window.current == 6){
@@ -287,7 +262,6 @@
                                 console.log(ceil);
                                      this.success();  
                                      this.reset();
-                                // this.gameDataSheet();
                                 this.firstScreen();
                            })
                         }else{

@@ -24,7 +24,7 @@ body {
 
 #instructions {
     height: 100vh;
-    background-image: url(../../../../static/img/interface/statement0.png);
+    background-image: url(../../../static/img/interface/statement0.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: top center;
@@ -112,13 +112,13 @@ body {
 .start {
     float: right;
     background-repeat: no-repeat;
-    background-image: url(../../../../static/img/buttons/start1.png);
+    background-image: url(../../../static/img/buttons/start1.png);
     width:100px; 
     height: 50px;
     background-size: 100%;
 }
 .start:hover {
-    background-image: url(../../../../static/img/buttons/start2.png);
+    background-image: url(../../../static/img/buttons/start2.png);
 }
 .start:active {
     width: 98px;
