@@ -80,33 +80,27 @@
                         heroContainer.addChild(insect);
                         heroContainer.x = 490;
                         heroContainer.y = 300;
-
                         this.gameView.addChild(heroContainer);
 // 右手
                     var heroContainers = new createjs.Container();
                         window.current = babyEye.randomRange(5, 7);
                         getHeros = window.queue.getResult(current);
-
                         redImgHero = new createjs.Bitmap(getHeros);
                         redImgHero.scaleX = redImgHero.scaleY = ceil;
-
                         redImgHero.regX = 39;
                         redImgHero.regY = 29;
-
                         heroContainers.addChild(redImgHero);
                         heroContainers.x = 800;
                         heroContainers.y = 300;
                         this.gameView.addChild(heroContainers);
-
-
-                         //右边赢按钮
+//右边赢按钮
                         sgBtn_1 = window.queue.getResult("sgBtn");
                         sgBtns = new createjs.Bitmap(sgBtn_1);
                         sgBtns.scaleX = sgBtns.scaleY = 0.7;
                         sgBtns.x= 760;
                         sgBtns.y = 520;
                         this.gameView.addChild(sgBtns);
-                        //左边赢按钮
+//左边赢按钮
                         scBtn_1 = window.queue.getResult("scBtn");
                         scBtns = new createjs.Bitmap(scBtn_1);
                         scBtns.scaleX = scBtns.scaleY = 0.7;
@@ -114,7 +108,7 @@
                         scBtns.y = 520;
                         this.gameView.addChild(scBtns);
 
-                        //平局按钮
+//平局按钮
                         pjBtn_1 = window.queue.getResult("pjBtn");
                         pjBtns = new createjs.Bitmap(pjBtn_1);
                         pjBtns.scaleX = pjBtns.scaleY = 0.7;
@@ -122,18 +116,8 @@
                         pjBtns.y = 520;
                         this.gameView.addChild(pjBtns);
                        
-                        //左边赢判断
-                        if(window.currentIndex == 1 && window.current == 6){
-                           scBtns.addEventListener("mousedown",(ev)=>{
-                               this.gameView.removeChild(heroContainer);
-                               this.opinion();
-                           })
-                        }else if(window.currentIndex == 2 && window.current == 4){
-                           scBtns.addEventListener("mousedown",(ev)=>{
-                               this.gameView.removeChild(heroContainer);
-                               this.opinion();
-                           })
-                        }else if(window.currentIndex == 3 && window.current == 5){
+//左边赢判断
+                        if(window.currentIndex == 1 && window.current == 6||window.currentIndex == 2 && window.current == 4||window.currentIndex == 3 && window.current == 5){
                            scBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
                                this.opinion();
@@ -143,18 +127,8 @@
                             this.fail();
                             })
                         }
-                         //右边赢判断
-                          if(window.currentIndex == 3 && window.current == 4){
-                           sgBtns.addEventListener("mousedown",(ev)=>{
-                               this.gameView.removeChild(heroContainer);
-                               this.opinion();
-                           })
-                        }else if(window.currentIndex == 1 && window.current == 5){
-                           sgBtns.addEventListener("mousedown",(ev)=>{
-                               this.gameView.removeChild(heroContainer);
-                               this.opinion();
-                           })
-                        }else if(window.currentIndex == 2 && window.current == 6){
+ //右边赢判断
+                          if(window.currentIndex == 3 && window.current == 4||window.currentIndex == 1 && window.current == 5||window.currentIndex == 2 && window.current == 6){
                            sgBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
                                this.opinion();
@@ -164,18 +138,8 @@
                             this.fail();
                             })
                         }
-                        //平局判断
-                        if(window.currentIndex == 1 && window.current == 4){
-                           pjBtns.addEventListener("mousedown",(ev)=>{
-                               this.gameView.removeChild(heroContainer);
-                               this.opinion();
-                           })
-                        }else if(window.currentIndex == 2 && window.current == 5){
-                           pjBtns.addEventListener("mousedown",(ev)=>{
-                               this.gameView.removeChild(heroContainer);
-                               this.opinion();
-                           })
-                        }else if(window.currentIndex == 3 && window.current == 6){
+//平局判断
+                        if(window.currentIndex == 1 && window.current == 4||window.currentIndex == 2 && window.current == 5||window.currentIndex == 3 && window.current == 6){
                            pjBtns.addEventListener("mousedown",(ev)=>{
                                this.gameView.removeChild(heroContainer);
                                this.opinion();
@@ -198,24 +162,24 @@
                 this.reset();
                 this.firstScreen();
         }
-        // 正确提示
+// 正确提示
         success(){
                 createjs.Sound.play("nzb", createjs.Sound.INTERRUPT_NONE, 0, 0, 0, 1, 0);
                 $("#sucImg").show(500);
                 $("#sucImg").hide(500);
         }
-        // 错误提示
+ // 错误提示
         fail(){
             createjs.Sound.play("noMuc", createjs.Sound.INTERRUPT_NONE, 0, 0, 0, 1, 0);
                 $("#failImg").show(500);
                 $("#failImg").hide(500);
         }
-        // 清空画布
+// 清空画布
         reset(){
                         this.stage.removeAllChildren();
                         this.stage.removeAllEventListeners();
                 }
-        // 背景缩放判断处理
+// 背景缩放判断处理
        bgMain(){
                 if(ceil == 1){
                 this.canvasBgeight(); 
