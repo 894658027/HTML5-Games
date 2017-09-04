@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>EaselJS demo: localToLocal</title>  
+    <style type="text/css">  
+    body {  
+    margin: 0;  
+    padding: 7px;  
+    background-color: rgba(255,255,255,0);  
+    }   
+    </style>    
+    <script>  
+    //es5方法
+var nTimeCount = 15;
+function fCountTime() {
+  if (nTimeCount > 0) {
+    nTimeCount--;
+    setTimeout(function() {
+      fCountTime();
+      console.log(nTimeCount)
+    }, 1000);
+  } else {
+    console.log('时间到');
+  }
+}
+fCountTime();
+//es6方法
+        fCountTime() {
+                    // dire = dire - 1;
+                    let text_sum = new createjs.Text(this.nTimeCount, "25px Arial", "#ffffff");
+                    text_sum.x = 1229;
+                    text_sum.y = 6;
+                    text_sum.textAlign = "center" ;
+                    this.gameView.addChild(text_sum);
+
+                      let upSteTimeOut = setTimeout(()=>{
+                     if(this.nTimeCount>0){
+                        this.nTimeCount --;
+                        text_sum.text = this.nTimeCount;
+                        console.log(this.nTimeCount);          
+                        // ev.remove();  
+                        this.gameView.removeChild(text_sum);            
+                        this.fCountTime();
+                     }else{
+                         window.clearInterval(upSteTimeOut);  
+                         console.log("时间到!");
+                     }  
+                    
+                 },1000)
+}
+    </script>  
+</head>  
+<body>  
+</body>  
+</html>  

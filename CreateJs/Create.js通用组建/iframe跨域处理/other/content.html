@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="parent">父级页面</h1>
+    <iframe id="myIframe" src="iframe.html"></iframe>
+</body>
+<script type="text/javascript">
+    // document.onclick = function(){
+    window.onload = function(){
+        var myIframe = document.getElementById("myIframe").contentWindow
+                               .document.getElementById("son").innerText;
+        console.log(myIframe)   
+    }
+</script>
+</html>

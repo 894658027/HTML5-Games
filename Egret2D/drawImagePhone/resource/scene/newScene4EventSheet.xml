@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="newScene4" previous="" next="" version="2.0">
+  <item type="instance" UID="4797"/>
+  <item type="instance" UID="4794"/>
+  <item type="instance" UID="4749"/>
+  <item type="instance" UID="4746"/>
+  <item type="instance" UID="4743"/>
+  <item type="instance" UID="4740"/>
+  <item type="instance" UID="4737"/>
+  <item type="instance" UID="4734"/>
+  <item type="instance" UID="4731"/>
+  <item type="instance" UID="4728"/>
+  <item type="instance" UID="4725"/>
+  <item type="instance" UID="4722"/>
+  <item type="instance" UID="4776"/>
+  <item type="instance" UID="4773"/>
+  <item type="instance" UID="4770"/>
+  <item type="instance" UID="4767"/>
+  <item type="instance" UID="4764"/>
+  <item type="instance" UID="4761"/>
+  <item type="instance" UID="4758"/>
+  <item type="instance" UID="4755"/>
+  <item type="instance" UID="4752"/>
+  <item type="instance" UID="4716"/>
+  <item type="instance" UID="4710"/>
+  <item type="instance" UID="4707"/>
+  <item type="instance" UID="4719"/>
+  <item type="instance" UID="4704"/>
+  <item type="instance" UID="4701"/>
+  <item type="instance" UID="4713"/>
+  <item type="instance" UID="4698"/>
+  <item type="instance" UID="4695"/>
+  <item type="instance" UID="4692"/>
+  <item type="instance" UID="4788"/>
+  <item type="instance" UID="4785"/>
+  <item type="instance" UID="4791"/>
+  <item type="instance" UID="4689"/>
+  <item type="instance" UID="4686">
+    <item type="behavior" behaviorType="FlashBehavior" name="闪烁">
+      <item valueDataType="any" value="0.3" name="onTime"/>
+      <item valueDataType="any" value="0.1" name="offTime"/>
+      <item valueDataType="any" value="0" name="times"/>
+      <item valueDataType="any" value="1" name="enabled"/>
+    </item>
+  </item>
+  <item type="instance" UID="4779"/>
+  <item type="instance" UID="4681">
+    <item type="behavior" behaviorType="FlashBehavior" name="闪烁">
+      <item valueDataType="any" value="0.1" name="onTime"/>
+      <item valueDataType="any" value="0.1" name="offTime"/>
+      <item valueDataType="any" value="0" name="times"/>
+      <item valueDataType="any" value="1" name="enabled"/>
+    </item>
+  </item>
+  <item type="instance" UID="4782"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="1"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="319.65" name="16"/>
+      <item valueDataType="any" value="246.50" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d1">
+      <item valueDataType="any" value="228.20" name="16"/>
+      <item valueDataType="any" value="183.25" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateCounterClockWise" target="lina">
+      <item valueDataType="any" value="54" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="lina">
+      <item valueDataType="any" value="232.20" name="16"/>
+      <item valueDataType="any" value="186.25" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="1"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="2">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="2"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="427.60" name="16"/>
+      <item valueDataType="any" value="282.70" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d2">
+      <item valueDataType="any" value="316.65" name="16"/>
+      <item valueDataType="any" value="244.50" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateCounterClockWise" target="linb">
+      <item valueDataType="any" value="70" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="linb">
+      <item valueDataType="any" value="319.65" name="16"/>
+      <item valueDataType="any" value="246.50" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="2"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="3">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="3"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="553.10" name="16"/>
+      <item valueDataType="any" value="301.65" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d3">
+      <item valueDataType="any" value="421.60" name="16"/>
+      <item valueDataType="any" value="276.70" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateCounterClockWise" target="linc">
+      <item valueDataType="any" value="80" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="linc">
+      <item valueDataType="any" value="427.60" name="16"/>
+      <item valueDataType="any" value="282.70" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="3"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="4">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="4"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="359.05" name="16"/>
+      <item valueDataType="any" value="332.10" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d4">
+      <item valueDataType="any" value="549.10" name="16"/>
+      <item valueDataType="any" value="301.65" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateCounterClockWise" target="lind">
+      <item valueDataType="any" value="120" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="lind">
+      <item valueDataType="any" value="359.05" name="16"/>
+      <item valueDataType="any" value="332.10" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="4"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="5">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="5"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="230.60" name="16"/>
+      <item valueDataType="any" value="332.65" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d5">
+      <item valueDataType="any" value="353.05" name="16"/>
+      <item valueDataType="any" value="322.10" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="line">
+      <item valueDataType="any" value="230.60" name="16"/>
+      <item valueDataType="any" value="332.65" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateCounterClockWise" target="line">
+      <item valueDataType="any" value="90" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="5"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="6">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="6"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="309.90" name="16"/>
+      <item valueDataType="any" value="412.60" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d6">
+      <item valueDataType="any" value="225.60" name="16"/>
+      <item valueDataType="any" value="330.65" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateCounterClockWise" target="linf">
+      <item valueDataType="any" value="150" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="linf">
+      <item valueDataType="any" value="309.90" name="16"/>
+      <item valueDataType="any" value="412.60" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="6"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="7">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="7"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="484.85" name="16"/>
+      <item valueDataType="any" value="338.85" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d7">
+      <item valueDataType="any" value="304.90" name="16"/>
+      <item valueDataType="any" value="410.60" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateClockWise" target="ling">
+      <item valueDataType="any" value="133" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="ling">
+      <item valueDataType="any" value="484.85" name="16"/>
+      <item valueDataType="any" value="338.85" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="7"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="8">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="8"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="491.05" name="16"/>
+      <item valueDataType="any" value="402.05" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d8">
+      <item valueDataType="any" value="480.85" name="16"/>
+      <item valueDataType="any" value="330.85" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateClockWise" target="linh">
+      <item valueDataType="any" value="180" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="linh">
+      <item valueDataType="any" value="491.05" name="16"/>
+      <item valueDataType="any" value="402.05" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="8"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="9">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="9"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="diAnimate">
+      <item valueDataType="any" value="606.10" name="16"/>
+      <item valueDataType="any" value="386.70" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="d9">
+      <item valueDataType="any" value="487.05" name="16"/>
+      <item valueDataType="any" value="400.05" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="rotateClockWise" target="lini">
+      <item valueDataType="any" value="151" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="lini">
+      <item valueDataType="any" value="606.10" name="16"/>
+      <item valueDataType="any" value="386.70" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="9"/>
+    <item type="action" callTarget="instance" callName="setEnabled" target="10">
+      <item valueDataType="any" value="1" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="10"/>
+    <item type="action" callTarget="instance" callName="play" target="meidaMic">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="diAnimate"/>
+    <item type="action" callTarget="instance" callName="setPosition" target="d10">
+      <item valueDataType="any" value="602.10" name="16"/>
+      <item valueDataType="any" value="383.70" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="10"/>
+    <item type="action" callTarget="instance" callName="setVisible" target="dutexa">
+      <item valueDataType="any" value="1" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" target="diText">
+      <item valueDataType="any" value="1" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" target="ditexb">
+      <item valueDataType="any" value="1" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setPosition" target="lineZi">
+      <item valueDataType="any" value="400.04" name="16"/>
+      <item valueDataType="any" value="299.15" name="17"/>
+    </item>
+    <item type="action" callTarget="instance" callName="execTween" target="diBtns">
+      <item valueDataType="any" value="diBtns" name="key"/>
+      <item valueDataType="any" value="693.29" name="x"/>
+      <item valueDataType="any" value="393.70" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="1000" name="duration"/>
+      <item valueDataType="string" value="bounceInOut" name="ease"/>
+      <item valueDataType="any" value="0" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="1" name="scaleX"/>
+      <item valueDataType="any" value="1" name="scaleY"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" callTarget="instance" callName="setVisible" target="dutexa">
+      <item valueDataType="any" value="0" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" target="diText">
+      <item valueDataType="any" value="0" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setVisible" target="ditexb">
+      <item valueDataType="any" value="0" name="10"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="2">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="3">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="4">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="5">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="6">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="7">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="8">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="9">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setEnabled" target="10">
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="diBtns"/>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="newScene5" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="diCongZi"/>
+    <item type="action" callTarget="instance" callName="reload" target="Browser"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="diAnimate"/>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="newScene4" name="18"/>
+    </item>
+  </item>
+</eventSheets>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>EaselJS demo: localToLocal</title>  
+    <style type="text/css">  
+    body {  
+    margin: 0;  
+    padding: 7px;  
+    background-color: rgba(255,255,255,0);  
+    }  
+  
+    canvas {  
+        border: solid 1px rgba(0,0,0,0.05);  
+    }  
+    </style>  
+    <script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>  
+    <script>  
+    var stage, arm, target;  
+   function init() {  
+       stage = new createjs.Stage("game");  
+//红色目标  
+       target = stage.addChild(new createjs.Shape());  
+       target.graphics.beginFill("red").drawCircle(0,0,45)  
+               .beginFill("white").drawCircle(0,0,30)  
+               .beginFill("red").drawCircle(0,0,15);  
+       target.x = 100;  
+       target.y = 180;  
+  
+       arm = stage.addChild(new createjs.Shape());  
+       arm.graphics.beginFill("black").drawRect(-2,-2,100,4)//黑色方形  
+               .beginFill("blue").drawCircle(100,0,8);//蓝色球  
+         
+       arm.x = 180;  
+       arm.y = 100;  
+  
+       createjs.Ticker.on("tick", tick);  
+   }  
+  
+   function tick(event) {  
+       arm.rotation += 5;  
+  
+       target.alpha = 0.2;  
+       var pt = arm.localToLocal(100,0,target);//碰撞检测前，先把arm图形中的某点的坐标跟目标target做一个转化，这里是（100，0），也就是蓝球中心  
+       if (target.hitTest(pt.x, pt.y)) { target.alpha = 1; }//使用转化后的坐标进行检测即可判断两个物体是否相交。  
+  
+       stage.update(event);  
+   }  
+    </script>  
+</head>  
+<body onload="init();">  
+    <canvas id="game" width="1280" height="720">  
+        alternate content  
+    </canvas>  
+</body>  
+</html>  
