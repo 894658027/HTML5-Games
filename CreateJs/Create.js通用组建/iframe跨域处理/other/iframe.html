@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="son">子级页面</h1>
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        var sonText = window.parent.document.getElementById("parent").innerText;
+        console.log(sonText);
+    }
+</script>
+</html>

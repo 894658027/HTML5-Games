@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/base.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script>
+    window.addEventListener("load", init);
+    function init() {
+      var stage = new createjs.Stage("myCanvas");
+      if (createjs.Touch.isSupported() == true) {
+        createjs.Touch.enable(stage)
+      }
+      //-------------------------------
+      window.addEventListener("resize", handleResize);
+      handleResize(); 
+      function handleResize(event) {
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        stage.canvas.width = w;
+        stage.canvas.height = h;
+        // 画面更新
+        stage.update();
+      }
+      //-------------------------------
+      var shape = new createjs.Shape();
+      shape.graphics.beginFill("DarkRed").drawCircle(0, 0, 80);
+      stage.addChild(shape);
+      createjs.Ticker.addEventListener("tick", handleTick);
+      function handleTick(event) {
+        shape.x += 30;
+        shape.y += 5;
+        if (shape.x > window.innerWidth) shape.x = 0;
+        if (shape.y > window.innerHeight) shape.y = 0;
+        stage.update();
+      }
+    }
+  </script>
+  <style>
+    canvas#myCanvas {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="myCanvas" width="960" height="540"></canvas>
+</body>
+</html>

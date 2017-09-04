@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>pic
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="js/create.js"></script>
+  <script src="js/common.js"></script><!--我自己写的函数库-->
+</head>
+<body>
+<center>
+    <canvas id="gameView" width="1280" height="768" style="width:1280px;height:768px;background:palevioletred;"></canvas>
+  </center>
+</body>
+<script type="text/javascript">
+
+var stage = new createjs.Stage("gameView");
+var gameView = new createjs.Container();
+
+gameView.width = stage.width;
+gameView.height = stage.height;
+
+Init();
+
+function Init(){
+    let bitmaps = [];
+    　// 五个a字母
+        for(let i = 0; i < 5;i++){
+            let bitA = new createjs.Bitmap("image/15/15pxA.png");
+            bitmaps.push(bitA);
+        }
+        //15个v字母
+        for(let i = 0; i < 15;i++){
+            let bitV = new createjs.Bitmap("image/15/15pxV.png");
+            bitmaps.push(bitV);
+            // 追加
+        }
+        //打乱函数
+        babyEye.shuffle(bitmaps);
+        for (var i = 0 ; i < 4 ; i++) {
+            // 四列
+            for (var j = 0 ; j < 5 ; j++) {
+                // 五行
+                let bitn = bitmaps[i*5 + j]
+                console.log([i,j]);
+                bitn.x = 70 + 70 * j;
+                // x间距
+                bitn.y = 70 + 70*i;
+                // y间距
+                stage.addChild(bitn);
+ console.log(bitn.x);
+            }
+    }
+                   
+}
+ createjs.Ticker.setFPS(30);
+      createjs.Ticker.addEventListener("tick", function () {
+      stage.update();
+      //不断更新
+  })
+</script>
+</html>
+
+
+
+

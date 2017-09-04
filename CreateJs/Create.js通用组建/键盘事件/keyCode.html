@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/base.css">
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script>
+    window.addEventListener("load", init);
+    function init() {
+      // 舞台
+      var stage = new createjs.Stage("myCanvas");
+      // 飞船位置
+      var ship = new createjs.Shape();
+      ship.graphics.beginFill("DarkRed")
+              .drawCircle(0, 0, 10);
+      stage.addChild(ship);
+      // 设置舞台中心
+      ship.x = stage.canvas.width / 2;
+      ship.y = stage.canvas.height / 2;
+      // 判断方向
+      var isPressLeft = false;
+      var isPressRight = false;
+      var isPressUp = false;
+      var isPressDown = false;
+      // 设置键盘事件
+      window.addEventListener("keydown", handleKeyDown);
+      window.addEventListener("keyup", handleKeyUp);
+      function handleKeyDown(event) {
+        // 监听键盘事件触发
+        var keyCode = event.keyCode;
+        if (keyCode == 39) { // 右
+          isPressRight = true;
+        } else if (keyCode == 37) { // 左
+          isPressLeft = true;
+        } else if (keyCode == 40) { // 下
+          isPressDown = true;
+        } else if (keyCode == 38) { // 上
+          isPressUp = true;
+        }
+      }
+      function handleKeyUp(event) {
+        // 监听键盘事件触发
+        var keyCode = event.keyCode;
+        if (keyCode == 39) { // 右
+          isPressRight = false;// 
+        } else if (keyCode == 37) { // 左
+          isPressLeft = false;
+        } else if (keyCode == 40) { // 下
+          isPressDown = false;
+        } else if (keyCode == 38) { // 上
+          isPressUp = false;
+        }
+      }
+      // 時間経過
+      createjs.Ticker.addEventListener("tick", handleTick);
+      function handleTick() {
+        // 处理移动
+        if (isPressRight == true) { // 右
+          ship.x += 50; // 移動
+        } else if (isPressLeft == true) { // 左
+          ship.x -= 50;
+        }
+        if (isPressDown == true) { // 下
+          ship.y += 50;
+        } else if (isPressUp == true) { // 上
+          ship.y -= 50;
+        }
+
+if (ship.x < 0) { ship.x = 0; }
+if (ship.x > stage.canvas.width) { ship.x = stage.canvas.width; }
+if (ship.y < 0) { ship.y = 0; }
+if (ship.y > stage.canvas.height) { ship.y = stage.canvas.height; }
+// 超出屏幕处理
+
+        stage.update(); // 画面更新
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="myCanvas" width="960" height="540"></canvas>
+</body>
+</html>

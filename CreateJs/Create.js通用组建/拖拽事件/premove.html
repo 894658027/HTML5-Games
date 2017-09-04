@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/base.css">
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script>
+    window.addEventListener("load", init);
+    function init() {
+      var stage = new createjs.Stage("myCanvas");
+      var radius = 100;
+      var dragPointX;
+      var dragPointY;
+      var ball = new createjs.Shape();
+      ball.graphics.beginFill("DarkRed").drawCircle(0, 0, radius);
+      ball.x = stage.canvas.width / 2; 
+      ball.y = stage.canvas.height / 2;
+      stage.addChild(ball);
+
+      ball.addEventListener("mousedown", handleDown);
+      ball.addEventListener("pressmove", handleMove);
+      ball.addEventListener("pressup", handleUp);
+// 按下处理
+      function handleDown(event) {
+        // 最佳拖拽位置
+        dragPointX = stage.mouseX - ball.x;
+        dragPointY = stage.mouseY - ball.y;
+        // 半透明
+        ball.alpha = 0.5;
+      }
+      // 移动处理
+      function handleMove(event) {
+        // 座標追随
+        ball.x = stage.mouseX - dragPointX;
+        ball.y = stage.mouseY - dragPointY;
+      }
+      // 移动接触抬起
+      function handleUp(event) {
+        // 透明度
+        ball.alpha = 1.0;
+      }
+      createjs.Ticker.addEventListener("tick", handleTick);
+      function handleTick() {
+        stage.update(); // 画面更新
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="myCanvas" width="960" height="540"></canvas>
+</body>
+</html>

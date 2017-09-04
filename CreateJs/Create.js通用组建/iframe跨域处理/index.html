@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+     <script src="js/jquery.min.js"></script>
+<body>
+        <!--嵌套游戏层-->
+<iframe src="index_2.html" width="1280" height="720" id="myIframe">
+</iframe>
+<p>通过iframe父页面监测子页面游戏数据是否加载完成，完成返回真，否则显示父页面。</p>
+<p>如果浏览器不支持，则 iframe 是不可见的。</p>
+</body>
+<script>
+window.onload = function(){
+        var myIframe = document.getElementById("myIframe").contentWindow
+                               .document.getElementById("containerGame");
+                               console.log(myIframe);
+                               myIframe.style.display = "block";
+                        if(['window.pro']){
+                            myIframe.style.display = "none";
+                               }
+    }
+</script>
+</html>

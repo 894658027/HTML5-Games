@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="newScene" previous="" next="" version="2.0">
+  <item type="instance" UID="4540"/>
+  <item type="instance" UID="4522"/>
+  <item type="instance" UID="3999"/>
+  <item type="instance" UID="3996"/>
+  <item type="instance" UID="4534"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsButtonDownEvent" callName="isTouchDown" isTrigger="false" target="AIButton4001"/>
+    <item type="action" callTarget="instance" callName="play" target="beginAAA">
+      <item valueDataType="any" value="0" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="MainScene" name="18"/>
+    </item>
+  </item>
+</eventSheets>
