@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout id="null" sceneSize="800,600" next="newScene6" previous="newScene4" eventSheet="newScene5EventSheet" version="2.0">
+  <layer index="0" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <layer index="1" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
+  <item UID="4812" plugin="AISprite" name="fixbGs" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="fixbGs" valueDataType="string"/>
+    <item name="uiGuid" value="4812" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="400.11" valueDataType="number"/>
+    <item name="y" value="299.64" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="800" valueDataType="number"/>
+    <item name="height" value="600" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F5s.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C600.00%2C800.00%7C600.00%2C800.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C600.00%2C800.00%7C600.00%2C800.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="4809" plugin="AISprite" name="fixbG" parallaxX="100" parallaxY="100" index="1" family="displayobject">
+    <item name="name" value="fixbG" valueDataType="string"/>
+    <item name="uiGuid" value="4809" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="400.11" valueDataType="number"/>
+    <item name="y" value="299.64343834494474" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="800" valueDataType="number"/>
+    <item name="height" value="600" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F5.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C600.00%2C800.00%7C600.00%2C800.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C600.00%2C800.00%7C600.00%2C800.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="FlashBehavior" name="闪烁">
+        <item valueDataType="any" value="0.1" name="onTime"/>
+        <item valueDataType="any" value="0.1" name="offTime"/>
+        <item valueDataType="any" value="0" name="times"/>
+        <item valueDataType="any" value="1" name="enabled"/>
+      </item>
+    </item>
+  </item>
+  <item UID="4815" plugin="AISprite" name="xieZi" parallaxX="100" parallaxY="100" index="2" family="displayobject">
+    <item name="name" value="xieZi" valueDataType="string"/>
+    <item name="uiGuid" value="4815" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="1220.3206031458735" valueDataType="number"/>
+    <item name="y" value="298.65984608830263" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="800" valueDataType="number"/>
+    <item name="height" value="600" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2FxieZi.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C600.00%2C800.00%7C600.00%2C800.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C600.00%2C800.00%7C600.00%2C800.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="FlashBehavior" name="闪烁">
+        <item valueDataType="any" value="0.3" name="onTime"/>
+        <item valueDataType="any" value="0.1" name="offTime"/>
+        <item valueDataType="any" value="0" name="times"/>
+        <item valueDataType="any" value="1" name="enabled"/>
+      </item>
+    </item>
+  </item>
+  <item UID="4824" plugin="AISprite" name="st1" parallaxX="100" parallaxY="100" index="0" family="displayobject">
+    <item name="name" value="st1" valueDataType="string"/>
+    <item name="uiGuid" value="4824" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="590.410596007524" valueDataType="number"/>
+    <item name="y" value="53.59635936984992" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="30" valueDataType="number"/>
+    <item name="height" value="30" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C30.00%2C30.00%7C30.00%2C30.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C30.00%2C30.00%7C30.00%2C30.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4821" plugin="AISprite" name="st2" parallaxX="100" parallaxY="100" index="1" family="displayobject">
+    <item name="name" value="st2" valueDataType="string"/>
+    <item name="uiGuid" value="4821" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="613.6305392532275" valueDataType="number"/>
+    <item name="y" value="119.23994394614486" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="68.22" valueDataType="number"/>
+    <item name="height" value="72.44" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4830" plugin="AISprite" name="st3" parallaxX="100" parallaxY="100" index="2" family="displayobject">
+    <item name="name" value="st3" valueDataType="string"/>
+    <item name="uiGuid" value="4830" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="607.1454857169284" valueDataType="number"/>
+    <item name="y" value="207.51384996993855" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="68.22" valueDataType="number"/>
+    <item name="height" value="72.44" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4833" plugin="AISprite" name="st4" parallaxX="100" parallaxY="100" index="3" family="displayobject">
+    <item name="name" value="st4" valueDataType="string"/>
+    <item name="uiGuid" value="4833" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="460.71954451415934" valueDataType="number"/>
+    <item name="y" value="192.1870861609138" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="104" valueDataType="number"/>
+    <item name="height" value="107" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C107.00%2C104.00%7C107.00%2C104.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C107.00%2C104.00%7C107.00%2C104.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4836" plugin="AISprite" name="st5" parallaxX="100" parallaxY="100" index="4" family="displayobject">
+    <item name="name" value="st5" valueDataType="string"/>
+    <item name="uiGuid" value="4836" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="358.7" valueDataType="number"/>
+    <item name="y" value="356.8280428260904" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="68.22" valueDataType="number"/>
+    <item name="height" value="72.43762887138288" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4839" plugin="AISprite" name="st6" parallaxX="100" parallaxY="100" index="5" family="displayobject">
+    <item name="name" value="st6" valueDataType="string"/>
+    <item name="uiGuid" value="4839" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="348.6474045970978" valueDataType="number"/>
+    <item name="y" value="438.7696494982043" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="68.22" valueDataType="number"/>
+    <item name="height" value="74.44" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C74.44%2C68.22%7C74.44%2C68.22%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C74.44%2C68.22%7C74.44%2C68.22%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4842" plugin="AISprite" name="st7" parallaxX="100" parallaxY="100" index="6" family="displayobject">
+    <item name="name" value="st7" valueDataType="string"/>
+    <item name="uiGuid" value="4842" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="343.6" valueDataType="number"/>
+    <item name="y" value="528.35" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="104" valueDataType="number"/>
+    <item name="height" value="107" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C107.00%2C104.00%7C107.00%2C104.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C107.00%2C104.00%7C107.00%2C104.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4845" plugin="AISprite" name="st8" parallaxX="100" parallaxY="100" index="7" family="displayobject">
+    <item name="name" value="st8" valueDataType="string"/>
+    <item name="uiGuid" value="4845" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="129.35094929625143" valueDataType="number"/>
+    <item name="y" value="500.2283414062622" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="68.22" valueDataType="number"/>
+    <item name="height" value="74.44" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C74.44%2C68.22%7C74.44%2C68.22%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C74.44%2C68.22%7C74.44%2C68.22%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4848" plugin="AISprite" name="st9" parallaxX="100" parallaxY="100" index="8" family="displayobject">
+    <item name="name" value="st9" valueDataType="string"/>
+    <item name="uiGuid" value="4848" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="195.40204254859952" valueDataType="number"/>
+    <item name="y" value="404.7893285337691" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="104" valueDataType="number"/>
+    <item name="height" value="107" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C107.00%2C104.00%7C107.00%2C104.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C107.00%2C104.00%7C107.00%2C104.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4851" plugin="AISprite" name="st10" parallaxX="100" parallaxY="100" index="9" family="displayobject">
+    <item name="name" value="st10" valueDataType="string"/>
+    <item name="uiGuid" value="4851" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="101.80218561055705" valueDataType="number"/>
+    <item name="y" value="420.2482855689334" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="68.22" valueDataType="number"/>
+    <item name="height" value="72.44" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fstarts.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C72.44%2C68.22%7C72.44%2C68.22%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4887" plugin="AIMovieClip" name="fixAnimate" parallaxX="100" parallaxY="100" index="10" family="displayobject">
+    <item name="name" value="fixAnimate" valueDataType="string"/>
+    <item name="uiGuid" value="4887" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="591.1646082094175" valueDataType="number"/>
+    <item name="y" value="51.02169297442072" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="124.71" valueDataType="number"/>
+    <item name="height" value="128.09" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C128.09%2C124.71%7C128.09%2C124.71%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C128.09%2C124.71%7C128.09%2C124.71%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="actions" value="" valueDataType="any">
+      <item name="动画" loop="0" fps="24" scaleX="1" scaleY="1">
+        <item src="resource%2FuserAsset%2Fimages%2F1-7.png"/>
+        <item src="resource%2FuserAsset%2Fimages%2F1-5.png"/>
+        <item src="resource%2FuserAsset%2Fimages%2F1-3.png"/>
+        <item src="resource%2FuserAsset%2Fimages%2F1-1.png"/>
+        <item src="resource%2FuserAsset%2Fimages%2F1-2.png"/>
+        <item src="resource%2FuserAsset%2Fimages%2F1-4.png"/>
+        <item src="resource%2FuserAsset%2Fimages%2F1-6.png"/>
+      </item>
+    </item>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4854" plugin="AISprite" name="at1" parallaxX="100" parallaxY="100" index="11" family="displayobject">
+    <item name="name" value="at1" valueDataType="string"/>
+    <item name="uiGuid" value="4854" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="583.73" valueDataType="number"/>
+    <item name="y" value="43.85704277984179" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4860" plugin="AISprite" name="at2" parallaxX="100" parallaxY="100" index="12" family="displayobject">
+    <item name="name" value="at2" valueDataType="string"/>
+    <item name="uiGuid" value="4860" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="605.1" valueDataType="number"/>
+    <item name="y" value="109.7" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4863" plugin="AISprite" name="at3" parallaxX="100" parallaxY="100" index="13" family="displayobject">
+    <item name="name" value="at3" valueDataType="string"/>
+    <item name="uiGuid" value="4863" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="599" valueDataType="number"/>
+    <item name="y" value="197.8" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4866" plugin="AISprite" name="at4" parallaxX="100" parallaxY="100" index="14" family="displayobject">
+    <item name="name" value="at4" valueDataType="string"/>
+    <item name="uiGuid" value="4866" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="454.25" valueDataType="number"/>
+    <item name="y" value="182.3" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4869" plugin="AISprite" name="at5" parallaxX="100" parallaxY="100" index="15" family="displayobject">
+    <item name="name" value="at5" valueDataType="string"/>
+    <item name="uiGuid" value="4869" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="352.3" valueDataType="number"/>
+    <item name="y" value="347.8" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4872" plugin="AISprite" name="at6" parallaxX="100" parallaxY="100" index="16" family="displayobject">
+    <item name="name" value="at6" valueDataType="string"/>
+    <item name="uiGuid" value="4872" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="341.7446421138639" valueDataType="number"/>
+    <item name="y" value="430.55929992137766" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4875" plugin="AISprite" name="at7" parallaxX="100" parallaxY="100" index="17" family="displayobject">
+    <item name="name" value="at7" valueDataType="string"/>
+    <item name="uiGuid" value="4875" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="336.6" valueDataType="number"/>
+    <item name="y" value="518.9" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4878" plugin="AISprite" name="at8" parallaxX="100" parallaxY="100" index="18" family="displayobject">
+    <item name="name" value="at8" valueDataType="string"/>
+    <item name="uiGuid" value="4878" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="121.4" valueDataType="number"/>
+    <item name="y" value="490.9" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4881" plugin="AISprite" name="at9" parallaxX="100" parallaxY="100" index="19" family="displayobject">
+    <item name="name" value="at9" valueDataType="string"/>
+    <item name="uiGuid" value="4881" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="187.75" valueDataType="number"/>
+    <item name="y" value="394.35" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4884" plugin="AISprite" name="at10" parallaxX="100" parallaxY="100" index="20" family="displayobject">
+    <item name="name" value="at10" valueDataType="string"/>
+    <item name="uiGuid" value="4884" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="94.55" valueDataType="number"/>
+    <item name="y" value="410.6" valueDataType="number"/>
+    <item name="anchorX" value="0.3" valueDataType="number"/>
+    <item name="anchorY" value="0.3" valueDataType="number"/>
+    <item name="width" value="20" valueDataType="number"/>
+    <item name="height" value="20" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F545453.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C20.00%2C20.00%7C20.00%2C20.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4890" plugin="AISprite" name="fixa" parallaxX="100" parallaxY="100" index="21" family="displayobject">
+    <item name="name" value="fixa" valueDataType="string"/>
+    <item name="uiGuid" value="4890" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-257.2" valueDataType="number"/>
+    <item name="y" value="58.85" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="70" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Frect.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C70.00%2C1.00%7C70.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C70.00%2C1.00%7C70.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4896" plugin="AISprite" name="fixb" parallaxX="100" parallaxY="100" index="22" family="displayobject">
+    <item name="name" value="fixb" valueDataType="string"/>
+    <item name="uiGuid" value="4896" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-245.75" valueDataType="number"/>
+    <item name="y" value="67.25" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="90" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2FrectQ.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C90.00%2C1.00%7C90.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C90.00%2C1.00%7C90.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4899" plugin="AISprite" name="fixc" parallaxX="100" parallaxY="100" index="23" family="displayobject">
+    <item name="name" value="fixc" valueDataType="string"/>
+    <item name="uiGuid" value="4899" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-183.9" valueDataType="number"/>
+    <item name="y" value="60.15" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="170" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Frect.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C170.00%2C1.00%7C170.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C170.00%2C1.00%7C170.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4902" plugin="AISprite" name="fixd" parallaxX="100" parallaxY="100" index="24" family="displayobject">
+    <item name="name" value="fixd" valueDataType="string"/>
+    <item name="uiGuid" value="4902" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-177.5" valueDataType="number"/>
+    <item name="y" value="91.4" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="150" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Frect.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C150.00%2C1.00%7C150.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C150.00%2C1.00%7C150.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4905" plugin="AISprite" name="fixe" parallaxX="100" parallaxY="100" index="25" family="displayobject">
+    <item name="name" value="fixe" valueDataType="string"/>
+    <item name="uiGuid" value="4905" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-210.6" valueDataType="number"/>
+    <item name="y" value="120.3" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="185" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Frect.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C185.00%2C1.00%7C185.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C185.00%2C1.00%7C185.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4908" plugin="AISprite" name="fixf" parallaxX="100" parallaxY="100" index="26" family="displayobject">
+    <item name="name" value="fixf" valueDataType="string"/>
+    <item name="uiGuid" value="4908" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-78" valueDataType="number"/>
+    <item name="y" value="145" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="70" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2FrectQ.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C70.00%2C1.00%7C70.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C70.00%2C1.00%7C70.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4911" plugin="AISprite" name="fixg" parallaxX="100" parallaxY="100" index="27" family="displayobject">
+    <item name="name" value="fixg" valueDataType="string"/>
+    <item name="uiGuid" value="4911" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-148.45" valueDataType="number"/>
+    <item name="y" value="176.35" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="90" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Frect.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C90.00%2C1.00%7C90.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C90.00%2C1.00%7C90.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4914" plugin="AISprite" name="fixh" parallaxX="100" parallaxY="100" index="28" family="displayobject">
+    <item name="name" value="fixh" valueDataType="string"/>
+    <item name="uiGuid" value="4914" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-147.85" valueDataType="number"/>
+    <item name="y" value="131.95" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="210" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Frect.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C210.00%2C1.00%7C210.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C210.00%2C1.00%7C210.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4917" plugin="AISprite" name="fixi" parallaxX="100" parallaxY="100" index="29" family="displayobject">
+    <item name="name" value="fixi" valueDataType="string"/>
+    <item name="uiGuid" value="4917" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-129.55" valueDataType="number"/>
+    <item name="y" value="230.7" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="117" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Frect.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C117.00%2C1.00%7C117.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C117.00%2C1.00%7C117.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4920" plugin="AISprite" name="pixj" parallaxX="100" parallaxY="100" index="30" family="displayobject">
+    <item name="name" value="pixj" valueDataType="string"/>
+    <item name="uiGuid" value="4920" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-135.5" valueDataType="number"/>
+    <item name="y" value="105.2" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="1" valueDataType="number"/>
+    <item name="height" value="95" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2FrectQ.png" valueDataType="string"/>
+    <item name="enabled" value="false" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C95.00%2C1.00%7C95.00%2C1.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C95.00%2C1.00%7C95.00%2C1.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4923" plugin="AISprite" name="resBtnGo" parallaxX="100" parallaxY="100" index="31" family="displayobject">
+    <item name="name" value="resBtnGo" valueDataType="string"/>
+    <item name="uiGuid" value="4923" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="754.18" valueDataType="number"/>
+    <item name="y" value="38.96" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="58" valueDataType="number"/>
+    <item name="height" value="58" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2F%E9%87%8D%E7%BD%AE%E6%8C%89%E9%92%AE1.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C58.00%2C58.00%7C58.00%2C58.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C58.00%2C58.00%7C58.00%2C58.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4926" plugin="AITextField" name="fixiText" parallaxX="100" parallaxY="100" index="32" family="text">
+    <item name="name" value="fixiText" valueDataType="string"/>
+    <item name="uiGuid" value="4926" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="688.08" valueDataType="number"/>
+    <item name="y" value="240.61645159843576" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="227.5303678883779" valueDataType="number"/>
+    <item name="height" value="43.936908100914344" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="text" value="%E5%B0%8F%E6%9C%8B%E5%8F%8B%E4%BB%AC%E4%BD%A0%E4%BB%AC%E5%A5%BD%EF%BC%81" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
+    <item name="size" value="20" valueDataType="number"/>
+    <item name="textColor" value="0xffffff" valueDataType="string"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4929" plugin="AITextField" name="fixiTeax" parallaxX="100" parallaxY="100" index="33" family="text">
+    <item name="name" value="fixiTeax" valueDataType="string"/>
+    <item name="uiGuid" value="4929" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="631.2232966462834" valueDataType="number"/>
+    <item name="y" value="278.2966792880137" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="336.5198706510506" valueDataType="number"/>
+    <item name="height" value="46" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="text" value="%E6%88%91%E6%98%AF%E5%A4%A9%E8%9D%8E%E5%BA%A7%2C%E5%8D%81%E4%BA%8C%E6%98%9F%E5%BA%A7%E4%B9%8B%E9%BB%84%E9%81%93%E7%AC%AC%E5%85%AB%E5%AE%AB" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
+    <item name="size" value="20" valueDataType="number"/>
+    <item name="textColor" value="0xffffff" valueDataType="string"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4932" plugin="AITextField" name="fixiTeaxr" parallaxX="100" parallaxY="100" index="34" family="text">
+    <item name="name" value="fixiTeaxr" valueDataType="string"/>
+    <item name="uiGuid" value="4932" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="653.6231938607874" valueDataType="number"/>
+    <item name="y" value="318.0130738409398" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="288.6463877215748" valueDataType="number"/>
+    <item name="height" value="34.22614768187963" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="text" value="%E4%BD%8D%E4%BA%8E%E5%A4%A9%E7%A7%A4%E5%BA%A7%E4%B9%8B%E4%B8%9C%EF%BC%8C%E5%B0%84%E6%89%8B%E5%BA%A7%E4%B9%8B%E8%A5%BF%E3%80%82" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
+    <item name="size" value="20" valueDataType="number"/>
+    <item name="textColor" value="0xffffff" valueDataType="string"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="4935" plugin="AISprite" name="nextBgin" parallaxX="100" parallaxY="100" index="35" family="displayobject">
+    <item name="name" value="nextBgin" valueDataType="string"/>
+    <item name="uiGuid" value="4935" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="671.2772110061082" valueDataType="number"/>
+    <item name="y" value="650.6675155598582" valueDataType="number"/>
+    <item name="anchorX" value="0.5" valueDataType="number"/>
+    <item name="anchorY" value="0.5" valueDataType="number"/>
+    <item name="width" value="135" valueDataType="number"/>
+    <item name="height" value="52.6" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fimages%2Fnext-btn.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C52.60%2C135.00%7C52.60%2C135.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C52.60%2C135.00%7C52.60%2C135.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+  <item UID="5044" plugin="AIAudio" name="touchBar" parallaxX="100" parallaxY="100" index="36" family="">
+    <item name="name" value="touchBar" valueDataType="string"/>
+    <item name="uiGuid" value="5044" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="-109.4" valueDataType="number"/>
+    <item name="y" value="-36.45" valueDataType="number"/>
+    <item name="width" value="30" valueDataType="number"/>
+    <item name="height" value="30" valueDataType="number"/>
+    <item name="alpha" value="1" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Faudio%2FTouch.mp3" valueDataType="string"/>
+    <item name="loop" value="1" valueDataType="number"/>
+    <item name="volume" value="1" valueDataType="number"/>
+    <item name="playOnStart" value="false" valueDataType="boolean"/>
+    <item name="layer" value="1" valueDataType="number"/>
+  </item>
+</layout>
