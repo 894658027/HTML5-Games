@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--han games -->
+<html>
+<head>
+  <title>视琦 -【开心找国旗】</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="css/ex.css" rel = "stylesheet" type="text/css">
+</head>
+<style>
+.icon_1{left: 10px;background-image: url(../../static/img/version5/buttons/help-text.png);z-index: 998;top: 0px;}
+.icon_2{left:10px;background-image: url(../../static/img/version5/buttons/replay-text.png);z-index: 999;bottom:1%;}  
+.icon_1,.icon_2{position: absolute;width: 75px;height: 75px;cursor: pointer;display:block;}
+.icon_2:hover{
+    background-image: url(../../static/img/version5/buttons/replay.png);
+}
+.icon_1:hover{
+    background-image: url(../../static/img/version5/buttons/help.png);
+}
+#sucImg,#failImg{position: absolute;top: 30%;left: 44%;z-index: 999;display: none;}
+#timer{position: absolute;top: 1px;right:1%;z-index: 995;font-size: 3rem;}
+@media (min-width: 1020px) and (max-width: 1300px) {
+    #sucImg,#failImg{position: absolute;top: 28%;left: 36%;}
+}
+@media (min-width: 1301px) and (max-width: 1600px) {
+    #sucImg,#failImg{position: absolute;top: 26%;left: 40%;}
+}
+@media (min-width: 1601px ) and (max-width: 1920px){
+#sucImg,#failImg{position: absolute;top: 30%;left: 43%;}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+     #sucImg,#failImg{position: absolute;top: 35%;left: 36%;}
+}
+</style>
+<body>
+    <div id="loading"><span><img src="image/loading.gif"></span></div>
+    <div id="instructions" style="display: none;">
+       <div class="select" >
+            <div class="content">
+                <div class="indent" style="margin-bottom: 30px;">
+                    鼠标点击或(移动端触摸)屏幕来进行训练,训练开始时在右上方会有提示栏，请您根据提示找出相应数量的国旗。找到不同有惊喜。
+                </div>
+                 <div class="start"></div>
+            </div>
+        </div>
+    </div>
+    <div id="sucImg"><img src="image/success.png" style="width:300px;height: 300px;"></div>
+    <div id="failImg"><img src="image/fail.png" style="width:300px;height: 300px;"></div>
+    <!--<div class="icon_1"><img src="image/help2.png"></div>-->
+    <!--<div class="icon_2"> <a href="index.html"><img src="image/reset1.png"></a></div>-->
+    <!--<div id="loading"><span></span></div>-->
+    <div class="icon_1"></div>
+   <a href="index.html"> <div class="icon_2"> </div></a>
+  <center>
+    <canvas id="game-canvas" width="1280" height="768" style="width:100vw;height:100vh;"></canvas>
+  </center>
+  <canvas id="bg-canvas" width="1024" height="768" style="margin:auto; position: absolute; z-index:-10;width: 100vw;height:100vh;top:0px;left:0px;"></canvas>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/create.js"></script>
+<script src="js/common.js"></script>
+<script src="js/stbg.js"></script>
+<script src="js/proload.js"></script><!--预加载界面js-->
+<script src="js/gameData.js"></script><!--第一关-->
+<script>
+window.handleResize = function () {
+    if (window.innerWidth < window.innerHeight * 1024 / 768) {
+        $("#gameView").css({
+            "height": "auto",
+            "width": "99vw"
+        });
+    } else {
+        $("#gameView").css({
+            "height": "99vh",
+            "width": "auto"
+        });
+    };
+};
+window.addEventListener('resize', handleResize, false);
+window.handleResize();
+
+  $(".icon_1").click(function(){
+    $("#game-canvas").hide();
+    $("#instructions").show();
+    $(".icon_1").hide();
+    $(".icon_2").hide();
+  })
+  $(".start").click(function(){
+      $("#instructions").hide();
+     $("#game-canvas").show();
+    $(".icon_1").show();
+    $(".icon_2").show();
+  })
+</script>
+</html>
