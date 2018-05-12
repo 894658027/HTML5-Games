@@ -1,5 +1,5 @@
 # HTML5-Games
 
-Cococs Creator && create.js && egret && phaser 
+Cococs Creator (wx-Game) && create.js && egret && (lakeshore) && phaser.js
 
 
