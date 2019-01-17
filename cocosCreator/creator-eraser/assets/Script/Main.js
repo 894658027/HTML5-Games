@@ -7,7 +7,6 @@ cc.Class({
       promptLabel:cc.Label,
   },
 
-  // use this for initialization
   onLoad: function (){
       this.node.on(cc.Node.EventType.TOUCH_START, this._onTouchBegin, this);
       this.node.on(cc.Node.EventType.TOUCH_MOVE, this._onTouchMoved, this);
@@ -23,24 +22,6 @@ cc.Class({
   },
 
   start:function () {
-     //
-
-
-      // var x =-100;
-      // var y =-100;
-      // var width =300;
-      // var height = 200;
-      // var rectangle = [cc.v2(x, y),
-      //     cc.v2(x + width, y),
-      //     cc.v2(x + width, y + height),
-      //     cc.v2(x, y + height)];
-      //
-      // stencil.drawPoly(rectangle, color, 0, color);
-
-      // stencil.drawPoly(this.mask._calculateCircle(cc.p(0,0),cc.p(100,100), 64), color, 0, color);
-      //
-      // stencil.drawPoly(this.mask._calculateCircle(cc.p(200,200),cc.p(50,50), 64), color, 0, color);
-
   },
 
   _onTouchBegin:function (event) {
@@ -65,9 +46,6 @@ cc.Class({
   },
 
   _onTouchCancel:function (event) {
-      // var point = event.touch.getLocation();
-      // point = this.node.convertToNodeSpaceAR(point);
-      // this._addCircle(point);
   },
 
   _addCircle:function (point) {
@@ -81,7 +59,7 @@ cc.Class({
   //_clippingStencil是Mask组件内部实现遮罩的东西，
   //用于给cc.ClippingNode（cocos2dx的遮罩节点）作stencil。
   //如果Mask组件是RECT或ELLIPSE模式，那_clippingStencil就是一个cc.DrawNode（也是cocos2dx的东西，理解为cc.Graphics），
-  //通过画一个矩形或者椭圆来生成遮罩模板stencil（所以楼主的功能要实现必须设置Mask的Type属性为RECT或ELLIPSE）。
+  //通过画一个矩形或者椭圆来生成遮罩模板stencil（所以功能要实现必须设置Mask的Type属性为RECT或ELLIPSE）。
   //cc.ClippingNode和cc.DrawNode是cocos2dx的东西，不在Creator的官方API中，最好通过Mask组件使用，但是直接操作它可以获得更大的自由度。
 
 
