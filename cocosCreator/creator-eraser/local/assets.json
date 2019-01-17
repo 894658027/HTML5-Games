@@ -1,0 +1,108 @@
+{
+  "item-states": [
+    {
+      "folded": false,
+      "id": "mount-assets"
+    },
+    {
+      "folded": true,
+      "id": "29f52784-2fca-467b-92e7-8fd9ef8c57b7"
+    },
+    {
+      "folded": false,
+      "id": "4734c20c-0db8-4eb2-92ea-e692f4d70934"
+    },
+    {
+      "folded": false,
+      "id": "7b81d4e8-ec84-4716-968d-500ac1d78a54"
+    },
+    {
+      "folded": true,
+      "id": "c6f18564-7c45-4198-8bb6-d561cdb1f2db"
+    },
+    {
+      "folded": false,
+      "id": "mount-build-template-components"
+    },
+    {
+      "folded": true,
+      "id": "6aa0aa6a-ebee-4155-a088-a687a6aadec4"
+    },
+    {
+      "folded": true,
+      "id": "96e03a3e-e11c-4541-aff2-9712ca7f60b3"
+    },
+    {
+      "folded": true,
+      "id": "a8027877-d8d6-4645-97a0-52d4a0123dba"
+    },
+    {
+      "folded": true,
+      "id": "e3b1efbf-3370-465c-857d-66b30a069fba"
+    },
+    {
+      "folded": true,
+      "id": "e8194cb2-ce26-4aba-8a0e-a1d3152d37a8"
+    },
+    {
+      "folded": true,
+      "id": "d9a0d8c0-afde-4ac7-924f-d75b794c7fe3"
+    },
+    {
+      "folded": true,
+      "id": "15ce605a-1725-4b51-8c25-71396ab01874"
+    },
+    {
+      "folded": true,
+      "id": "1de045c9-926f-4497-b2a8-4d748e703987"
+    },
+    {
+      "folded": true,
+      "id": "8e0e379e-691c-4763-8f0e-6dc79976e26d"
+    },
+    {
+      "folded": true,
+      "id": "573b2160-8711-4fc2-b2a9-cb4f57d3335e"
+    },
+    {
+      "folded": true,
+      "id": "6e47fd9a-eff0-4c08-833e-b94ee593844c"
+    },
+    {
+      "folded": true,
+      "id": "bee78efb-6de0-4c55-b267-97dc11fdd102"
+    },
+    {
+      "folded": true,
+      "id": "baf2e4f0-ea68-410e-84da-20488fabb433"
+    },
+    {
+      "folded": true,
+      "id": "6a1bddf7-3549-48ca-850c-323eff3a4ea6"
+    },
+    {
+      "folded": true,
+      "id": "763f0799-89ec-4c41-9355-e1b21c05538d"
+    },
+    {
+      "folded": true,
+      "id": "e5845280-f852-4a84-a7d4-4406a34957e8"
+    },
+    {
+      "folded": true,
+      "id": "70a219c0-0e81-4102-9a55-c098b74f78f9"
+    },
+    {
+      "folded": true,
+      "id": "bd6324d0-09c8-4667-83de-5a9f4c746586"
+    },
+    {
+      "folded": true,
+      "id": "5f107ba2-c1f6-40cf-a012-b032a450c38d"
+    },
+    {
+      "folded": true,
+      "id": "9a4a0d6e-69e7-4441-b258-61796c0ccf7c"
+    }
+  ]
+}
