@@ -1,0 +1,26 @@
+{
+    "16edf320dd2": {
+        "path": "game/SceneBegin.ts",
+        "class": "SceneBegin",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAdsorbEnable": true,
+        "globalRulerEnable": true
+    },
+    "16edf9ecbe9": {
+        "path": "game/SceneLevel.ts",
+        "class": "SceneLevel",
+        "parentPath": ""
+    },
+    "16edfc8b237": {
+        "path": "game/LevelIcon.ts",
+        "class": "LevelIcon",
+        "parentPath": "resource/eui_skins/ButtonSkin.exml"
+    },
+    "16ee3f6cbae": {
+        "path": "game/SceneGame.ts",
+        "class": "SceneGame",
+        "parentPath": ""
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SceneLevelSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16edf9ecbe9" ></w:Config>
+	<e:Scroller id="sc_level" width="640" height="1136" x="0" y="0">
+		<e:Group id="gp_level">
+			<e:Image id="img_arrow" source="PageDownBtn_png" x="396.94" y="697"/>
+		</e:Group>
+	</e:Scroller>
+	<e:Button id="btn_back" label="" x="518" y="1018">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="BackBtn1_png" source.down="BackBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>
