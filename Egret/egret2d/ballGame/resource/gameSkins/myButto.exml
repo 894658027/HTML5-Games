@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="myButto" width="400" height="300" currentState="down" xmlns:e="http://ns.egret.com/eui" states="up,down"  width.up="150" width.down="150" height.up="120" height.down="120">
+	<e:Image includeIn="up" x="0" y="0" width="150" height="120" source="btn_png"/>
+	<e:Image width="150" height="120" includeIn="down" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="btn_png"/>
+	<e:Label text="继续" includeIn="down" width="151" height="95" textColor="0xffd500" fontFamily="KaiTi" size="50" verticalAlign="middle" textAlign="center" anchorOffsetX="0" horizontalCenter="-37.5" verticalCenter="-31.5"/>
+	<e:Label text="暂停" includeIn="up" anchorOffsetX="0" width="182" anchorOffsetY="0" height="95" verticalCenter="0.5" horizontalCenter="0" verticalAlign="middle" textAlign="center" size="50" textColor="0xe20000" fontFamily="KaiTi"/>
+</e:Skin>

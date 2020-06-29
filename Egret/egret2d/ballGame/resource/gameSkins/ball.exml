@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ballSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="164c522ae08" ></w:Config>
+	<e:Image width="640" height="1136" x="0" y="0" source="bgImg_png"/>
+	<e:Image width="540" height="320" x="50" y="132" anchorOffsetX="0" anchorOffsetY="0" source="aImg_png"/>
+	<e:Image width="540" height="320" x="50" y="679.33" source="bImg_png" />
+	<e:Image id="img_ball" width="150" height="150" x="321" y="571.67" anchorOffsetX="75" anchorOffsetY="75" source="ballImg_png"/>
+	<e:Button id="btn_start" label="" anchorOffsetX="113" width="220" anchorOffsetY="92" height="180" right="0" verticalCenter="0" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled,pause,resume,reset">
+			<e:Image   width="90%" height="90%" width.down="100%" height.down="100%" source="btnImg_png" source.down="btnImg_png" source.disabled="btnImg_png" source.pause="pause_png" source.resume="resume_png" source.reset = "reset_png" horizontalCenter="0" verticalCenter=" 0" />
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="win_Top" width="400" height="250" x="121" y="167" anchorOffsetX="0" anchorOffsetY="0" source="win_png" visible="false"/>
+	<e:Image id="win_Buttom" width="400" height="250" x="121" y="733" anchorOffsetX="0" anchorOffsetY="0" source="win_png" visible="false"/>
+</e:Skin>
