@@ -1,27 +1,26 @@
 # HTML5-Games
 
-Cococs Creator (wx-Game) && create.js && egret (lakeshore) && phaser.js
+Cococs Creator  && Egret (lakeshore) && Create.js && Phaser.js
 
+<h2>Cocos Creator </h2>
 
-CreaterJS  四款游戏demo，
+基础教程代码合集，刮刮卡，摇杆，一笔画，跳一跳，摄像机追随。
+
+<h2>Egret &&  Lakeshore </h2>
+
+Egret2d：足球竞猜，瓶子工厂，别踩白块，成语大挑战，极速飞车，七彩贪吃蛇，时间大师。
+
+Lakeshore：前线狙击，星座瞄点，单眼娃吃星星。
+
+<h2>CreaterJS</h2>
 
 看你有多色，水果还是蔬菜，找国旗，划拳裁判长。
 
-template 包含:   移动端拖拽，屏幕适配处理，倒计时，序列祯操作，键盘事件，游戏预加载与游戏内部通信，碰撞检测，矩阵绘制背景图
+createjs-template(模板):   移动端拖拽，屏幕适配处理，倒计时，序列祯操作，键盘事件，游戏预加载与游戏内部通信，碰撞检测，矩阵绘制背景图
 
 
-Egret && Lakeshore  七款游戏demo
-
-前线狙击，七彩贪吃蛇，瓶子工厂，时间大师，别踩白块，星座瞄点，单眼娃吃星星。
-
-
-PhaserJS  三款游戏demo
+<h2>PhaserJS</h2>
 
 星星狗，小鸟蹦极，躲避外星人。
 
 
-Cocos Creator 微信小游戏两款demo(未发布)
-
-微信小游戏包含：1.跳一跳，2.摄像机跟随，主角原地旋转，3.橡皮擦
-
-序列帧操作，龙骨操作，
