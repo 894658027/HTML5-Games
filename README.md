@@ -1,6 +1,8 @@
 # HTML5-Games
 
-<h2>Cococs Creator  && Egret (lakeshore) && Create.js && Phaser.js<h2>
+<h3>JavaScript</h3>
+
+飞机大战。
 
 <h3>Cocos Creator </h3>
 
@@ -23,6 +25,3 @@ createjs-template(模板):   移动端拖拽，屏幕适配处理，倒计时，
 
 星星狗，小鸟蹦极，躲避外星人。
 
-<h3>JavaScript</h3>
-
-飞机大战。
