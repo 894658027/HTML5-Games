@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "cardSkew",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.75,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1
+        },
+        {
+          "frame": 0.4,
+          "value": 0
+        },
+        {
+          "frame": 0.75,
+          "value": -1
+        }
+      ],
+      "skewY": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.4,
+          "value": -20
+        },
+        {
+          "frame": 0.75,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

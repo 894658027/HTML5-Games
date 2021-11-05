@@ -1,0 +1,51 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "card",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.65,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1
+        },
+        {
+          "frame": 0.25,
+          "value": 0
+        },
+        {
+          "frame": 0.5,
+          "value": 1
+        },
+        {
+          "frame": 0.65,
+          "value": 1
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1
+        },
+        {
+          "frame": 0.25,
+          "value": 1
+        },
+        {
+          "frame": 0.5,
+          "value": 1
+        },
+        {
+          "frame": 0.65,
+          "value": 1
+        }
+      ]
+    }
+  },
+  "events": []
+}
